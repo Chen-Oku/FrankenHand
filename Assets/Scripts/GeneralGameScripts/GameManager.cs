@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     private int totalPoints = 0;
 
+    public event System.Action<int> OnPointsChanged;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -14,6 +16,7 @@ public class GameManager : MonoBehaviour
     public void UpdatePoints(int points)
     {
         totalPoints = points;
+        OnPointsChanged?.Invoke(totalPoints);
         // Actualizar UI, guardar progreso, etc.
     }
 

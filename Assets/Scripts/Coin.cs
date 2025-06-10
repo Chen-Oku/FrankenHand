@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
         if (inventory != null)
         {
             inventory.CollectCoin(this);
-            Destroy(gameObject);
+            Destroy(gameObject); // Solo destruye la moneda
         }
     }
 }
