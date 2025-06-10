@@ -37,9 +37,18 @@ public class PlayerController : MonoBehaviour
     private Vector3 airMomentum = Vector3.zero;
     private float airControlLerp = 5f; // Controla qué tan rápido cambia el momentum en el aire
 
+    public PlayerInventory inventory;
+    public PlayerAbilities abilities;
+    public PlayerScore score;
+
+    public Checkpoint lastCheckpoint; // Referencia al último checkpoint
+
     void Start()
     {
         charController = charController ?? GetComponent<CharacterController>();
+        inventory = inventory ?? GetComponent<PlayerInventory>();
+        abilities = abilities ?? GetComponent<PlayerAbilities>();
+        score = score ?? GetComponent<PlayerScore>();
     }
 
     void Update()
@@ -89,12 +98,18 @@ public class PlayerController : MonoBehaviour
             {
                 Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
                 charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
-                airMomentum = moveDir.normalized * currentSpeed; // Guarda el momentum
+
+                // Solo asigna momentum si hay input significativo
+                airMomentum = moveDir.normalized * currentSpeed;
             }
             else
             {
                 isRunning = false; // Detener carrera si no hay input
-                airMomentum = Vector3.zero;
+
+                // Reducir gradualmente el momentum en el suelo si no hay input
+                airMomentum = Vector3.Lerp(airMomentum, Vector3.zero, 20f * Time.deltaTime);
+                if (airMomentum.magnitude < 0.05f)
+                    airMomentum = Vector3.zero;
             }
         }
         else // En el aire
@@ -103,7 +118,6 @@ public class PlayerController : MonoBehaviour
             if (direction.magnitude >= 0.1f)
             {
                 Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
-                // Cambia 5f por la suavidad deseada (mayor = más rápido el cambio)
                 airMomentum = Vector3.Lerp(airMomentum, moveDir.normalized * currentSpeed, airControlLerp * Time.deltaTime);
             }
             // Aplica el momentum guardado
@@ -119,6 +133,7 @@ public class PlayerController : MonoBehaviour
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 coyoteTimeCounter = 0f;
+                canDoubleJump = true; // Permitir doble salto solo después de un salto válido
             }
             else if (canDoubleJump)
             {
@@ -205,6 +220,7 @@ public class PlayerController : MonoBehaviour
 
     private void DetectDoubleTapForRun()
     {
+        // Detectar doble toque para correr
         KeyCode[] keys = { KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D, KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow };
         foreach (var key in keys)
         {
@@ -217,6 +233,19 @@ public class PlayerController : MonoBehaviour
                 }
                 lastTapTimes[key] = time;
             }
+        }
+    }
+
+    public void RespawnAtCheckpoint()
+    {
+        if (lastCheckpoint != null)
+        {
+            transform.position = lastCheckpoint.transform.position; // Reiniciar posición al último checkpoint
+            // Resetear estado si es necesario
+        }
+        else
+        {
+            // Reiniciar nivel o lógica alternativa
         }
     }
 }
