@@ -1,4 +1,4 @@
-using UnityEngine;
+/* using UnityEngine;
 using UnityEngine.UI;
 
 public class BrightnessController : MonoBehaviour
@@ -25,5 +25,39 @@ public class BrightnessController : MonoBehaviour
         sliderValue = value;
         PlayerPrefs.SetFloat("Brightness", sliderValue);
         panelBrightness.color = new Color(panelBrightness.color.r, panelBrightness.color.g, panelBrightness.color.b, sliderValue);
+    }
+} */
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class brillo : MonoBehaviour
+{
+    public Slider slider;
+    public float sliderValue;
+    public Image panelBrillo;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
+
+        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
+    }
+
+    //Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void ChangeSlider(float valor)
+    {
+        sliderValue = valor;
+        PlayerPrefs.SetFloat("brillo", sliderValue);
+        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
     }
 }
