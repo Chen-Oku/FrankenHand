@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController charController;
     public Transform cameraTransform;
+    public Transform spriteTransform; // Asigna el objeto del sprite en el Inspector
     public float speed = 6.0f;
     public float runSpeed = 12.0f;
     public float jumpHeight = 1.5f;
@@ -42,6 +43,8 @@ public class PlayerController : MonoBehaviour
     public PlayerScore score;
 
     public Checkpoint lastCheckpoint; // Referencia al último checkpoint
+
+    private Quaternion targetSpriteRotation = Quaternion.Euler(90f, 0f, 0f); // Agrega este campo arriba
 
     void Start()
     {
@@ -86,6 +89,23 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        // --- NUEVO: Suavizar el giro del sprite ---
+        if (spriteTransform != null && horizontal != 0)
+        {
+            float yRot = horizontal > 0 ? 180f : 0f;
+            targetSpriteRotation = Quaternion.Euler(90f, yRot, 0f);
+        }
+        if (spriteTransform != null)
+        {
+            // Suaviza la rotación hacia el objetivo
+            spriteTransform.localRotation = Quaternion.Slerp(
+                spriteTransform.localRotation,
+                targetSpriteRotation,
+                10f * Time.deltaTime // Ajusta la velocidad aquí
+            );
+        }
+        // --- FIN NUEVO ---
 
         // Detectar doble toque para correr
         DetectDoubleTapForRun();
