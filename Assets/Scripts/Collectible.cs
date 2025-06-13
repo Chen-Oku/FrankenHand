@@ -6,11 +6,11 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var inventory = other.GetComponent<PlayerInventory>();
+        /* var inventory = other.GetComponent<PlayerInventory>();
         if (inventory != null)
         {
             inventory.CollectItem(this);
             Destroy(gameObject);
-        }
+        } */
     }
 }

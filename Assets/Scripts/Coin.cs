@@ -6,11 +6,11 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var inventory = other.GetComponent<PlayerInventory>();
+        /* var inventory = other.GetComponent<PlayerInventory>();
         if (inventory != null)
         {
             inventory.CollectCoin(this);
             Destroy(gameObject); // Solo destruye la moneda
-        }
+        } */
     }
 }
