@@ -564,6 +564,7 @@ MonoBehaviour:
       Anamorphism: 0
   BlendHint: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &261724825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,6 +693,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280386000}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &330585543
@@ -1235,6 +1238,7 @@ PrefabInstance:
       addedObject: {fileID: 1117028688}
   m_SourcePrefab: {fileID: 100100000, guid: 9fe283bc724b22e42a2788c216d2c773, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &457298156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1362,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &511446747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,8 +1395,11 @@ Transform:
   m_Children:
   - {fileID: 1503179846}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 2138854405}
   - {fileID: 1534222100}
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
   m_Father: {fileID: 0}
@@ -1455,6 +1464,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1903460240}
   m_SourcePrefab: {fileID: 100100000, guid: d1681478a0d7fcb448617c9db22e445a, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &652722669
 GameObject:
@@ -1700,6 +1710,8 @@ MonoBehaviour:
   collectibles: []
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &795965916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,6 +1890,7 @@ Transform:
   - {fileID: 1983775585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &859091821
 GameObject:
@@ -2083,6 +2096,8 @@ MonoBehaviour:
   icon: {fileID: 0}
   slotIconGameObject: {fileID: 0}
   type: 0
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &978966717
@@ -2597,6 +2612,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1527588048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,6 +2721,8 @@ Transform:
   - {fileID: 457298157}
   m_Father: {fileID: 511446748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &1629698315
@@ -3384,8 +3402,11 @@ GameObject:
   - component: {fileID: 2058254759}
   - component: {fileID: 2058254762}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 2058254760}
   - component: {fileID: 2058254763}
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
   m_Layer: 0
@@ -3480,9 +3501,12 @@ MonoBehaviour:
   cameraTransform: {fileID: 1345900308}
   spriteTransform: {fileID: 978966718}
 <<<<<<< HEAD
+<<<<<<< HEAD
   speed: 20
   runSpeed: 30
 =======
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
   speed: 10
   runSpeed: 20
 >>>>>>> parent of 28c5457 (Inventory Scripts)
@@ -3532,6 +3556,7 @@ MonoBehaviour:
   collectedItems:
   - {fileID: 1629698316}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &2058254763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3549,6 +3574,8 @@ MonoBehaviour:
   slotHolder: {fileID: 875605500}
   items: []
   collectibles: []
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1 &2136718766
@@ -3627,6 +3654,7 @@ Transform:
   - {fileID: 1960759139}
   m_Father: {fileID: 1345900308}
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &2138854404
 GameObject:
@@ -3731,6 +3759,8 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+=======
+>>>>>>> parent of 28c5457 (Inventory Scripts)
 =======
 >>>>>>> parent of 28c5457 (Inventory Scripts)
 --- !u!1660057539 &9223372036854775807
