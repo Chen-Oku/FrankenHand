@@ -56,10 +56,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // Si el inventario está abierto, no procesar input de movimiento
-        if (FindFirstObjectByType<Inventory>()?.inventoryEnabled == true)
-            return;
-
         // Comprobar si está en el suelo
         isGrounded = charController.isGrounded;
         if (isGrounded && velocity.y < 0)
@@ -78,10 +74,9 @@ public class PlayerController : MonoBehaviour
             HandleMovementInput();
             HandleJumpInput();
         }
-        
 
         HandleDashInput();
-        HandleSliceInput();
+            HandleSliceInput();
         HandleCrouchInput();
         HandleInteractInput();
 
