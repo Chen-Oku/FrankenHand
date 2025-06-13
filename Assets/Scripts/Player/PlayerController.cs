@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 airMomentum = Vector3.zero;
     private float airControlLerp = 5f; // Controla qué tan rápido cambia el momentum en el aire
 
+    public PlayerInventory inventory;
     public PlayerAbilities abilities;
     public PlayerScore score;
 
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         charController = charController ?? GetComponent<CharacterController>();
+        inventory = inventory ?? GetComponent<PlayerInventory>();
         abilities = abilities ?? GetComponent<PlayerAbilities>();
         score = score ?? GetComponent<PlayerScore>();
     }
