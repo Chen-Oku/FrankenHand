@@ -109,8 +109,8 @@ public class PlayerController : MonoBehaviour
         {
             if (direction.magnitude >= 0.1f)
             {
-                Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
-                charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
+                Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction; // Dirección del movimiento basada en la cámara
+                charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime); // Mover al jugador
 
                 // Solo asigna momentum si hay input significativo
                 airMomentum = moveDir.normalized * currentSpeed;
