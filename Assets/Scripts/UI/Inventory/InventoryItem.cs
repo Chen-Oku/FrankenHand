@@ -11,10 +11,10 @@ public class InventoryItem
     [System.NonSerialized]
     public InventoryItemData itemData; // Asignar después de cargar
 
-    public InventoryItem(InventoryItemData data, string itemName, Sprite icon, int quantity = 1)
+    public InventoryItem(InventoryItemData data, int quantity = 1)
     {
-        this.itemName = itemName;
-        this.itemIcon = icon;
+        this.itemName = data.itemName;
+        this.itemIcon = data.icon;
         this.quantity = quantity;
         this.itemData = data;
     }

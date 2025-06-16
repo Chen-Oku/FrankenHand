@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Mono.Cecil.Cil;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -16,10 +18,14 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> collectibles = new List<InventoryItem>();
     public List<InventoryItem> keys = new List<InventoryItem>();
 
+
     public int maxSlots = 20;
+
+    public PauseMenu pauseMenu; // Asigna el PauseMenu desde el Inspector
 
     void Start()
     {
+        
         allSlots = slotHolder.transform.childCount;
         slots = new GameObject[allSlots];
 
@@ -43,11 +49,16 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // No abrir el inventario si el menú de pausa está activo
+        if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
+            return;
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
         }
-        if (inventoryEnabled == true)
+
+        if (inventoryEnabled)
         {
             inventoryUI.SetActive(true);
             Time.timeScale = 0f; // Pausa el juego
@@ -65,39 +76,58 @@ public class Inventory : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Item"){
-            GameObject itemPickedUp = other.gameObject;
-            PickupItem pickup = itemPickedUp.GetComponent<PickupItem>();
-            if (pickup != null && pickup.itemData != null)
-            {
-                AddItem(itemPickedUp, pickup.itemData, pickup.itemData.itemName, pickup.amount, pickup.itemData.icon);
-                // Aquí puedes agregar lógica para marcar el objeto como recogido o destruirlo si es necesario
-            }
+        if (other.gameObject.TryGetComponent(out PickupItem pickup))
+        {
+            AddItem(pickup);
         }
     }
 
-    public void AddItem(GameObject itemObject, InventoryItemData itemData, string itemName, int quantity, Sprite icon)
+    public void AddItem(PickupItem pickup)
     {
         // Busca si ya existe el item en el inventario (para stackear)
-        InventoryItem existing = items.Find(i => i.itemData == itemData);
+        InventoryItem existing = items.FirstOrDefault(i => i.itemData == pickup.itemData);
+
         if (existing != null)
         {
-            existing.quantity += quantity;
+            existing.quantity += pickup.amount;
         }
         else
         {
-            InventoryItem newItem = new InventoryItem(itemData, itemName, icon, quantity);
-            newItem.itemData = itemData;
-            items.Add(newItem);
+            items.Add(new InventoryItem(pickup.itemData));
         }
 
         // Opcional: Actualiza la UI de slots aquí si lo necesitas
 
         // Desactiva o destruye el objeto recogido
-        itemObject.SetActive(false);
+        pickup.gameObject.SetActive(false);
 
         return;
     }
+
+    public void UpdateSlot()
+    {
+            Inventory inventory = Object.FindFirstObjectByType<Inventory>();
+            var myItems = items;
+        // Actualiza los slots de la UI con los items del inventario
+        for (int i = 0; i < allSlots; i++)
+        {
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (i < myItems.Count)
+            {
+                slot.item = myItems[i]; // slot.item debe ser de tipo InventoryItem en la clase Slot
+                // If ambiguity persists, use explicit cast or rename one of the 'item' members in Slot class.
+                slot.empty = false;
+                slot.UpdateSlot(); // Asegúrate de que este método actualice la UI del slot
+            }
+            else
+            {
+                slot.item = null;
+                slot.empty = true;
+                slot.UpdateSlot(); // Actualiza la UI para mostrar que está vacío
+            }
+        }
+    }
+
 
     public bool RemoveItem(InventoryItemData itemData, int amount = 1)
     {
@@ -149,6 +179,6 @@ public class Inventory : MonoBehaviour
     }
 
 }
-    
+
 
 

@@ -11,6 +11,7 @@ public class Slot : MonoBehaviour
     public string type;
     public int quantity;
     public string description;
+    public InventoryItem item;
 
     public bool empty;
     public Sprite icon;

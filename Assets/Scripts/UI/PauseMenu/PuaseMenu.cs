@@ -7,8 +7,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject optionsMenuUI;
     private bool pauseMenuEnabled = false;
 
-    private PlayerController playerController; // Referencia al script de control del jugador
-
     void Start()
     {
         pauseMenuUI.SetActive(false);
@@ -17,8 +15,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public bool IsPauseMenuActive()
+    {
+        return pauseMenuUI.activeSelf;
+    }
+
     void Update()
     {
+        // No abrir el menú de pausa si el inventario está activo
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenuEnabled = !pauseMenuEnabled;
@@ -28,15 +32,11 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
-            if (playerController != null)
-                playerController.enabled = false; // Desactiva el control del jugador
         }
         else
         {
             pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
-            if (playerController != null)
-                playerController.enabled = true; // Reactiva el control del jugador
         }
     }
 
@@ -45,21 +45,10 @@ public class PauseMenu : MonoBehaviour
         pauseMenuEnabled = false;
     }
 
-    public void Pause()
+    public void Restart()
     {
-        pauseMenuEnabled = true;
-    }
-
-    public void SaveGame()
-    {
-        // Implementa tu lógica de guardado aquí
-        Debug.Log("Juego guardado.");
-    }
-
-    public void LoadGame()
-    {
-        // Implementa tu lógica de carga aquí
-        Debug.Log("Juego cargado.");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void OpenOptions()
@@ -76,9 +65,33 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
     }
 
-    public void QuitGame()
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu"); // Asegúrate que la escena se llame "MainMenu" o cambia el nombre aquí
+    }
+
+    public void Quit()
     {
         Application.Quit();
         Debug.Log("Salir del juego.");
+    }
+
+    public void QuitGame()
+    {
+        // Quit the application
+        Application.Quit();
+
+        // If running in the editor, stop playing
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        // Quit the application
+        Application.Quit();
+        
+        // If running in the editor, stop playing
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }
