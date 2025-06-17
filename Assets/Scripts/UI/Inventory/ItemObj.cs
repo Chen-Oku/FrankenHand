@@ -1,11 +1,13 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Itemobj : MonoBehaviour
 {
     public int ID;
     public string type;
     public string description;
     public Sprite icon;
+    public Image iconImage;
 
     [HideInInspector]
     public bool pickedUp;

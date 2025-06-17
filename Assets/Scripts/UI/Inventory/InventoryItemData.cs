@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public enum ItemType { Collectible, Key, Usable, Other }
@@ -8,6 +9,7 @@ public class InventoryItemData : ScriptableObject
     public string itemName;
     public ItemType itemType;
     public Sprite icon;
+
     [TextArea]
     public string description;
     public int maxStack = 5; // 1 = no apilable, >1 = apilable

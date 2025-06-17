@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
         {
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
 
-            if (slots[i].GetComponent<Slot>().item == null)
+            if (slots[i].GetComponent<Slot>().itemSlot == null)
             {
                 slots[i].GetComponent<Slot>().empty = true; // Marca la ranura como vacía si no hay un item
             }
@@ -97,6 +97,7 @@ public class Inventory : MonoBehaviour
         }
 
         // Opcional: Actualiza la UI de slots aquí si lo necesitas
+        UpdateSlot();
 
         // Desactiva o destruye el objeto recogido
         pickup.gameObject.SetActive(false);
@@ -106,25 +107,20 @@ public class Inventory : MonoBehaviour
 
     public void UpdateSlot()
     {
-            Inventory inventory = Object.FindFirstObjectByType<Inventory>();
-            var myItems = items;
-        // Actualiza los slots de la UI con los items del inventario
         for (int i = 0; i < allSlots; i++)
         {
             Slot slot = slots[i].GetComponent<Slot>();
-            if (i < myItems.Count)
+            if (i < items.Count)
             {
-                slot.item = myItems[i]; // slot.item debe ser de tipo InventoryItem en la clase Slot
-                // If ambiguity persists, use explicit cast or rename one of the 'item' members in Slot class.
+                slot.itemSlot = items[i];
                 slot.empty = false;
-                slot.UpdateSlot(); // Asegúrate de que este método actualice la UI del slot
             }
             else
             {
-                slot.item = null;
+                slot.itemSlot = null;
                 slot.empty = true;
-                slot.UpdateSlot(); // Actualiza la UI para mostrar que está vacío
             }
+            slot.UpdateSlot();
         }
     }
 
