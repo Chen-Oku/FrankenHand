@@ -17,7 +17,6 @@ public class TimeManager : MonoBehaviour
     {
         pauseRequests++;
         Time.timeScale = 0f;
-            Debug.Log("TimeManager: Juego reanudado en frame " + Time.frameCount);
     }
 
     public void RequestResume()
