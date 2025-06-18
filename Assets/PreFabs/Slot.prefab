@@ -310,15 +310,17 @@ MonoBehaviour:
   quantity: 0
   description: 
   empty: 1
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 7444757717628976024}
   itemSlot:
     itemName: 
     quantity: 0
     pickedcUp: 0
     itemIcon: {fileID: 0}
-  quantityText: {fileID: 0}
+  quantityText: {fileID: 2593153955815777972}
   tooltip: {fileID: 0}
-  itemPrefab: {fileID: 6398985140036211909}
+  itemPrefab: {fileID: 0}
+  selectedShader: {fileID: 5838738443365819178}
+  thisItemSelected: 0
   dropSideDistance: 10
   dropUpDistance: 5
   dropRaycastDown: 10

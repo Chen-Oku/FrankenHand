@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public GameObject inventoryUI; // Asigna el objeto de la UI del inventario en el Inspector
     private int allSlots;
     private int enabledSlots;
-    private GameObject[] slots;
+    public GameObject[] slots;
     public GameObject slotHolder; // Referencia al objeto contenedor de los slots
 
     private PlayerController playerController; // Referencia al script de control del jugador
@@ -106,25 +106,46 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(PickupItem pickup)
     {
-        // Busca si ya existe el item en el inventario (para stackear)
-        InventoryItem existing = items.FirstOrDefault(i => i.itemData == pickup.itemData);
-
-        if (existing != null)
+        // 1. Intenta poner el ítem en un slot vacío
+        for (int i = 0; i < slots.Length; i++)
         {
-            existing.quantity += pickup.amount;
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (slot != null && slot.empty)
+            {
+                slot.AddItem(pickup.itemData, pickup.amount);
+                pickup.gameObject.SetActive(false);
+                return;
+            }
         }
-        else
+
+        // 2. Si no hay slot vacío, intenta stackear en un slot existente
+        for (int i = 0; i < slots.Length; i++)
         {
-            items.Add(new InventoryItem(pickup.itemData));
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (slot != null && !slot.empty && slot.itemSlot.itemData == pickup.itemData)
+            {
+                slot.itemSlot.quantity += pickup.amount;
+                slot.UpdateSlot();
+                pickup.gameObject.SetActive(false);
+                return;
+            }
         }
 
-        // Opcional: Actualiza la UI de slots aquí si lo necesitas
-        UpdateSlot();
+        // 3. Si no hay slot vacío ni stackeable, puedes mostrar mensaje de inventario lleno
+        Debug.Log("Inventario lleno, no se pudo agregar el item.");
+    }
 
-        // Desactiva o destruye el objeto recogido
-        pickup.gameObject.SetActive(false);
-
-        return;
+    public void DeselectAllSlots()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (slot != null)
+            {
+                slot.selectedShader.SetActive(false);
+                slot.thisItemSelected = false;
+            }
+        }
     }
 
     public void UpdateSlot()
@@ -149,6 +170,7 @@ public class Inventory : MonoBehaviour
 
     public bool RemoveItem(InventoryItemData itemData, int amount = 1)
     {
+
         // Implementa lógica similar para remover de la sección correcta
         return true;
     }

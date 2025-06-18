@@ -27,6 +27,11 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
 
     public GameObject itemPrefab; // para asignar el prefab del item si es necesario
 
+    public GameObject selectedShader; // Shader que se activa al seleccionar el item
+    public bool thisItemSelected = false; // Indica si este item está seleccionado
+
+    private Inventory inventory; // Referencia al inventario, si es necesario
+
 
     [Header("Drop Settings")]
     public float dropSideDistance = 3f;
@@ -65,47 +70,67 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
 
     void Start()
     {
-        
+        inventory = Object.FindFirstObjectByType<Inventory>();
     }
 
     // Update is called once per frame
     public void UpdateSlot()
     {
-        //this.GetComponent<Image>().sprite = icon;
-        
-        if(iconImage == null)
+        if (itemSlot != null && itemSlot.itemData != null)
         {
-            Debug.Log("IconImage no  esta asignado en el inspector en" + gameObject.name);
-            // Intenta obtener el componente Image del GameObject actual");
-            iconImage = GetComponent<Image>();
-        }
-
-        if (itemSlot != null && itemSlot.itemIcon != null)
-        {
-            iconImage.sprite = itemSlot.itemIcon; // Asigna el icono del item al Image del slot
+            iconImage.sprite = itemSlot.itemData.icon;
             iconImage.enabled = true;
-            quantityText.text = itemSlot.quantity > 0 ? itemSlot.quantity.ToString() : ""; // Muestra la cantidad si es mayor a 1
+
+            // Asegúrate de que el icono sea hijo del slot y esté centrado
+            iconImage.transform.SetParent(this.transform);
+            iconImage.transform.localPosition = Vector3.zero;
+            iconImage.transform.localScale = Vector3.one;
+
+            // ...actualiza cantidad, etc...
         }
         else
         {
             iconImage.sprite = null;
             iconImage.enabled = false;
-            quantityText.text = ""; // Limpia el texto de cantidad si no hay item
         }
     }
 
+/*     public void AddItem(PickupItem pickup)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (slot != null && slot.empty)
+            {
+                slot.AddItem(pickup.itemData, pickup.amount);
+                pickup.gameObject.SetActive(false);
+                return;
+            }
+        }
+        // Si no hay slot vacío, puedes intentar stackear o mostrar mensaje de inventario lleno
+    } */
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (itemSlot != null && itemSlot.itemData != null && tooltip != null) // Verifica que itemSlot y tooltip no sean nulos
-        {
-            //tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, Vector2.zero); // Mostrar el tooltip con la información del item
-            tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, itemSlot.itemIcon);
-        }
+        if (itemSlot == null || empty)
+            return; // No seleccionar si el slot está vacío
+
+        if (inventory != null)
+            inventory.DeselectAllSlots();
+
+        thisItemSelected = true;
+        if (selectedShader != null)
+            selectedShader.SetActive(true);
+
+        // Mostrar tooltip solo si hay item
+        if (tooltip != null)
+            tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, itemSlot.itemData.icon);
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (itemSlot == null) return;
+        if (itemSlot == null || empty) return;
         originalPosition = iconImage.transform.parent;
         iconImage.transform.SetParent(canvas.transform); //Mueve el icono al canvas para que este sobre todo
         iconImage.raycastTarget = false; //Desactiva el raycast para que no bloquee otros eventos
@@ -113,12 +138,14 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (itemSlot == null) return;
+        if (itemSlot == null || empty) return;
         iconImage.transform.position = eventData.position; // Mueve el icono a la posición del ratón
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (itemSlot == null || empty) return;
+        // Si se suelta el icono fuera de un slot, lo devuelve a su posición original
         iconImage.transform.SetParent(originalPosition);
         iconImage.transform.localPosition = Vector3.zero;
         iconImage.raycastTarget = true;
@@ -142,7 +169,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                     dropPosition = Camera.main.transform.position + left * dropSideDistance + Vector3.up * dropUpDistance;
                 }
 
-                // Ajusta la altura al nivel del suelo usando un raycast hacia abajo
                 RaycastHit hit;
                 if (Physics.Raycast(dropPosition, Vector3.down, out hit, dropRaycastDown))
                 {
@@ -165,19 +191,29 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                     StartCoroutine(EnableColliderAfterDelay(collider, dropColliderDelay));
                 }
 
-                Inventory inventory = Object.FindFirstObjectByType<Inventory>();
-                if (inventory != null)
+                // --- AJUSTE: Solo elimina el item de este slot ---
+                if (itemSlot.quantity > 1)
                 {
-                    inventory.items.Remove(itemSlot);
-                    inventory.UpdateSlot();
+                    itemSlot.quantity--;
                 }
+                else
+                {
+                    itemSlot = null;
+                    empty = true;
+                    // Oculta el tooltip si este slot estaba seleccionado
+                    if (thisItemSelected && tooltip != null)
+                        tooltip.HideTooltip();
+                    thisItemSelected = false;
+                    if (selectedShader != null)
+                        selectedShader.SetActive(false);
+                }
+                UpdateSlot();
             }
 
             iconImage.transform.SetParent(originalPosition);
             iconImage.transform.localPosition = Vector3.zero;
         }
     }
-
     private IEnumerator EnableColliderAfterDelay(Collider col, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -187,18 +223,70 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
 
     public void OnDrop(PointerEventData eventData)
     {
-        Slot otherSlot = eventData.pointerDrag?.GetComponent<Slot>();
-        if (otherSlot != null && otherSlot != this)
+        Slot originSlot = eventData.pointerDrag.GetComponent<Slot>();
+        if (originSlot != null && originSlot != this)
         {
-            // Intercambia los items entre los slots
-            var temp = itemSlot;
-            itemSlot = otherSlot.itemSlot;
-            otherSlot.itemSlot = temp;
+            // Si este slot está vacío, mueve el item y limpia el slot de origen
+            if (this.empty)
+            {
+                this.itemSlot = originSlot.itemSlot;
+                this.empty = false;
 
-            // Actualiza los slots
-            UpdateSlot();
-            otherSlot.UpdateSlot();
+                // Limpia el slot de origen
+                originSlot.itemSlot = null;
+                originSlot.empty = true;
+                originSlot.thisItemSelected = false;
+                if (originSlot.selectedShader != null)
+                    originSlot.selectedShader.SetActive(false);
+                originSlot.UpdateSlot();
+
+                // Selecciona este slot
+                this.thisItemSelected = true;
+                if (selectedShader != null)
+                    selectedShader.SetActive(true);
+
+                this.UpdateSlot();
+            }
+            else // Si ambos slots tienen item, intercambia
+            {
+                InventoryItem tempItem = this.itemSlot;
+                this.itemSlot = originSlot.itemSlot;
+                originSlot.itemSlot = tempItem;
+
+                // Actualiza los estados de vacío
+                this.empty = (this.itemSlot == null);
+                originSlot.empty = (originSlot.itemSlot == null);
+
+                // Deselecciona ambos slots y oculta el shader
+                this.thisItemSelected = false;
+                if (selectedShader != null)
+                    selectedShader.SetActive(false);
+
+                originSlot.thisItemSelected = false;
+                if (originSlot.selectedShader != null)
+                    originSlot.selectedShader.SetActive(false);
+
+                // Selecciona el slot de destino solo si NO está vacío
+                if (!this.empty)
+                {
+                    this.thisItemSelected = true;
+                    if (selectedShader != null)
+                        selectedShader.SetActive(true);
+                }
+
+                // Actualiza la UI de ambos slots
+                this.UpdateSlot();
+                originSlot.UpdateSlot();
+            }
         }
+    }
+
+
+    public void AddItem(InventoryItemData itemData, int amount)
+    {
+        this.itemSlot = new InventoryItem(itemData, amount);
+        this.empty = false;
+        UpdateSlot();
     }
 
 
@@ -220,4 +308,5 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         tooltip.HideTooltip();
     } */
 }
+
 
