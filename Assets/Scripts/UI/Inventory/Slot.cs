@@ -14,6 +14,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     public string type;
     public int quantity;
     public string description;
+    public bool empty;
+
+    [SerializeField]
+    public Image iconImage;
     public InventoryItem itemSlot;
     public TMP_Text quantityText; // Texto para mostrar la cantidad del item
     public InventoryTooltip tooltip; // Referencia al tooltip para mostrar información del item
@@ -21,12 +25,8 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     private Transform originalPosition; // Posición original del icono
     private Canvas canvas; // Referencia al canvas para mover el icono
 
-    //public GameObject itemPrefab; // para asignar el prefab del item si es necesario
+    public GameObject itemPrefab; // para asignar el prefab del item si es necesario
 
-    public bool empty;
-    //public Sprite icon;
-
-    public Image iconImage;
 
     [Header("Drop Settings")]
     public float dropSideDistance = 3f;

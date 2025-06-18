@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Mono.Cecil.Cil;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -46,31 +47,52 @@ public class Inventory : MonoBehaviour
         playerController = Object.FindFirstObjectByType<PlayerController>();
     }
 
-    // Update is called once per frame
+        public bool IsInventoryUIActive()
+    {
+        return inventoryUI.activeSelf;
+    } 
+
+
     void Update()
     {
-        // No abrir el inventario si el menú de pausa está activo
-        if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
-            return;
-
+        // if (inventoryUI != null && IsInventoryUIActive()) //
+        //     return;
+            
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
-        }
+            inventoryUI.SetActive(inventoryEnabled);
 
-        if (inventoryEnabled)
-        {
-            inventoryUI.SetActive(true);
-            Time.timeScale = 0f; // Pausa el juego
-            if (playerController != null)
-                playerController.enabled = false; // Desactiva el control del jugador
+            if (inventoryEnabled)
+            {
+                if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
+                    pauseMenu.Resume();
+
+                TimeManager.Instance.RequestPause();
+                if (playerController != null)
+                    playerController.enabled = false;
+            }
+            else
+            {
+                if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
+                {
+                    TimeManager.Instance.RequestResume();
+                    if (playerController != null)
+                        playerController.enabled = true;
+                }
+            }
         }
-        else
+    }
+
+    public void CloseInventory()
+    {
+        inventoryEnabled = false;
+        inventoryUI.SetActive(false);
+        if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
         {
-            inventoryUI.SetActive(false);
-            Time.timeScale = 1f; // Reanuda el juego
+            TimeManager.Instance.RequestResume();
             if (playerController != null)
-                playerController.enabled = true; // Reactiva el control del jugador
+                playerController.enabled = true;
         }
     }
     

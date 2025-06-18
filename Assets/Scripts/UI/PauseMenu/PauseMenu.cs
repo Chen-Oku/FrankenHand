@@ -7,8 +7,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject optionsMenuUI;
     private bool pauseMenuEnabled = false;
 
+    private PlayerController playerController; // Referencia al script de control del jugador
+
+    public Inventory inventory; // Referencia al inventario, si es necesario
+
     void Start()
     {
+        playerController = Object.FindFirstObjectByType<PlayerController>();
+
         pauseMenuUI.SetActive(false);
         if (optionsMenuUI != null)
             optionsMenuUI.SetActive(false);
@@ -26,23 +32,34 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenuEnabled = !pauseMenuEnabled;
+
+            if(pauseMenuEnabled && inventory != null && inventory.IsInventoryUIActive())
+            {
+                inventory.CloseInventory(); // Cierra el inventario si está abierto
+            }
         }
 
         if (pauseMenuEnabled)
         {
             pauseMenuUI.SetActive(true);
-            Time.timeScale = 0f;
+            TimeManager.Instance.RequestPause();
+            if (playerController != null)
+                    playerController.enabled = false;
         }
         else
         {
             pauseMenuUI.SetActive(false);
-            Time.timeScale = 1f;
-        }
+            TimeManager.Instance.RequestResume();
+            if (playerController != null)
+                        playerController.enabled = true;
+        } 
     }
 
     public void Resume()
     {
         pauseMenuEnabled = false;
+        pauseMenuUI.SetActive(false);
+        TimeManager.Instance.RequestResume();
     }
 
     public void Restart()
