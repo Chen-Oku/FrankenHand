@@ -374,6 +374,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &396211773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5880465827164250532, guid: 19c04e671fad4534cb0dc6bdc11329a4, type: 3}
+  m_PrefabInstance: {fileID: 3744700506938865623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &442311203
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +707,18 @@ PrefabInstance:
     - target: {fileID: 3169463756485503083, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
       propertyPath: m_Name
       value: === ObjtosEntreEscenas ===
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178065346916561848, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
+      propertyPath: mainMenuUI
+      value: 
+      objectReference: {fileID: 396211773}
+    - target: {fileID: 6178065346916561848, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178065346916561848, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
+      propertyPath: previousMenu
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7286135774726737253, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

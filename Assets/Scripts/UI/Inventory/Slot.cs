@@ -73,7 +73,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         inventory = Object.FindFirstObjectByType<Inventory>();
     }
 
-    // Update is called once per frame
+
     public void UpdateSlot()
     {
         if (itemSlot != null && itemSlot.itemData != null)
@@ -81,21 +81,25 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
             iconImage.sprite = itemSlot.itemData.icon;
             iconImage.enabled = true;
 
-            // Asegúrate de que el icono sea hijo del slot y esté centrado
-            iconImage.transform.SetParent(this.transform);
-            iconImage.transform.localPosition = Vector3.zero;
-            iconImage.transform.localScale = Vector3.one;
-
-            // ...actualiza cantidad, etc...
+            // Actualiza la cantidad
+            if (quantityText != null)
+            {
+                if (itemSlot.quantity > 1)
+                    quantityText.text = itemSlot.quantity.ToString();
+                else
+                    quantityText.text = ""; // O "1" si prefieres mostrar siempre la cantidad
+            }
         }
         else
         {
             iconImage.sprite = null;
             iconImage.enabled = false;
+            if (quantityText != null)
+                quantityText.text = "";
         }
     }
 
-/*     public void AddItem(PickupItem pickup)
+/*      public void AddItem(PickupItem pickup)
     {
         for (int i = 0; i < slots.Length; i++)
         {
@@ -109,6 +113,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         }
         // Si no hay slot vacío, puedes intentar stackear o mostrar mensaje de inventario lleno
     } */
+
+    public void AddItem(InventoryItemData itemData, int amount)
+    {
+        this.itemSlot = new InventoryItem(itemData, amount);
+        this.empty = false;
+        UpdateSlot();
+    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -282,12 +293,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     }
 
 
-    public void AddItem(InventoryItemData itemData, int amount)
-    {
-        this.itemSlot = new InventoryItem(itemData, amount);
-        this.empty = false;
-        UpdateSlot();
-    }
 
 
     // Con estos metodos hago que el tooltip se muestre al pasar el mouse por encima del slot

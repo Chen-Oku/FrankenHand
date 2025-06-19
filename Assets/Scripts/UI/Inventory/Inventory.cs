@@ -137,21 +137,40 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    /*     public void AddItem(PickupItem pickup)
+        {
+            // 1. Intenta poner el ítem en un slot vacío
+            for (int i = 0; i < slots.Length; i++)
+            {
+                Slot slot = slots[i].GetComponent<Slot>();
+                if (slot != null && slot.empty)
+                {
+                    slot.AddItem(pickup.itemData, pickup.amount);
+                    pickup.gameObject.SetActive(false);
+                    return;
+                }
+            }
+
+            // 2. Si no hay slot vacío, intenta stackear en un slot existente
+            for (int i = 0; i < slots.Length; i++)
+            {
+                Slot slot = slots[i].GetComponent<Slot>();
+                if (slot != null && !slot.empty && slot.itemSlot.itemData == pickup.itemData)
+                {
+                    slot.itemSlot.quantity += pickup.amount;
+                    slot.UpdateSlot();
+                    pickup.gameObject.SetActive(false);
+                    return;
+                }
+            }
+
+            // 3. Si no hay slot vacío ni stackeable, puedes mostrar mensaje de inventario lleno
+            Debug.Log("Inventario lleno, no se pudo agregar el item.");
+        } */
+
     public void AddItem(PickupItem pickup)
     {
-        // 1. Intenta poner el ítem en un slot vacío
-        for (int i = 0; i < slots.Length; i++)
-        {
-            Slot slot = slots[i].GetComponent<Slot>();
-            if (slot != null && slot.empty)
-            {
-                slot.AddItem(pickup.itemData, pickup.amount);
-                pickup.gameObject.SetActive(false);
-                return;
-            }
-        }
-
-        // 2. Si no hay slot vacío, intenta stackear en un slot existente
+        // 1. Intenta stackear en un slot existente con el mismo tipo de item
         for (int i = 0; i < slots.Length; i++)
         {
             Slot slot = slots[i].GetComponent<Slot>();
@@ -164,9 +183,22 @@ public class Inventory : MonoBehaviour
             }
         }
 
+        // 2. Si no hay slot stackeable, busca un slot vacío
+        for (int i = 0; i < slots.Length; i++)
+        {
+            Slot slot = slots[i].GetComponent<Slot>();
+            if (slot != null && slot.empty)
+            {
+                slot.AddItem(pickup.itemData, pickup.amount);
+                pickup.gameObject.SetActive(false);
+                return;
+            }
+        }
+
         // 3. Si no hay slot vacío ni stackeable, puedes mostrar mensaje de inventario lleno
         Debug.Log("Inventario lleno, no se pudo agregar el item.");
     }
+
 
     public void DeselectAllSlots()
     {
