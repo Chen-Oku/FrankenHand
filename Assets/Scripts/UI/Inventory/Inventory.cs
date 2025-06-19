@@ -45,19 +45,20 @@ public class Inventory : MonoBehaviour
         inventoryUI.SetActive(inventoryEnabled); 
 
         playerController = Object.FindFirstObjectByType<PlayerController>();
+        Debug.Log("PlayerController encontrado: " + (playerController != null));
     }
 
         public bool IsInventoryUIActive()
     {
         return inventoryUI.activeSelf;
-    } 
+    }
 
 
     void Update()
     {
         // if (inventoryUI != null && IsInventoryUIActive()) //
         //     return;
-            
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
@@ -65,24 +66,56 @@ public class Inventory : MonoBehaviour
 
             if (inventoryEnabled)
             {
+                // Si el menú de pausa está activo, ciérralo
                 if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
                     pauseMenu.Resume();
 
                 TimeManager.Instance.RequestPause();
-                if (playerController != null)
-                    playerController.enabled = false;
             }
             else
             {
+                // Solo reanuda si no hay otro menú abierto
                 if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
                 {
                     TimeManager.Instance.RequestResume();
-                    if (playerController != null)
-                        playerController.enabled = true;
                 }
             }
         }
+
+        // Controla el PlayerController según si hay algún menú abierto
+        if (playerController != null)
+            playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()));
+            
+
+/*             inventoryEnabled = !inventoryEnabled;
+                            inventoryUI.SetActive(inventoryEnabled);
+
+                            if (inventoryEnabled)
+                            {
+                                if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
+                                    pauseMenu.Resume();
+
+                                TimeManager.Instance.RequestPause();
+                                if (playerController != null)
+                                    playerController.enabled = false;
+                            }
+                            else
+                            {
+                                if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
+                                {
+                                    TimeManager.Instance.RequestResume();
+                                    if (playerController != null)
+                                        playerController.enabled = true;
+                                }
+                            } */
+    
     }
+
+    public bool AnyMenuOpen()
+    {
+        return (pauseMenu != null && pauseMenu.IsPauseMenuActive()) || inventoryEnabled;
+    }
+
 
     public void CloseInventory()
     {

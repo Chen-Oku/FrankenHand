@@ -40,11 +40,14 @@ public class PlayerController : MonoBehaviour
 
     public Checkpoint lastCheckpoint; // Referencia al último checkpoint
 
+    private PauseMenu pauseMenu;
+
     private Quaternion targetSpriteRotation = Quaternion.Euler(90f, 180f, 0f); // Agrega este campo arriba
 
     void Start()
     {
         charController = charController ?? GetComponent<CharacterController>();
+        pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
     }
 
     void Update()
@@ -261,4 +264,5 @@ public class PlayerController : MonoBehaviour
             // Reiniciar nivel o lógica alternativa
         }
     }
+
 }

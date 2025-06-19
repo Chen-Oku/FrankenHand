@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Item
+  - SharedMenus
+  - SharedOptionMenu
+  - Opciones
+  - MainMenu
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

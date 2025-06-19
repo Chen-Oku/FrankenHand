@@ -5,6 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
+    
     private bool pauseMenuEnabled = false;
 
     private PlayerController playerController; // Referencia al script de control del jugador
@@ -28,12 +29,11 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        // No abrir el menú de pausa si el inventario está activo
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenuEnabled = !pauseMenuEnabled;
 
-            if(pauseMenuEnabled && inventory != null && inventory.IsInventoryUIActive())
+            if (pauseMenuEnabled && inventory != null && inventory.IsInventoryUIActive())
             {
                 inventory.CloseInventory(); // Cierra el inventario si está abierto
             }
@@ -43,17 +43,52 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenuUI.SetActive(true);
             TimeManager.Instance.RequestPause();
-            if (playerController != null)
-                    playerController.enabled = false;
+            // Quita el control del player aquí
+            // if (playerController != null)
+            //     playerController.enabled = false;
         }
         else
         {
             pauseMenuUI.SetActive(false);
             TimeManager.Instance.RequestResume();
-            if (playerController != null)
-                        playerController.enabled = true;
-        } 
+            // if (playerController != null)
+            //     playerController.enabled = true;
+        }
     }
+
+    public bool AnyMenuOpen()
+    {
+        return IsPauseMenuActive() || (inventory != null && inventory.IsInventoryUIActive());
+    }
+
+    /*     void Update()
+        {
+            // No abrir el menú de pausa si el inventario está activo
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pauseMenuEnabled = !pauseMenuEnabled;
+
+                if(pauseMenuEnabled && inventory != null && inventory.IsInventoryUIActive())
+                {
+                    inventory.CloseInventory(); // Cierra el inventario si está abierto
+                }
+            }
+
+            if (pauseMenuEnabled)
+            {
+                pauseMenuUI.SetActive(true);
+                TimeManager.Instance.RequestPause();
+                if (playerController != null)
+                        playerController.enabled = false;
+            }
+            else
+            {
+                pauseMenuUI.SetActive(false);
+                TimeManager.Instance.RequestResume();
+                if (playerController != null)
+                            playerController.enabled = true;
+            } 
+        } */
 
     public void Resume()
     {
@@ -70,16 +105,23 @@ public class PauseMenu : MonoBehaviour
 
     public void OpenOptions()
     {
-        pauseMenuUI.SetActive(false);
         if (optionsMenuUI != null)
+        {
+            // Guarda quién abrió el menú de opciones
+            var opcionesScript = optionsMenuUI.GetComponent<ControladorOpciones>();
+            if (opcionesScript != null)
+                opcionesScript.previousMenu = pauseMenuUI;
+
+            pauseMenuUI.SetActive(false);
             optionsMenuUI.SetActive(true);
+        }
     }
 
     public void CloseOptions()
     {
         if (optionsMenuUI != null)
-            optionsMenuUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
+            optionsMenuUI.SetActive(false); // Oculta el menú de opciones
+        pauseMenuUI.SetActive(true); // Muestra el menú de pausa
     }
 
     public void MainMenu()

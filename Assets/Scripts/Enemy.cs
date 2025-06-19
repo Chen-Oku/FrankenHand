@@ -23,6 +23,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("TimeScale: " + Time.timeScale);
+
         // Detener toda la lógica si el juego está en pausa (por inventario o menú de pausa)
         if (Time.timeScale == 0f)
         {
