@@ -7,9 +7,9 @@ public class PickupItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Objeto recogido por: " + other.name);
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Objeto recogido por: " + other.name);
             Inventory inventory = other.GetComponent<Inventory>();
             if (inventory != null && itemData != null)
             {

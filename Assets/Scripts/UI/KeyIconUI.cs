@@ -14,10 +14,8 @@ public class KeyIconUI : MonoBehaviour
         bool hasKey = false;
         foreach (var item in inventory.keys)
         {
-            Debug.Log("Llave en inventario: " + item.itemName);
             if (item.itemName == keyItemName)
             {
-                Debug.Log("¡Llave encontrada!");
                 hasKey = true;
                 break;
             }

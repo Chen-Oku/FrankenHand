@@ -129,14 +129,23 @@ public class Inventory : MonoBehaviour
                 playerController.enabled = true;
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
+    /*     {
+            if (other.gameObject.TryGetComponent(out PickupItem pickup))
+            {
+                AddItem(pickup);
+            }
+        } */
     {
-        if (other.gameObject.TryGetComponent(out PickupItem pickup))
+        // Solo recoge objetos que tengan el componente PickupItem
+        var pickup = other.GetComponent<PickupItem>();
+        if (pickup != null)
         {
             AddItem(pickup);
         }
     }
+
 
     public void AddItem(PickupItem pickup)
     {

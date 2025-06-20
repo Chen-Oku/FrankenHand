@@ -49,6 +49,15 @@ public class PlayerController : MonoBehaviour
     {
         charController = charController ?? GetComponent<CharacterController>();
         pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
+
+        // Aparecer en el spawn inicial
+        PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
+        if (spawn != null)
+        {
+            transform.position = spawn.transform.position;
+            lastCheckpoint = null; // No hay checkpoint aún
+        }
+    
     }
 
     void Update()
@@ -91,7 +100,24 @@ public class PlayerController : MonoBehaviour
                 transform.rotation = lookRotation;
             }
         }
+
+        // al caer por debajo de un cierto nivel, reiniciar al último checkpoint
+/*         if (transform.position.y < -10f && lastCheckpoint != null) // Ajusta el valor según tu escena
+        {
+            transform.position = lastCheckpoint.transform.position;
+        } */
+    
     }
+
+        private void OnTriggerEnter(Collider other)
+    {
+        Checkpoint checkpoint = other.GetComponent<Checkpoint>();
+        if (checkpoint != null)
+        {
+            lastCheckpoint = checkpoint;
+        }
+    }
+
 
     private void HandleMovementInput()
     {
@@ -264,13 +290,48 @@ public class PlayerController : MonoBehaviour
     {
         if (lastCheckpoint != null)
         {
-            transform.position = lastCheckpoint.transform.position; // Reiniciar posición al último checkpoint
-            // Resetear estado si es necesario
+            // Si usas CharacterController:
+            CharacterController cc = GetComponent<CharacterController>();
+            if (cc != null)
+            {
+                cc.enabled = false;
+            }
+
+            transform.position = lastCheckpoint.transform.position;
+
+            if (cc != null)
+            {
+                cc.enabled = true;
+            }
+
+            Debug.Log("Reaparecido en el checkpoint: " + lastCheckpoint.name);
         }
         else
         {
-            // Reiniciar nivel o lógica alternativa
+            PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
+            if (spawn != null)
+            {
+                CharacterController cc = GetComponent<CharacterController>();
+                if (cc != null)
+                {
+                    cc.enabled = false;
+                }
+
+                transform.position = spawn.transform.position;
+
+                if (cc != null)
+                {
+                    cc.enabled = true;
+                }
+
+                Debug.Log("Reaparecido en el spawn inicial: " + spawn.name);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontró PlayerSpawnPoint en la escena.");
+            }
         }
     }
+
 
 }

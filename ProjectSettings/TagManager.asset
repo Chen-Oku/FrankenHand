@@ -10,6 +10,7 @@ TagManager:
   - Opciones
   - MainMenu
   - PauseMenu
+  - ColliderEnvironment
   layers:
   - Default
   - TransparentFX
