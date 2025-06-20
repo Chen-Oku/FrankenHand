@@ -99,27 +99,38 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         }
     }
 
-/*      public void AddItem(PickupItem pickup)
-    {
-        for (int i = 0; i < slots.Length; i++)
+//=========================
+    /*      public void AddItem(PickupItem pickup)
         {
-            Slot slot = slots[i].GetComponent<Slot>();
-            if (slot != null && slot.empty)
+            for (int i = 0; i < slots.Length; i++)
             {
-                slot.AddItem(pickup.itemData, pickup.amount);
-                pickup.gameObject.SetActive(false);
-                return;
+                Slot slot = slots[i].GetComponent<Slot>();
+                if (slot != null && slot.empty)
+                {
+                    slot.AddItem(pickup.itemData, pickup.amount);
+                    pickup.gameObject.SetActive(false);
+                    return;
+                }
             }
-        }
-        // Si no hay slot vacío, puedes intentar stackear o mostrar mensaje de inventario lleno
-    } */
+            // Si no hay slot vacío, puedes intentar stackear o mostrar mensaje de inventario lleno
+        } */
 
-    public void AddItem(InventoryItemData itemData, int amount)
+    /*     public void AddItem(InventoryItemData itemData, int amount)
+        {
+            this.itemSlot = new InventoryItem(itemData, amount);
+            this.empty = false;
+            UpdateSlot();
+        } */
+
+    public void AddItem(InventoryItem item)
     {
-        this.itemSlot = new InventoryItem(itemData, amount);
+        this.itemSlot = item;
         this.empty = false;
         UpdateSlot();
     }
+
+//=========================
+
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -134,7 +145,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
             selectedShader.SetActive(true);
 
         // Mostrar tooltip solo si hay item
-        if (tooltip != null)
+        if (tooltip != null && itemSlot != null && itemSlot.itemData != null)
             tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, itemSlot.itemData.icon);
 
     }
@@ -209,8 +220,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                 }
                 else
                 {
+                    if (inventory != null && itemSlot != null && itemSlot.itemData != null)
+                    {
+                        inventory.RemoveItem(itemSlot.itemData, 1);
+                    }
                     itemSlot = null;
                     empty = true;
+
                     // Oculta el tooltip si este slot estaba seleccionado
                     if (thisItemSelected && tooltip != null)
                         tooltip.HideTooltip();
@@ -291,27 +307,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
             }
         }
     }
-
-
-
-
-    // Con estos metodos hago que el tooltip se muestre al pasar el mouse por encima del slot
-    /* public void OnPointerClick(PointerEventData eventData)
-    {
-        if (itemSlot != null && itemSlot.itemData != null && tooltip != null)
-        {
-            // Mostrar el tooltip con la información del item
-            tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, Vector2.zero);
-        }
-        {
-            tooltip.ShowTooltip(itemSlot.itemData.itemName, itemSlot.itemData.description, Input.mousePosition);
-        }
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        tooltip.HideTooltip();
-    } */
 }
 
 

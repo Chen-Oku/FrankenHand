@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 482414871869791248}
   - component: {fileID: 5221051058104036669}
   m_Layer: 0
-  m_Name: Specs Panel
+  m_Name: SpecsTTip Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 4877055582174936356}
   - component: {fileID: 4088808584057657364}
   m_Layer: 0
-  m_Name: Description Panel
+  m_Name: NameTTip Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 6300149860454370748}
   - component: {fileID: 5944420476712730968}
   m_Layer: 0
-  m_Name: Description Text (TMP)
+  m_Name: NameTTip(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Name
+  m_text: NameTTip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 4937846951775752875}
   - component: {fileID: 7465154106444162388}
   m_Layer: 0
-  m_Name: Specs Text (TMP)
+  m_Name: SpecsTTip(TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -511,6 +511,7 @@ GameObject:
   - component: {fileID: 3718829510013089972}
   - component: {fileID: 1985725560860433550}
   - component: {fileID: 1762380466550875216}
+  - component: {fileID: 6978075561872897537}
   m_Layer: 0
   m_Name: InventoryToolTip
   m_TagString: Untagged
@@ -525,7 +526,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7482387385966945319}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -604,3 +605,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &6978075561872897537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482387385966945319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c984ebda6da00bf4884a81299a72929c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 5944420476712730968}
+  descriptionText: {fileID: 7465154106444162388}
+  panel: {fileID: 7482387385966945319}
