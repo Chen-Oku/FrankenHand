@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController charController;
     public Transform cameraTransform;
-    public Transform spriteTransform; // Asigna el objeto del sprite en el Inspector
+    public Transform spriteVisualTransform; // Asigna el hijo visual en el Inspector
     public float speed = 6.0f;
     public float runSpeed = 12.0f;
     public float jumpHeight = 1.5f;
@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     private PauseMenu pauseMenu;
 
     private Quaternion targetSpriteRotation = Quaternion.Euler(90f, 180f, 0f); // Agrega este campo arriba
+    private int lastFacing = 1; // 1 = derecha, -1 = izquierda
 
     void Start()
     {
@@ -78,6 +79,18 @@ public class PlayerController : MonoBehaviour
 
         ApplyGravity();
         charController.Move(velocity * Time.deltaTime);
+
+        // --- Billboarding: el objeto principal mira a la cámara (solo Y) ---
+        if (cameraTransform != null)
+        {
+            Vector3 toCamera = cameraTransform.position - transform.position;
+            toCamera.y = 0f;
+            if (toCamera.sqrMagnitude > 0.001f)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(toCamera.normalized, Vector3.up);
+                transform.rotation = lookRotation;
+            }
+        }
     }
 
     private void HandleMovementInput()
@@ -86,22 +99,23 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        // --- NUEVO: Suavizar el giro del sprite ---
-        if (spriteTransform != null && horizontal != 0)
+        // Detectar dirección y preparar rotación tipo Paper Mario
+        if (horizontal > 0.01f)
+            lastFacing = 1;
+        else if (horizontal < -0.01f)
+            lastFacing = -1;
+
+        // Flip Paper Mario: giro suave en Y local del hijo visual
+        if (spriteVisualTransform != null)
         {
-            float yRot = horizontal > 0 ? 180f : 0f;
-            targetSpriteRotation = Quaternion.Euler(90f, yRot, 0f);
-        }
-        if (spriteTransform != null)
-        {
-            // Suaviza la rotación hacia el objetivo
-            spriteTransform.localRotation = Quaternion.Slerp(
-                spriteTransform.localRotation,
-                targetSpriteRotation,
-                10f * Time.deltaTime // Ajusta la velocidad aquí
+            float yRot = lastFacing == 1 ? 180f : 0f;
+            Quaternion targetFlip = Quaternion.Euler(0f, yRot, 0f);
+            spriteVisualTransform.localRotation = Quaternion.Slerp(
+                spriteVisualTransform.localRotation,
+                targetFlip,
+                10f * Time.deltaTime // Ajusta la velocidad aquí para más o menos suavidad
             );
         }
-        // --- FIN NUEVO ---
 
         // Detectar doble toque para correr
         DetectDoubleTapForRun();
@@ -112,17 +126,13 @@ public class PlayerController : MonoBehaviour
         {
             if (direction.magnitude >= 0.1f)
             {
-                Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction; // Dirección del movimiento basada en la cámara
-                charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime); // Mover al jugador
-
-                // Solo asigna momentum si hay input significativo
+                Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
+                charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
                 airMomentum = moveDir.normalized * currentSpeed;
             }
             else
             {
-                isRunning = false; // Detener carrera si no hay input
-
-                // Reducir gradualmente el momentum en el suelo si no hay input
+                isRunning = false;
                 airMomentum = Vector3.Lerp(airMomentum, Vector3.zero, 20f * Time.deltaTime);
                 if (airMomentum.magnitude < 0.05f)
                     airMomentum = Vector3.zero;
@@ -130,13 +140,11 @@ public class PlayerController : MonoBehaviour
         }
         else // En el aire
         {
-            // Si el jugador da input, suaviza el cambio de momentum
             if (direction.magnitude >= 0.1f)
             {
                 Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
                 airMomentum = Vector3.Lerp(airMomentum, moveDir.normalized * currentSpeed, airControlLerp * Time.deltaTime);
             }
-            // Aplica el momentum guardado
             charController.Move(new Vector3(airMomentum.x, 0f, airMomentum.z) * Time.deltaTime);
         }
     }
