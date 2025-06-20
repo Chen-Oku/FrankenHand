@@ -235,10 +235,8 @@ public class Inventory : MonoBehaviour
             if (item.quantity <= 0)
                 targetList.Remove(item);
 
-            // NO actualices los slots aquí, solo llama a UpdateSlot al final
-            UpdateSlot();
+            UpdateSlot(); // <- Esto es lo importante
 
-            Debug.Log("Objeto removido del inventario: " + itemData.itemName);
             return true;
         }
         return false;
@@ -258,7 +256,7 @@ public class Inventory : MonoBehaviour
     }
     public void UpdateSlot()
     {
-        // 1. Limpia todos los slots primero
+        // Limpia todos los slots primero
         for (int i = 0; i < allSlots; i++)
         {
             Slot slot = slots[i].GetComponent<Slot>();
@@ -267,15 +265,15 @@ public class Inventory : MonoBehaviour
             slot.UpdateSlot();
         }
 
-        // 2. Junta todos los items en el orden que quieras mostrar
+        // Junta todos los items en el orden que quieras mostrar
         int index = 0;
         List<InventoryItem> allItems = new List<InventoryItem>();
-        allItems.AddRange(keys);           // Primero llaves
-        allItems.AddRange(collectibles);   // Luego coleccionables
-        allItems.AddRange(usable);         // Luego usables
-        allItems.AddRange(others);         // Al final otros
+        allItems.AddRange(keys);
+        allItems.AddRange(collectibles);
+        allItems.AddRange(usable);
+        allItems.AddRange(others);
 
-        // 3. Asigna los items a los slots desde el principio
+        // Asigna los items a los slots desde el principio
         for (; index < allItems.Count && index < allSlots; index++)
         {
             Slot slot = slots[index].GetComponent<Slot>();
@@ -284,56 +282,6 @@ public class Inventory : MonoBehaviour
             slot.UpdateSlot();
         }
     }
-
-
-
-    
-/*         int index = 0;
-
-                                // Primero los items normales
-                                for (int i = 0; i < others.Count && index < allSlots; i++, index++)
-                                {
-                                    Slot slot = slots[index].GetComponent<Slot>();
-                                    slot.itemSlot = others[i];
-                                    slot.empty = false;
-                                    slot.UpdateSlot();
-                                }
-
-                                // Luego los usables
-                                for (int i = 0; i < usable.Count && index < allSlots; i++, index++)
-                                {
-                                    Slot slot = slots[index].GetComponent<Slot>();
-                                    slot.itemSlot = usable[i];
-                                    slot.empty = false;
-                                    slot.UpdateSlot();
-                                }
-
-                                // Luego los coleccionables
-                                for (int i = 0; i < collectibles.Count && index < allSlots; i++, index++)
-                                {
-                                    Slot slot = slots[index].GetComponent<Slot>();
-                                    slot.itemSlot = collectibles[i];
-                                    slot.empty = false;
-                                    slot.UpdateSlot();
-                                }
-
-                                // Luego las llaves
-                                for (int i = 0; i < keys.Count && index < allSlots; i++, index++)
-                                {
-                                    Slot slot = slots[index].GetComponent<Slot>();
-                                    slot.itemSlot = keys[i];
-                                    slot.empty = false;
-                                    slot.UpdateSlot();
-                                }
-
-                                // Vacía los slots restantes
-                                for (; index < allSlots; index++)
-                                {
-                                    Slot slot = slots[index].GetComponent<Slot>();
-                                    slot.itemSlot = null;
-                                    slot.empty = true;
-                                    slot.UpdateSlot();
-                                } */
     
 
     // --- Guardado y carga ---
