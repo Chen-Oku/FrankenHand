@@ -19,6 +19,6 @@ public class PointsUIController : MonoBehaviour
 
     void UpdatePointsUI(int points)
     {
-        pointsText.text = points + " Puntos";
+        pointsText.text = "Pts "+ points;
     }
 }

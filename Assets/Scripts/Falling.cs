@@ -7,6 +7,11 @@ public class Falling : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            VidaPlayer vida = other.GetComponentInParent<VidaPlayer>();
+            if (vida != null)
+            {
+                vida.RecibirDanio(1); // O la cantidad que quieras
+            }
             PlayerController player = other.GetComponentInParent<PlayerController>();
             if (player != null)
             {
