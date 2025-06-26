@@ -11,6 +11,7 @@ TagManager:
   - MainMenu
   - PauseMenu
   - ColliderEnvironment
+  - Libro
   layers:
   - Default
   - TransparentFX

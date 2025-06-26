@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VidaPlayer : SistemaVida
 {
@@ -19,6 +20,13 @@ public class VidaPlayer : SistemaVida
         vidaActual = maxContenedores * vidaPorContenedor;
         RaiseOnVidaCambiada(); // <--- Usa el método protegido
     }
+
+        private void OnGameOver()
+    {
+        // Cargar la escena de Game Over
+        SceneManager.LoadScene("GameOver");
+    }
+
 
     // Update is called once per frame
     void Update()
