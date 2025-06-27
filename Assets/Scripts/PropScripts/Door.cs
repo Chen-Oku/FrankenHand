@@ -1,8 +1,6 @@
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEngine.UI;
-using cakeslice; // Importante: agrega esto arriba
+using Unity.VisualScripting; // Solo si usas TextMeshPro
 
 public class Door : MonoBehaviour
 {
@@ -11,23 +9,8 @@ public class Door : MonoBehaviour
     public float openDistance = 4f; // Distancia para interactuar
     private float liftingDistance = 10f; // Distancia que se levantará la puerta al abrir
     public GameObject interactMessage; // Asigna el objeto de mensaje en el inspector
-    //public Material normalMaterial;
-    //public Material outlineMaterial; // Asigna el material de Shader Graph
 
-    private MeshRenderer meshRenderer;
     private bool playerInRange = false;
-    private OutlineEffect outline;
-
-    void Awake()
-    {
-/*         meshRenderer = GetComponent<MeshRenderer>();
-        if (meshRenderer != null && outlineMaterial != null)
-            meshRenderer.material = outlineMaterial; // Siempre usa el material con outline */
-
-        outline = GetComponent<OutlineEffect>();
-        if (outline != null)
-            outline.enabled = false; // Desactiva el outline al inicio
-    }
 
     void Update()
     {
@@ -43,14 +26,11 @@ public class Door : MonoBehaviour
         {
             playerInRange = true;
             if (interactMessage != null)
-                interactMessage.SetActive(true);
+                interactMessage.SetActive(true);  // Al entrar
 
+            // Asigna el inventario automáticamente si no está asignado
             if (inventory == null)
                 inventory = other.GetComponent<Inventory>();
-
-/*             // Activa el outline
-            if (outlineMaterial != null)
-                outlineMaterial.SetFloat("Outline Thickness", 0.03f); // Ajusta el nombre según tu shader */
         }
     }
 
@@ -60,11 +40,7 @@ public class Door : MonoBehaviour
         {
             playerInRange = false;
             if (interactMessage != null)
-                interactMessage.SetActive(false);
-
-/*             // Desactiva el outline
-            if (outlineMaterial != null)
-                outlineMaterial.SetFloat("Outline Thickness", 0f); // Ajusta el nombre según tu shader */
+                interactMessage.SetActive(false); // Al salir
         }
     }
 
