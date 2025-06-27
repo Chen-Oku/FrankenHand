@@ -708,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: === ObjtosEntreEscenas ===
       objectReference: {fileID: 0}
+    - target: {fileID: 3169463756485503083, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6178065346916561848, guid: 4f38419016238f34fa737da50f97dad2, type: 3}
       propertyPath: mainMenuUI
       value: 

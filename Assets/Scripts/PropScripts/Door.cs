@@ -16,21 +16,25 @@ public class Door : MonoBehaviour
 
     private MeshRenderer meshRenderer;
     private bool playerInRange = false;
-    private OutlineEffect outline;
+    private Outline outline;
+    private Transform playerTransform;
 
     void Awake()
     {
-/*         meshRenderer = GetComponent<MeshRenderer>();
-        if (meshRenderer != null && outlineMaterial != null)
-            meshRenderer.material = outlineMaterial; // Siempre usa el material con outline */
-
-        outline = GetComponent<OutlineEffect>();
+        // Si el Outline está en un hijo, usa GetComponentInChildren<Outline>()
+        outline = GetComponent<Outline>();
         if (outline != null)
             outline.enabled = false; // Desactiva el outline al inicio
+
+        // Busca el jugador por tag
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            playerTransform = playerObj.transform;
     }
 
     void Update()
     {
+        // Ya no necesitas activar/desactivar el outline aquí
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             TryOpen();
@@ -47,24 +51,25 @@ public class Door : MonoBehaviour
 
             if (inventory == null)
                 inventory = other.GetComponent<Inventory>();
+        }
+    }
 
-/*             // Activa el outline
-            if (outlineMaterial != null)
-                outlineMaterial.SetFloat("Outline Thickness", 0.03f); // Ajusta el nombre según tu shader */
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && outline != null)
+        {
+            outline.enabled = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && outline != null)
         {
+            outline.enabled = false;
             playerInRange = false;
             if (interactMessage != null)
                 interactMessage.SetActive(false);
-
-/*             // Desactiva el outline
-            if (outlineMaterial != null)
-                outlineMaterial.SetFloat("Outline Thickness", 0f); // Ajusta el nombre según tu shader */
         }
     }
 
@@ -99,7 +104,7 @@ public class Door : MonoBehaviour
         float duration = 1f;
         float elapsed = 0f;
         Vector3 startPos = transform.position;
-        Vector3 endPos = startPos + Vector3.up * liftingDistance; // Mueve la puerta 3 unidades hacia arriba
+        Vector3 endPos = startPos + Vector3.up * liftingDistance; // Mueve la puerta hacia arriba
 
         while (elapsed < duration)
         {
