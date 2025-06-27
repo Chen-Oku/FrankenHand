@@ -54,20 +54,80 @@ public class Inventory : MonoBehaviour
         return inventoryUI.activeSelf;
     }
 
+    //========
+    /*     void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                inventoryEnabled = !inventoryEnabled;
+                inventoryUI.SetActive(inventoryEnabled);
 
-    void Update()
+                // --- Aquí va la lógica para los objetos movibles ---
+                foreach (var rb in movibles)
+                    if (rb != null)
+                        rb.isKinematic = inventoryEnabled;
+
+                if (inventoryEnabled)
+                {
+                    if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
+                        pauseMenu.Resume();
+
+                    TimeManager.Instance.RequestPause();
+                }
+                else
+                {
+                    if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
+                    {
+                        TimeManager.Instance.RequestResume();
+                    }
+                }
+            }
+
+            // Controla el PlayerController según si hay algún menú abierto
+            if (playerController != null)
+                playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()));
+          */
+    //=============
+    /*             inventoryEnabled = !inventoryEnabled;
+                                inventoryUI.SetActive(inventoryEnabled);
+
+                                if (inventoryEnabled)
+                                {
+                                    if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
+                                        pauseMenu.Resume();
+
+                                    TimeManager.Instance.RequestPause();
+                                    if (playerController != null)
+                                        playerController.enabled = false;
+                                }
+                                else
+                                {
+                                    if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
+                                    {
+                                        TimeManager.Instance.RequestResume();
+                                        if (playerController != null)
+                                            playerController.enabled = true;
+                                    }
+                                } */
+
+    /* } */
+    
+        public List<Rigidbody> movibles; // Asigna los objetos movibles desde el Inspector
+
+    private void Update()
     {
-        // if (inventoryUI != null && IsInventoryUIActive()) //
-        //     return;
-
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
             inventoryUI.SetActive(inventoryEnabled);
 
+            // --- Aquí va la lógica para los objetos movibles ---
+            foreach (var rb in movibles)
+                if (rb != null)
+                    rb.isKinematic = inventoryEnabled;
+
             if (inventoryEnabled)
             {
-                // Si el menú de pausa está activo, ciérralo
                 if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
                     pauseMenu.Resume();
 
@@ -75,7 +135,6 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                // Solo reanuda si no hay otro menú abierto
                 if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
                 {
                     TimeManager.Instance.RequestResume();
@@ -86,30 +145,21 @@ public class Inventory : MonoBehaviour
         // Controla el PlayerController según si hay algún menú abierto
         if (playerController != null)
             playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()));
-            
 
-/*             inventoryEnabled = !inventoryEnabled;
-                            inventoryUI.SetActive(inventoryEnabled);
-
-                            if (inventoryEnabled)
-                            {
-                                if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
-                                    pauseMenu.Resume();
-
-                                TimeManager.Instance.RequestPause();
-                                if (playerController != null)
-                                    playerController.enabled = false;
-                            }
-                            else
-                            {
-                                if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
-                                {
-                                    TimeManager.Instance.RequestResume();
-                                    if (playerController != null)
-                                        playerController.enabled = true;
-                                }
-                            } */
-    
+        if (inventoryEnabled)
+        {
+            // Al abrir inventario
+            foreach (var rb in movibles)
+                if (rb != null)
+                    rb.isKinematic = false;
+        }
+        else
+        {
+            // Al cerrar inventario
+            foreach (var rb in movibles)
+                if (rb != null)
+                    rb.isKinematic = true;
+        }
     }
 
     public bool AnyMenuOpen()
@@ -335,7 +385,6 @@ public class Inventory : MonoBehaviour
                 item.itemData = System.Array.Find(allItems, d => d.name == item.itemName);
         }
     }
-
 }
 
 
