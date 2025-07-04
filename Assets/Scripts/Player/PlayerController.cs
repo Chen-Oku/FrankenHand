@@ -45,10 +45,13 @@ public class PlayerController : MonoBehaviour
     private Quaternion targetSpriteRotation = Quaternion.Euler(90f, 180f, 0f); // Agrega este campo arriba
     private int lastFacing = 1; // 1 = derecha, -1 = izquierda
 
+    private Animator animator; // Asigna el Animator en el Inspector si lo tienes
+
     void Start()
     {
         charController = charController ?? GetComponent<CharacterController>();
         pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
+        animator = GetComponent<Animator>();
 
         // Aparecer en el spawn inicial
         PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
@@ -141,6 +144,15 @@ public class PlayerController : MonoBehaviour
                 targetFlip,
                 10f * Time.deltaTime // Ajusta la velocidad aquí para más o menos suavidad
             );
+        }
+
+        if(horizontal != 0 || vertical != 0)
+        {
+            animator.SetFloat("idleWaling", 1);
+        }
+        else
+        {
+            animator.SetFloat("idleWaling", 0);
         }
 
         // Detectar doble toque para correr
@@ -280,9 +292,11 @@ public class PlayerController : MonoBehaviour
                 if (lastTapTimes[key] > 0 && time - lastTapTimes[key] <= doubleTapTime)
                 {
                     isRunning = true;
+                    animator.SetFloat("idleWaling", 2);
                 }
                 lastTapTimes[key] = time;
             }
+            
         }
     }
 
@@ -324,11 +338,11 @@ public class PlayerController : MonoBehaviour
                     cc.enabled = true;
                 }
 
-                Debug.Log("Reaparecido en el spawn inicial: " + spawn.name);
+                //Debug.Log("Reaparecido en el spawn inicial: " + spawn.name);
             }
             else
             {
-                Debug.LogWarning("No se encontró PlayerSpawnPoint en la escena.");
+                //Debug.LogWarning("No se encontró PlayerSpawnPoint en la escena.");
             }
         }
     }
