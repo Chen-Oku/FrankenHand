@@ -104,6 +104,12 @@ public class Enemy : MonoBehaviour
                 }
             }
         }
+
+        if (agent != null)
+        {
+            if (!agent.isOnNavMesh)
+                Debug.LogWarning($"{gameObject.name} no está sobre el NavMesh.");
+        }
     }
 
     private void SetNewPatrolDestination()

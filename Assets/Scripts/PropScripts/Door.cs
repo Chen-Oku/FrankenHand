@@ -104,7 +104,7 @@ public class Door : MonoBehaviour
         float duration = 1f;
         float elapsed = 0f;
         Vector3 startPos = transform.position;
-        Vector3 endPos = startPos + Vector3.up * liftingDistance; // Mueve la puerta hacia arriba
+        Vector3 endPos = startPos + Vector3.right * liftingDistance; // Mueve la puerta en X
 
         while (elapsed < duration)
         {
