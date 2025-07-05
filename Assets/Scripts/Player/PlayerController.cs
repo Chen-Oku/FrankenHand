@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
             );
         }
 
-        if(horizontal != 0 || vertical != 0)
+         if(horizontal != 0 || vertical != 0)
         {
             animator.SetFloat("idleWaling", 1);
         }
