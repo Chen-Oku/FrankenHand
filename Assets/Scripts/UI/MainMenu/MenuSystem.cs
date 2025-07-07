@@ -15,12 +15,15 @@ public class MenuSystem : MonoBehaviour
     
     public void OpenOptionsFromMainMenu()
     {
+        // Activa el objeto raíz del menú de opciones
+        optionsMenuUI.SetActive(true); // Asegúrate de que el objeto raíz está activo
+
         var opcionesScript = optionsMenuUI.GetComponent<ControladorOpciones>();
         if (opcionesScript != null)
+        {
             opcionesScript.previousMenu = mainMenuUI;
-
-        mainMenuUI.SetActive(false);
-        optionsMenuUI.SetActive(true);
+            opcionesScript.SetOpcionesVisible(true);
+        }
     }
 
     public void Quit()

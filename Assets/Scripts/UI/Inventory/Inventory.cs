@@ -21,10 +21,10 @@ public class Inventory : MonoBehaviour
     public int maxSlots = 20;
 
     public PauseMenu pauseMenu; // Asigna el PauseMenu desde el Inspector
+    public CanvasGroup inventoryCanvasGroup; // Asigna el CanvasGroup desde el Inspector
 
     void Start()
     {
-        
         allSlots = slotHolder.transform.childCount;
         slots = new GameObject[allSlots];
 
@@ -36,31 +36,47 @@ public class Inventory : MonoBehaviour
             {
                 slots[i].GetComponent<Slot>().empty = true; // Marca la ranura como vacía si no hay un item
             }
-           
         }
 
         inventoryEnabled = false;
-        inventoryUI.SetActive(inventoryEnabled); 
+
+        // Detecta automáticamente el CanvasGroup si no está asignado
+        if (inventoryCanvasGroup == null && inventoryUI != null)
+            inventoryCanvasGroup = inventoryUI.GetComponent<CanvasGroup>();
+
+        // Asegúrate de que el CanvasGroup esté desactivado al inicio
+        if (inventoryCanvasGroup != null)
+            SetInventoryUIVisible(false);
 
         playerController = Object.FindFirstObjectByType<PlayerController>();
         Debug.Log("PlayerController encontrado: " + (playerController != null));
     }
 
-        public bool IsInventoryUIActive()
+    // Añade este método para controlar la visibilidad e interacción del inventario
+    private void SetInventoryUIVisible(bool visible)
     {
-        return inventoryUI.activeSelf;
+        if (inventoryCanvasGroup != null)
+        {
+            inventoryCanvasGroup.alpha = visible ? 1f : 0f;
+            inventoryCanvasGroup.interactable = visible;
+            inventoryCanvasGroup.blocksRaycasts = visible;
+        }
+        if (inventoryUI != null)
+            inventoryUI.SetActive(visible); // Opcional, si quieres seguir usando SetActive
     }
 
+    public bool IsInventoryUIActive()
+    {
+        // Si usas solo CanvasGroup, puedes comprobar el alpha o interactable
+        return inventoryCanvasGroup != null ? inventoryCanvasGroup.alpha > 0.5f : inventoryUI.activeSelf;
+    }
 
     void Update()
     {
-        // if (inventoryUI != null && IsInventoryUIActive()) //
-        //     return;
-
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
-            inventoryUI.SetActive(inventoryEnabled);
+            SetInventoryUIVisible(inventoryEnabled);
 
             if (inventoryEnabled)
             {
@@ -83,30 +99,6 @@ public class Inventory : MonoBehaviour
         // Controla el PlayerController según si hay algún menú abierto
         if (playerController != null)
             playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()));
-            
-
-/*             inventoryEnabled = !inventoryEnabled;
-                            inventoryUI.SetActive(inventoryEnabled);
-
-                            if (inventoryEnabled)
-                            {
-                                if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
-                                    pauseMenu.Resume();
-
-                                TimeManager.Instance.RequestPause();
-                                if (playerController != null)
-                                    playerController.enabled = false;
-                            }
-                            else
-                            {
-                                if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
-                                {
-                                    TimeManager.Instance.RequestResume();
-                                    if (playerController != null)
-                                        playerController.enabled = true;
-                                }
-                            } */
-    
     }
 
     public bool AnyMenuOpen()
@@ -118,7 +110,7 @@ public class Inventory : MonoBehaviour
     public void CloseInventory()
     {
         inventoryEnabled = false;
-        inventoryUI.SetActive(false);
+        SetInventoryUIVisible(false);
         if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
         {
             TimeManager.Instance.RequestResume();
@@ -128,13 +120,7 @@ public class Inventory : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    /*     {
-            if (other.gameObject.TryGetComponent(out PickupItem pickup))
-            {
-                AddItem(pickup);
-            }
-        } */
-    {
+{
         // Solo recoge objetos que tengan el componente PickupItem
         var pickup = other.GetComponent<PickupItem>();
         if (pickup != null)
@@ -334,6 +320,3 @@ public class Inventory : MonoBehaviour
     }
 
 }
-
-
-

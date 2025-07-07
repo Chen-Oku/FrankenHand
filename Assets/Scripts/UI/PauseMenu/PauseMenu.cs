@@ -12,19 +12,46 @@ public class PauseMenu : MonoBehaviour
 
     public Inventory inventory; // Referencia al inventario, si es necesario
 
+    private CanvasGroup pauseMenuUICanvasGroup; // Referencia al CanvasGroup del menú de pausa
+
     void Start()
     {
         playerController = Object.FindFirstObjectByType<PlayerController>();
 
-        pauseMenuUI.SetActive(false);
+        // Quita el SetActive, solo usa CanvasGroup
+        if (pauseMenuUI != null && pauseMenuUI.activeSelf)
+            pauseMenuUI.SetActive(true); // Asegúrate de que esté activo para buscar el CanvasGroup
+
         if (optionsMenuUI != null)
             optionsMenuUI.SetActive(false);
         Time.timeScale = 1f;
+
+        pauseMenuEnabled = false;
+
+        // Detecta automáticamente el CanvasGroup si no está asignado
+        if (pauseMenuUICanvasGroup == null && pauseMenuUI != null)
+            pauseMenuUICanvasGroup = pauseMenuUI.GetComponent<CanvasGroup>();
+
+        // Asegúrate de que el CanvasGroup esté desactivado al inicio
+        if (pauseMenuUICanvasGroup != null)
+            SetPauseMenuVisibility(false);
+    }
+
+    public void SetPauseMenuVisibility(bool visible)
+    {
+        if (pauseMenuUICanvasGroup != null)
+        {
+            pauseMenuUICanvasGroup.alpha = visible ? 1f : 0f;
+            pauseMenuUICanvasGroup.interactable = visible;
+            pauseMenuUICanvasGroup.blocksRaycasts = visible;
+        }
+        if (pauseMenuUI != null)
+            pauseMenuUI.SetActive(visible); // Opcional, puedes quitarlo si solo usas CanvasGroup
     }
 
     public bool IsPauseMenuActive()
     {
-        return pauseMenuUI.activeSelf;
+        return pauseMenuUICanvasGroup != null ? pauseMenuUICanvasGroup.alpha > 0.5f : pauseMenuUI.activeSelf;
     }
 
     void Update()
@@ -39,17 +66,16 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
+        SetPauseMenuVisibility(pauseMenuEnabled);
+
         if (pauseMenuEnabled)
         {
-            pauseMenuUI.SetActive(true);
             TimeManager.Instance.RequestPause();
-            // Quita el control del player aquí
             // if (playerController != null)
             //     playerController.enabled = false;
         }
         else
         {
-            pauseMenuUI.SetActive(false);
             TimeManager.Instance.RequestResume();
             // if (playerController != null)
             //     playerController.enabled = true;
@@ -61,39 +87,10 @@ public class PauseMenu : MonoBehaviour
         return IsPauseMenuActive() || (inventory != null && inventory.IsInventoryUIActive());
     }
 
-    /*     void Update()
-        {
-            // No abrir el menú de pausa si el inventario está activo
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                pauseMenuEnabled = !pauseMenuEnabled;
-
-                if(pauseMenuEnabled && inventory != null && inventory.IsInventoryUIActive())
-                {
-                    inventory.CloseInventory(); // Cierra el inventario si está abierto
-                }
-            }
-
-            if (pauseMenuEnabled)
-            {
-                pauseMenuUI.SetActive(true);
-                TimeManager.Instance.RequestPause();
-                if (playerController != null)
-                        playerController.enabled = false;
-            }
-            else
-            {
-                pauseMenuUI.SetActive(false);
-                TimeManager.Instance.RequestResume();
-                if (playerController != null)
-                            playerController.enabled = true;
-            } 
-        } */
-
     public void Resume()
     {
         pauseMenuEnabled = false;
-        pauseMenuUI.SetActive(false);
+        SetPauseMenuVisibility(false);
         TimeManager.Instance.RequestResume();
     }
 
@@ -107,13 +104,16 @@ public class PauseMenu : MonoBehaviour
     {
         if (optionsMenuUI != null)
         {
-            // Guarda quién abrió el menú de opciones
+            // Activa el objeto raíz del menú de opciones
+            optionsMenuUI.SetActive(true); // Asegúrate de que el objeto raíz está activo
+
             var opcionesScript = optionsMenuUI.GetComponent<ControladorOpciones>();
             if (opcionesScript != null)
+            {
                 opcionesScript.previousMenu = pauseMenuUI;
-
-            pauseMenuUI.SetActive(false);
-            optionsMenuUI.SetActive(true);
+                opcionesScript.SetOpcionesVisible(true);
+            }
+            SetPauseMenuVisibility(false); // Oculta el menú de pausa usando CanvasGroup
         }
     }
 

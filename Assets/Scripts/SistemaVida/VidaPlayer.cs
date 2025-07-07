@@ -14,14 +14,21 @@ public class VidaPlayer : SistemaVida
 
     private void Respawn()
     {
+        // Si ya no tiene vidas, ir a Game Over
+        if (vidaActual <= 0)
+        {
+            OnGameOver();
+            return;
+        }
+
         // Llama a tu lógica de respawn
         GetComponent<PlayerController>()?.RespawnAtCheckpoint();
         // Opcional: restaurar vida
         vidaActual = maxContenedores * vidaPorContenedor;
-        RaiseOnVidaCambiada(); // <--- Usa el método protegido
+        RaiseOnVidaCambiada();
     }
 
-        private void OnGameOver()
+    private void OnGameOver()
     {
         // Cargar la escena de Game Over
         SceneManager.LoadScene("GameOver");
