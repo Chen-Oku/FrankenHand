@@ -50,11 +50,16 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb; // Para animaciones de caída
 
+    private DraggableObject1 objetoArrastrado;
+    private IAgarrable objetoAgarrado;
+
     void Start()
     {
-        charController = charController ?? GetComponent<CharacterController>();
+        if (charController == null)
+            charController = GetComponent<CharacterController>();
+        if (animator == null)
+            animator = GetComponent<Animator>();
         pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
-        animator = GetComponent<Animator>();
 
         // Aparecer en el spawn inicial
         PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
@@ -114,6 +119,27 @@ public class PlayerController : MonoBehaviour
                     transform.position = lastCheckpoint.transform.position;
                 } */
 
+        // Detectar si el jugador mantiene presionada la tecla F
+        if (Input.GetKey(KeyCode.F))
+        {
+            if (objetoArrastrado == null)
+            {
+                IAgarrable agarrable = DetectarAgarrableCercano();
+                if (agarrable != null)
+                {
+                    agarrable.Agarrar(transform);
+                    objetoArrastrado = agarrable as DraggableObject1;
+                }
+            }
+        }
+        else
+        {
+            if (objetoArrastrado != null)
+            {
+                objetoArrastrado.Soltar();
+                objetoArrastrado = null;
+            }
+        }
     }
 
         private void OnTriggerEnter(Collider other)
@@ -156,14 +182,6 @@ public class PlayerController : MonoBehaviour
             );
         }
 
-/*         if (horizontal != 0 || vertical != 0)
-        {
-            animator.SetFloat("idleWaling", 1f);
-        }
-        else
-        {
-            animator.SetFloat("idleWaling", 0);
-        } */
 
         // Detectar doble toque para correr
         DetectDoubleTapForRun();
@@ -269,11 +287,36 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            // Ejecutar acción de interacción
-            Debug.Log("Interacción ejecutada");
-            // Aquí va tu lógica de interacción
+            IAgarrable agarrable = DetectarAgarrableCercano();
+            if (agarrable != null)
+            {
+                if (objetoAgarrado == null)
+                {
+                    agarrable.Agarrar(transform);
+                    objetoAgarrado = agarrable as DraggableObject;
+                }
+                else
+                {
+                    objetoAgarrado.Soltar();
+                    objetoAgarrado = null;
+                }
+            }
         }
     }
+
+    private IAgarrable DetectarAgarrableCercano()
+    {
+        float radio = 1.5f;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radio);
+        foreach (var col in colliders)
+        {
+            IAgarrable agarrable = col.GetComponent<IAgarrable>();
+            if (agarrable != null)
+                return agarrable;
+        }
+        return null;
+    }
+
 
     private void ApplyGravity()
     {
@@ -323,19 +366,13 @@ public class PlayerController : MonoBehaviour
     {
         if (lastCheckpoint != null)
         {
-            // Si usas CharacterController:
-            CharacterController cc = GetComponent<CharacterController>();
-            if (cc != null)
-            {
-                cc.enabled = false;
-            }
+            if (charController != null)
+                charController.enabled = false;
 
             transform.position = lastCheckpoint.transform.position;
 
-            if (cc != null)
-            {
-                cc.enabled = true;
-            }
+            if (charController != null)
+                charController.enabled = true;
 
             Debug.Log("Reaparecido en el checkpoint: " + lastCheckpoint.name);
         }
@@ -344,24 +381,13 @@ public class PlayerController : MonoBehaviour
             PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
             if (spawn != null)
             {
-                CharacterController cc = GetComponent<CharacterController>();
-                if (cc != null)
-                {
-                    cc.enabled = false;
-                }
+                if (charController != null)
+                    charController.enabled = false;
 
                 transform.position = spawn.transform.position;
 
-                if (cc != null)
-                {
-                    cc.enabled = true;
-                }
-
-                //Debug.Log("Reaparecido en el spawn inicial: " + spawn.name);
-            }
-            else
-            {
-                //Debug.LogWarning("No se encontró PlayerSpawnPoint en la escena.");
+                if (charController != null)
+                    charController.enabled = true;
             }
         }
     }

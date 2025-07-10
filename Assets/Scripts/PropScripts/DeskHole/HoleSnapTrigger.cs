@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class HoleSnapTrigger : MonoBehaviour
 {
-    public Transform snapPosition; // Empty transform en el centro del agujero
-    public string libroTag = "Libro"; // Asegúrate de ponerle este tag al libro
-    public float maxSnapDistance = 0.5f; // Qué tan cerca debe estar para hacer snap
-    public ParticleSystem efectoPolvo; // Asigna en el inspector si quieres partículas
+    public Transform snapPosition;
+    public string libroTag = "Libro";
+    public ParticleSystem efectoPolvo;
 
     private bool libroColocado = false;
 
@@ -14,9 +13,10 @@ public class HoleSnapTrigger : MonoBehaviour
         if (libroColocado) return;
         if (other.CompareTag(libroTag))
         {
-            // Snap SIEMPRE que entra al trigger
+            // Snap y acomodo
             other.transform.position = snapPosition.position;
             other.transform.rotation = snapPosition.rotation;
+
             // Desactiva físicas
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb != null)
@@ -24,13 +24,13 @@ public class HoleSnapTrigger : MonoBehaviour
                 rb.isKinematic = true;
                 rb.useGravity = false;
             }
-            // Opcional: desactiva collider para que no moleste más
+            // Desactiva collider
             Collider col = other.GetComponent<Collider>();
             if (col != null) col.enabled = false;
 
             libroColocado = true;
 
-            // Activa partículas si hay
+            // Activa partículas
             if (efectoPolvo != null)
                 efectoPolvo.Play();
         }

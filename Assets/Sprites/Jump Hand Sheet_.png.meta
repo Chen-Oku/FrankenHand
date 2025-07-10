@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47a2441479dedaa44ac5e3932273257c
+guid: 35b404f272c4c264c97f64d6bfb60625
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump Hand Sheet__0
+      name: Jump Hand Sheet_ 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df7d7a19019cde64dba105e216757bf7
-      internalID: -1978326903
+      spriteID: fc23698e57a4a554d8a9c03248923cbf
+      internalID: 147824339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__1
+      name: Jump Hand Sheet_ 1_1
       rect:
         serializedVersion: 2
         x: 512
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d789318194b11f46bf1885de5ce0313
-      internalID: -1194715232
+      spriteID: 993b6ff3c3b4cee449909a85d00163a9
+      internalID: 1769604848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__2
+      name: Jump Hand Sheet_ 1_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55c85c59459a2434a93f267a03ef6d57
-      internalID: 2114631855
+      spriteID: 10436eea67673f64d917e8f6fcf4ca85
+      internalID: 438152181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__3
+      name: Jump Hand Sheet_ 1_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fa1c5d6cb1922f4e9c153119465e47b
-      internalID: -1727573442
+      spriteID: a1f791aba738a7148b06e8b074ee13a1
+      internalID: 264978615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__4
+      name: Jump Hand Sheet_ 1_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159e00eca902ddc4494099dc554d5398
-      internalID: 480468694
+      spriteID: 93a01a3dfb7e5d94ea54ed2791f38e16
+      internalID: 1008256661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__5
+      name: Jump Hand Sheet_ 1_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -222,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 421706036e729784cb42b40a1755a0b6
-      internalID: -832592177
+      spriteID: f67cd2a4a7691ca4aa63d756229af8bb
+      internalID: -529775295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__6
+      name: Jump Hand Sheet_ 1_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -244,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5036c8dc87c75640ab988fa6677f018
-      internalID: 1636064870
+      spriteID: 8b2fdeb3ab6099b49a6a9dfea302598c
+      internalID: -706908147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__7
+      name: Jump Hand Sheet_ 1_7
       rect:
         serializedVersion: 2
         x: 3584
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e20cd5606097af49801145881ff47bb
-      internalID: -1645448341
+      spriteID: 6f55616979c8ee44fbd7294d33425e9f
+      internalID: 1506260177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__8
+      name: Jump Hand Sheet_ 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13211644a3b5aaf4d9ea1f54113fd843
-      internalID: -70259105
+      spriteID: cd2ee984ad20cc944a6cca83c7c00a9b
+      internalID: -97419666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__9
+      name: Jump Hand Sheet_ 1_9
       rect:
         serializedVersion: 2
         x: 512
@@ -310,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b06612432d9b449499a797bf7d0f07c9
-      internalID: 527042423
+      spriteID: 590d5ded545714145a1fb4d74ee89703
+      internalID: 465890057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__10
+      name: Jump Hand Sheet_ 1_10
       rect:
         serializedVersion: 2
         x: 1024
@@ -332,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d03f7d5d0191d443907120a30608b7f
-      internalID: 1193012217
+      spriteID: acae98a8ad77b784c97b774d03474f8f
+      internalID: -1952467996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__11
+      name: Jump Hand Sheet_ 1_11
       rect:
         serializedVersion: 2
         x: 1536
@@ -354,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb6a74f8897829843a083181878fe2c3
-      internalID: 410009913
+      spriteID: e07ace6b6659ab849b143cc33203a5be
+      internalID: 1862150582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__12
+      name: Jump Hand Sheet_ 1_12
       rect:
         serializedVersion: 2
         x: 2048
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeb72a6fc6ba2f24b8bc99a81439fee3
-      internalID: 1723510104
+      spriteID: d37092fa1df601548b6fc0ec95d306d8
+      internalID: -614421879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__13
+      name: Jump Hand Sheet_ 1_13
       rect:
         serializedVersion: 2
         x: 2560
@@ -398,14 +398,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e30a589791acbc64fa6be620c809be84
-      internalID: -1477071648
+      spriteID: 8ce369e3fb77563419ff1640ebf3cf11
+      internalID: 1904177612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__14
+      name: Jump Hand Sheet_ 1_14
       rect:
         serializedVersion: 2
         x: 3072
@@ -420,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6e3886dc823ed3488f7e28c7a1731ac
-      internalID: 686953956
+      spriteID: 94619d7d64c5a1d49bb61e8c9929f365
+      internalID: 317168015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__15
+      name: Jump Hand Sheet_ 1_15
       rect:
         serializedVersion: 2
         x: 3584
@@ -442,14 +442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56dc32201836c524ca757baa51de5f19
-      internalID: 493688713
+      spriteID: b25c0182d0fc52d4e970d07b655c947d
+      internalID: 596347650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__16
+      name: Jump Hand Sheet_ 1_16
       rect:
         serializedVersion: 2
         x: 0
@@ -464,14 +464,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2936eb8550be5244b6dd0c181044fab
-      internalID: -1708930193
+      spriteID: 15066ce3781a03844ac16066bd8cb890
+      internalID: -1650225755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__17
+      name: Jump Hand Sheet_ 1_17
       rect:
         serializedVersion: 2
         x: 512
@@ -486,14 +486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463214f7cb9c3c348816715a714e70aa
-      internalID: 1984843287
+      spriteID: 97abe4ee2058fa742a9b77e7bdd7ad14
+      internalID: 229367006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__18
+      name: Jump Hand Sheet_ 1_18
       rect:
         serializedVersion: 2
         x: 1024
@@ -508,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b3ae5167ed5b324c92844682ad4e3e1
-      internalID: -1173007970
+      spriteID: be65fb1257f37704ab6812ad3d9d1cbc
+      internalID: -1662049509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__19
+      name: Jump Hand Sheet_ 1_19
       rect:
         serializedVersion: 2
         x: 1536
@@ -530,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0467bce9415e60b43a676225dbbc77c1
-      internalID: -1725665914
+      spriteID: 5855af2ee22117246ae65b9365b6f0d2
+      internalID: -498325993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__20
+      name: Jump Hand Sheet_ 1_20
       rect:
         serializedVersion: 2
         x: 2048
@@ -552,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d5ff6416bd51804d9d569700c7f7379
-      internalID: -408965993
+      spriteID: 9efd1fb54ebb2ba44a5f7461a456f276
+      internalID: 1831562703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__21
+      name: Jump Hand Sheet_ 1_21
       rect:
         serializedVersion: 2
         x: 2560
@@ -574,14 +574,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ec3746a06624f147aec9a44fd893e48
-      internalID: 1865716152
+      spriteID: 5d2d22e6726480042ae2a82d73e4dfa8
+      internalID: 923986587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__22
+      name: Jump Hand Sheet_ 1_22
       rect:
         serializedVersion: 2
         x: 3072
@@ -596,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16794e02d1472f47b9dee77490c2147
-      internalID: 1141544082
+      spriteID: 055b3b606ec32284f9da7268ca839388
+      internalID: 1003151169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__23
+      name: Jump Hand Sheet_ 1_23
       rect:
         serializedVersion: 2
         x: 3584
@@ -618,14 +618,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e4813184ef7bc469f2e59ebeee7195
-      internalID: -667597524
+      spriteID: 277aa2798c2b07b4782ad8dcf6611a3c
+      internalID: -1971961066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__24
+      name: Jump Hand Sheet_ 1_24
       rect:
         serializedVersion: 2
         x: 0
@@ -640,14 +640,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7fd60c6190e77f40a0309e8ddd1815f
-      internalID: -1000567115
+      spriteID: dcffbc06b151c9a459d0aae24557a7a8
+      internalID: -415670393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__25
+      name: Jump Hand Sheet_ 1_25
       rect:
         serializedVersion: 2
         x: 512
@@ -662,14 +662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 151db3afe263ac2479f9cd5bcbe5e1ac
-      internalID: -776296260
+      spriteID: bd23cd7d0cf01a34e8961f291a6babb0
+      internalID: 2134715416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__26
+      name: Jump Hand Sheet_ 1_26
       rect:
         serializedVersion: 2
         x: 1024
@@ -684,14 +684,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a17087996f55eb4b97234de38f6a605
-      internalID: -2001068861
+      spriteID: 39958cffe381a4d4385c8c99526c27e6
+      internalID: -1693561957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__27
+      name: Jump Hand Sheet_ 1_27
       rect:
         serializedVersion: 2
         x: 1536
@@ -706,14 +706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed677b36db031234e819d338a316c39e
-      internalID: -1326076601
+      spriteID: d3712ad7c9d854549b7c13f239bdcd3d
+      internalID: 609213835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__28
+      name: Jump Hand Sheet_ 1_28
       rect:
         serializedVersion: 2
         x: 2048
@@ -728,14 +728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04fbca9facdb16f499a713905c68f96b
-      internalID: -190650982
+      spriteID: f73a5ee3f55ffe5449676df41f0b4d24
+      internalID: 102776057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__29
+      name: Jump Hand Sheet_ 1_29
       rect:
         serializedVersion: 2
         x: 2560
@@ -750,14 +750,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f1d7a4a85789a545bd45f8505443eaa
-      internalID: 346394324
+      spriteID: 9a8aa40627229ac4ab869812e4d01681
+      internalID: -919202365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__30
+      name: Jump Hand Sheet_ 1_30
       rect:
         serializedVersion: 2
         x: 3072
@@ -772,14 +772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dd34257dcca32e4eb3f33175cf75a71
-      internalID: 1650304516
+      spriteID: d0b0f2a1adee4e54fa4aa7171cd153c3
+      internalID: -1634326823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__31
+      name: Jump Hand Sheet_ 1_31
       rect:
         serializedVersion: 2
         x: 3584
@@ -794,14 +794,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54b3a9eee1755c4409c74d89e444813d
-      internalID: 1924118633
+      spriteID: 83272c12d8a897944b3359acabfef856
+      internalID: -265136869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__32
+      name: Jump Hand Sheet_ 1_32
       rect:
         serializedVersion: 2
         x: 0
@@ -816,14 +816,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52837c76667b29b42b1c3c3c9ea7fd17
-      internalID: 637992252
+      spriteID: d7ddfd5fec5c5d248881e5d79bec598e
+      internalID: 208659198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__33
+      name: Jump Hand Sheet_ 1_33
       rect:
         serializedVersion: 2
         x: 512
@@ -838,14 +838,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc3430d84da55b419380e3abc3f4213
-      internalID: 1883040047
+      spriteID: e306b0d57f31c5c4f9f7e8e3d5917485
+      internalID: -4234041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__34
+      name: Jump Hand Sheet_ 1_34
       rect:
         serializedVersion: 2
         x: 1024
@@ -860,14 +860,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1137d7ed62bf2a9449c8a3d8c0ccbbc1
-      internalID: -492252509
+      spriteID: 9cb1f233db84d764ab8e7a5487a655bb
+      internalID: 546004434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__35
+      name: Jump Hand Sheet_ 1_35
       rect:
         serializedVersion: 2
         x: 1536
@@ -882,14 +882,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77b74458788d90f44bb217e3fd794d19
-      internalID: 1519817687
+      spriteID: 02f78017b4e61914e877ae5e484931d7
+      internalID: 880735593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__36
+      name: Jump Hand Sheet_ 1_36
       rect:
         serializedVersion: 2
         x: 2048
@@ -904,14 +904,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d6d1f9fff1e82c4ea8f735e321af27d
-      internalID: 847496842
+      spriteID: 95d38950550e91b4abed3a1a70831f3c
+      internalID: -863266651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__37
+      name: Jump Hand Sheet_ 1_37
       rect:
         serializedVersion: 2
         x: 2560
@@ -926,14 +926,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5581d6f3ad4515b4aa8bbf4732bf9aec
-      internalID: 2024825026
+      spriteID: fc72ab0191d4de041aa8f35965c463c1
+      internalID: 1391187841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__38
+      name: Jump Hand Sheet_ 1_38
       rect:
         serializedVersion: 2
         x: 3072
@@ -948,14 +948,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae41b64cc2cd62a4b9ac31b7db8e5b41
-      internalID: 1510243892
+      spriteID: aa228eae5ad6f2548b75ef084d697793
+      internalID: 1423237203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__39
+      name: Jump Hand Sheet_ 1_39
       rect:
         serializedVersion: 2
         x: 3584
@@ -970,14 +970,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1b6db56c2ee7478f1bd2244c802cb
-      internalID: 121283450
+      spriteID: 29c2690e24ff24f41a81e0e1b2bf2748
+      internalID: -1426659778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump Hand Sheet__40
+      name: Jump Hand Sheet_ 1_40
       rect:
         serializedVersion: 2
         x: 0
@@ -992,8 +992,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4ef8c89fc7ffa4dba8e3baa9e66c2f
-      internalID: 825712482
+      spriteID: fef2af1b4463cfa4a8b671a42aa2f0c6
+      internalID: -1351169313
       vertices: []
       indices: 
       edges: []
@@ -1002,7 +1002,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2c74357bba7b62c4da87f6f9c38136b6
+    spriteID: 1f6baa642a8ec224a9b20f40decf06d7
     internalID: 0
     vertices: []
     indices: 
@@ -1012,50 +1012,55 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jump Hand Sheet__0: -1978326903
-      Jump Hand Sheet__1: -1194715232
-      Jump Hand Sheet__10: 1193012217
-      Jump Hand Sheet__11: 410009913
-      Jump Hand Sheet__12: 1723510104
-      Jump Hand Sheet__13: -1477071648
-      Jump Hand Sheet__14: 686953956
-      Jump Hand Sheet__15: 493688713
-      Jump Hand Sheet__16: -1708930193
-      Jump Hand Sheet__17: 1984843287
-      Jump Hand Sheet__18: -1173007970
-      Jump Hand Sheet__19: -1725665914
-      Jump Hand Sheet__2: 2114631855
-      Jump Hand Sheet__20: -408965993
-      Jump Hand Sheet__21: 1865716152
-      Jump Hand Sheet__22: 1141544082
-      Jump Hand Sheet__23: -667597524
-      Jump Hand Sheet__24: -1000567115
-      Jump Hand Sheet__25: -776296260
-      Jump Hand Sheet__26: -2001068861
-      Jump Hand Sheet__27: -1326076601
-      Jump Hand Sheet__28: -190650982
-      Jump Hand Sheet__29: 346394324
-      Jump Hand Sheet__3: -1727573442
-      Jump Hand Sheet__30: 1650304516
-      Jump Hand Sheet__31: 1924118633
-      Jump Hand Sheet__32: 637992252
-      Jump Hand Sheet__33: 1883040047
-      Jump Hand Sheet__34: -492252509
-      Jump Hand Sheet__35: 1519817687
-      Jump Hand Sheet__36: 847496842
-      Jump Hand Sheet__37: 2024825026
-      Jump Hand Sheet__38: 1510243892
-      Jump Hand Sheet__39: 121283450
-      Jump Hand Sheet__4: 480468694
-      Jump Hand Sheet__40: 825712482
-      Jump Hand Sheet__41: -544170421
-      Jump Hand Sheet__42: -476206022
-      Jump Hand Sheet__43: -1626298218
-      Jump Hand Sheet__5: -832592177
-      Jump Hand Sheet__6: 1636064870
-      Jump Hand Sheet__7: -1645448341
-      Jump Hand Sheet__8: -70259105
-      Jump Hand Sheet__9: 527042423
+      Jump Hand Sheet_ 1_0: 147824339
+      Jump Hand Sheet_ 1_1: 1769604848
+      Jump Hand Sheet_ 1_10: -1952467996
+      Jump Hand Sheet_ 1_11: 1862150582
+      Jump Hand Sheet_ 1_12: -614421879
+      Jump Hand Sheet_ 1_13: 1904177612
+      Jump Hand Sheet_ 1_14: 317168015
+      Jump Hand Sheet_ 1_15: 596347650
+      Jump Hand Sheet_ 1_16: -1650225755
+      Jump Hand Sheet_ 1_17: 229367006
+      Jump Hand Sheet_ 1_18: -1662049509
+      Jump Hand Sheet_ 1_19: -498325993
+      Jump Hand Sheet_ 1_2: 438152181
+      Jump Hand Sheet_ 1_20: 1831562703
+      Jump Hand Sheet_ 1_21: 923986587
+      Jump Hand Sheet_ 1_22: 1003151169
+      Jump Hand Sheet_ 1_23: -1971961066
+      Jump Hand Sheet_ 1_24: -415670393
+      Jump Hand Sheet_ 1_25: 2134715416
+      Jump Hand Sheet_ 1_26: -1693561957
+      Jump Hand Sheet_ 1_27: 609213835
+      Jump Hand Sheet_ 1_28: 102776057
+      Jump Hand Sheet_ 1_29: -919202365
+      Jump Hand Sheet_ 1_3: 264978615
+      Jump Hand Sheet_ 1_30: -1634326823
+      Jump Hand Sheet_ 1_31: -265136869
+      Jump Hand Sheet_ 1_32: 208659198
+      Jump Hand Sheet_ 1_33: -4234041
+      Jump Hand Sheet_ 1_34: 546004434
+      Jump Hand Sheet_ 1_35: 880735593
+      Jump Hand Sheet_ 1_36: -863266651
+      Jump Hand Sheet_ 1_37: 1391187841
+      Jump Hand Sheet_ 1_38: 1423237203
+      Jump Hand Sheet_ 1_39: -1426659778
+      Jump Hand Sheet_ 1_4: 1008256661
+      Jump Hand Sheet_ 1_40: -1351169313
+      Jump Hand Sheet_ 1_41: 1153571142
+      Jump Hand Sheet_ 1_42: 1947247425
+      Jump Hand Sheet_ 1_43: -529180462
+      Jump Hand Sheet_ 1_44: 1441715253
+      Jump Hand Sheet_ 1_45: 1147959
+      Jump Hand Sheet_ 1_46: 819236305
+      Jump Hand Sheet_ 1_47: -1087385840
+      Jump Hand Sheet_ 1_48: 974704362
+      Jump Hand Sheet_ 1_5: -529775295
+      Jump Hand Sheet_ 1_6: -706908147
+      Jump Hand Sheet_ 1_7: 1506260177
+      Jump Hand Sheet_ 1_8: -97419666
+      Jump Hand Sheet_ 1_9: 465890057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

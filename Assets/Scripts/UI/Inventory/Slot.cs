@@ -197,10 +197,10 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                     dropPosition.y = hit.point.y + 0.1f;
                 }
 
-                GameObject dropped = Instantiate(itemSlot.itemData.itemPrefab, dropPosition, Quaternion.identity);
-                Debug.Log("Prefab instanciado: " + dropped.name + " en posición " + dropPosition);
+                //GameObject dropped = Instantiate(itemSlot.itemData.itemPrefab, dropPosition, Quaternion.identity);
+                //Debug.Log("Prefab instanciado: " + dropped.name + " en posición " + dropPosition);
 
-                Rigidbody rb = dropped.GetComponent<Rigidbody>();
+                /* Rigidbody rb = dropped.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
                     rb.AddForce(left * dropImpulse, ForceMode.Impulse);
@@ -211,9 +211,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                 {
                     collider.enabled = false;
                     StartCoroutine(EnableColliderAfterDelay(collider, dropColliderDelay));
-                }
+                } */
 
-                // --- AJUSTE: Solo elimina el item de este slot ---
+                /* // --- AJUSTE: Solo elimina el item de este slot ---
                 if (itemSlot.quantity > 1)
                 {
                     itemSlot.quantity--;
@@ -234,7 +234,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
                     if (selectedShader != null)
                         selectedShader.SetActive(false);
                 }
-                UpdateSlot();
+                UpdateSlot(); */
             }
 
             iconImage.transform.SetParent(originalPosition);

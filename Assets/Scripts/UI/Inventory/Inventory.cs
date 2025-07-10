@@ -208,7 +208,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool RemoveItem(InventoryItemData itemData, int amount = 1)
+     public bool RemoveItem(InventoryItemData itemData, int amount = 1)
     {
         if (itemData == null) return false;
 
@@ -232,7 +232,7 @@ public class Inventory : MonoBehaviour
             return true;
         }
         return false;
-    }
+    } 
   
     public void DeselectAllSlots()
     {

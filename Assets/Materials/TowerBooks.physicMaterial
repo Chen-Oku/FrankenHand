@@ -8,8 +8,8 @@ PhysicsMaterial:
   m_PrefabAsset: {fileID: 0}
   m_Name: TowerBooks
   serializedVersion: 2
-  m_DynamicFriction: 0.02
-  m_StaticFriction: 0.002
+  m_DynamicFriction: 0.5
+  m_StaticFriction: 0.5
   m_Bounciness: 1
   m_FrictionCombine: 3
   m_BounceCombine: 3
