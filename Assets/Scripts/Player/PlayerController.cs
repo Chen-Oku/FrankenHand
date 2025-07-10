@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -47,6 +48,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator; // Asigna el Animator en el Inspector si lo tienes
 
+    private Rigidbody rb; // Para animaciones de caída
+
     void Start()
     {
         charController = charController ?? GetComponent<CharacterController>();
@@ -60,7 +63,6 @@ public class PlayerController : MonoBehaviour
             transform.position = spawn.transform.position;
             lastCheckpoint = null; // No hay checkpoint aún
         }
-    
     }
 
     void Update()
@@ -103,13 +105,15 @@ public class PlayerController : MonoBehaviour
                 transform.rotation = lookRotation;
             }
         }
+        
+        animator.SetFloat("yVelocity", velocity.y); // Actualizar animación de caída
 
         // al caer por debajo de un cierto nivel, reiniciar al último checkpoint
-/*         if (transform.position.y < -10f && lastCheckpoint != null) // Ajusta el valor según tu escena
-        {
-            transform.position = lastCheckpoint.transform.position;
-        } */
-    
+        /*         if (transform.position.y < -10f && lastCheckpoint != null) // Ajusta el valor según tu escena
+                {
+                    transform.position = lastCheckpoint.transform.position;
+                } */
+
     }
 
         private void OnTriggerEnter(Collider other)
@@ -127,6 +131,12 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        float moveAmount = new Vector2(horizontal, vertical).magnitude;
+        float animSpeed = 0f;
+        if (moveAmount > 0)
+            animSpeed = isRunning ? 1f : 0.5f;
+        animator.SetFloat("idleWaling", animSpeed);
 
         // Detectar dirección y preparar rotación tipo Paper Mario
         if (horizontal > 0.01f)
@@ -146,14 +156,14 @@ public class PlayerController : MonoBehaviour
             );
         }
 
-         if(horizontal != 0 || vertical != 0)
+/*         if (horizontal != 0 || vertical != 0)
         {
-            animator.SetFloat("idleWaling", 1);
+            animator.SetFloat("idleWaling", 1f);
         }
         else
         {
             animator.SetFloat("idleWaling", 0);
-        }
+        } */
 
         // Detectar doble toque para correr
         DetectDoubleTapForRun();
@@ -196,13 +206,21 @@ public class PlayerController : MonoBehaviour
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 coyoteTimeCounter = 0f;
                 canDoubleJump = true; // Permitir doble salto solo después de un salto válido
+                animator.SetBool("isJumping", true); // Activar animación de salto
             }
             else if (canDoubleJump)
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 canDoubleJump = false;
+                animator.SetBool("isJumping", true); // Activar animación de salto
             }
         }
+ 
+        if (isGrounded && velocity.y < 0)
+        {
+            animator.SetBool("isJumping", false); // Desactiva salto
+        }
+    
     }
 
     // DASH en E (ya implementado)
@@ -265,6 +283,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DashCoroutine(Vector3 direction)
     {
         isDashing = true;
+        animator.SetBool("isDashing", true); // Activa animación de dash
         dashTime = dashDuration;
 
         float targetAngle = cameraTransform.eulerAngles.y;
@@ -278,6 +297,7 @@ public class PlayerController : MonoBehaviour
         }
 
         isDashing = false;
+        animator.SetBool("isDashing", false); // Vuelve a animación normal
     }
 
     private void DetectDoubleTapForRun()
@@ -292,7 +312,6 @@ public class PlayerController : MonoBehaviour
                 if (lastTapTimes[key] > 0 && time - lastTapTimes[key] <= doubleTapTime)
                 {
                     isRunning = true;
-                    animator.SetFloat("idleWaling", 2);
                 }
                 lastTapTimes[key] = time;
             }
