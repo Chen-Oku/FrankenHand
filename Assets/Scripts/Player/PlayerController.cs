@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour
     private DraggableObject1 objetoArrastrado;
     private IAgarrable objetoAgarrado;
 
+    private bool estabaEmpujando = false;
+
     void Start()
     {
         if (charController == null)
@@ -139,6 +141,53 @@ public class PlayerController : MonoBehaviour
                 objetoArrastrado.Soltar();
                 objetoArrastrado = null;
             }
+        }
+
+        // Detectar si el jugador mantiene presionada la tecla F para agarrar
+        bool estaAgarrando = objetoArrastrado != null;
+
+        // Detectar si está moviendo el objeto (por ejemplo, si hay input de movimiento y está agarrando)
+        bool estaEmpujando = false;
+        if (estaAgarrando)
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+            float pushSpeed = new Vector2(horizontal, vertical).magnitude;
+            animator.SetFloat("pushSpeed", pushSpeed);
+        }
+        else
+        {
+            animator.SetFloat("pushSpeed", 0f);
+        }
+
+        if (estaAgarrando)
+        {
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
+            Vector3 direction = new Vector3(horizontal, 0f, vertical);
+
+            estaEmpujando = direction.magnitude > 0.1f;
+
+            // Animación de inicio de empuje
+            if (!estabaEmpujando && estaEmpujando)
+            {
+                animator.SetTrigger("startPush");
+            }
+
+            // Animación de empujando
+            animator.SetBool("isPushing", estaEmpujando);
+
+            // Animación de preparado (sosteniendo pero sin mover)
+            animator.SetBool("isHoldingPush", !estaEmpujando);
+
+            estabaEmpujando = estaEmpujando;
+        }
+        else
+        {
+            // Si suelta el objeto, desactiva animaciones de empuje
+            animator.SetBool("isPushing", false);
+            animator.SetBool("isHoldingPush", false);
+            estabaEmpujando = false;
         }
     }
 
@@ -400,5 +449,11 @@ public class PlayerController : MonoBehaviour
             Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
             rb.AddForce(pushDir * 5f, ForceMode.Impulse); // Ajusta la fuerza según lo necesites
         }
+    }
+
+    public Vector3 Velocity
+    {
+        get => velocity;
+        set => velocity = value;
     }
 }
