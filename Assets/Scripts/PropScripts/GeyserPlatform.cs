@@ -154,6 +154,13 @@ public class GeyserPlatform : MonoBehaviour
     }
 } */
 
+
+
+
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -261,9 +268,12 @@ public class GeyserPlatform : MonoBehaviour
             yield break;
         }
 
-        // Asignar al jugador como hijo de la plataforma
+        // Asignar al jugador como hijo de la plataforma y poner Rigidbody en kinematic
         Transform playerTransform = playerCollider.transform;
         playerTransform.SetParent(transform);
+        Rigidbody playerRb = playerCollider.GetComponent<Rigidbody>();
+        if (playerRb != null)
+            playerRb.isKinematic = true;
         bool playerAttached = true;
 
         // Subida
@@ -308,22 +318,10 @@ public class GeyserPlatform : MonoBehaviour
 
         // Liberar al jugador si aún está asignado como hijo
         if (playerAttached)
-            playerTransform.SetParent(null);
-
-        // Caída suave
-        if ((transform.position - originalPosition).sqrMagnitude > 0.001f)
         {
-            float fallDuration = liftDuration * fallDurationFactor;
-            elapsed = 0f;
-
-            while (elapsed < fallDuration)
-            {
-                float t = elapsed / fallDuration;
-                float fallCurve = Mathf.Pow(t, fallCurvePower);
-                transform.position = Vector3.Lerp(endPos, originalPosition, fallCurve);
-                elapsed += Time.deltaTime;
-                yield return null;
-            }
+            playerTransform.SetParent(null);
+            if (playerRb != null)
+                playerRb.isKinematic = false;
         }
 
         transform.position = originalPosition;
