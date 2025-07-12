@@ -7,6 +7,8 @@ public class VolumeControl : MonoBehaviour
     public float sliderValue;
     public Image imageMute;
 
+    
+
     void Start()
     {
         // Initialize the slider value from PlayerPrefs or set a default value

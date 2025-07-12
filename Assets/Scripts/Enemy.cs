@@ -23,22 +23,40 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+
+        // Detener toda la lógica si el juego está en pausa (por inventario o menú de pausa)
+        if (Time.timeScale == 0f)
+        {
+                if (agent != null && !agent.isStopped)
+            {
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero; // Detener movimiento inmediatamente
+            }
+            return;
+        }
+        else
+        {
+            if (agent != null && agent.isStopped)
+            {
+                agent.isStopped = false;
+            }
+        }
+
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
         // Guardar la posición anterior para detectar cambio de dirección en X
-        float prevX = transform.position.x;
+        // float prevX = transform.position.x; // <- Esta línea no es necesaria si no se usa
 
         if (distanceToPlayer < chaseDistance)
         {
             // Perseguir al jugador
-            Vector3 targetPos = player.transform.position;
             if (agent != null)
             {
-                agent.SetDestination(targetPos);
+                agent.SetDestination(player.transform.position);
             }
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * 3f);
+                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, Time.deltaTime * 3f);
             }
         }
         else
@@ -46,7 +64,8 @@ public class Enemy : MonoBehaviour
             // Patrullar aleatoriamente
             if (agent != null)
             {
-                if (Vector3.Distance(transform.position, patrolDestination) < 1f)
+                // Si el agente está cerca del destino o está atascado, busca uno nuevo
+                if (Vector3.Distance(transform.position, patrolDestination) < 1f || agent.pathPending || agent.remainingDistance < 0.5f)
                 {
                     patrolTimer += Time.deltaTime;
                     if (patrolTimer >= patrolWaitTime)
@@ -59,9 +78,17 @@ public class Enemy : MonoBehaviour
                 {
                     agent.SetDestination(patrolDestination);
                 }
+
+                // Si el agente está atascado (no se mueve), fuerza un nuevo destino
+                if (agent.velocity.sqrMagnitude < 0.01f && !agent.pathPending)
+                {
+                    SetNewPatrolDestination();
+                    patrolTimer = 0f;
+                }
             }
             else
             {
+                // Movimiento simple si no hay NavMeshAgent
                 if (Vector3.Distance(transform.position, patrolDestination) < 1f)
                 {
                     patrolTimer += Time.deltaTime;
@@ -78,18 +105,10 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        // Solo girar en Y si cambia de dirección en X
-        float deltaX = transform.position.x - prevX;
-        if (Mathf.Abs(deltaX) > 0.01f)
+        if (agent != null)
         {
-            // Mirar hacia la cámara (jugador) solo en el eje Y
-            Vector3 lookDirection = player.transform.position - transform.position;
-            lookDirection.y = 0; // Solo rotación en Y
-            if (lookDirection != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
-                transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
-            }
+            if (!agent.isOnNavMesh)
+                Debug.LogWarning($"{gameObject.name} no está sobre el NavMesh.");
         }
     }
 
@@ -104,6 +123,11 @@ public class Enemy : MonoBehaviour
             if (NavMesh.SamplePosition(patrolDestination, out hit, patrolRadius, NavMesh.AllAreas))
             {
                 patrolDestination = hit.position;
+            }
+            else
+            {
+                // Si no encuentra un punto válido, intenta de nuevo
+                patrolDestination = transform.position;
             }
         }
     }

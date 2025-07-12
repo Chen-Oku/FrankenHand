@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37183b102782a77428b3888400376ba8, type: 3}
+  m_Name: Key_LlavePuerta
+  m_EditorClassIdentifier: 
+  itemName: Key_LlavePuerta
+  itemType: 1
+  icon: {fileID: 21300000, guid: 9435b6b4db7642d4d83373a38d8aa442, type: 3}
+  itemPrefab: {fileID: 2954140549268419274, guid: d7b4769403c70cf4c9f58e8bfd002454, type: 3}
+  description: "Extra\xF1a llave que abre tu camino en busqueda de lo que mas anhelas"
+  maxStack: 1

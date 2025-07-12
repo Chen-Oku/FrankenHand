@@ -6,11 +6,15 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /* var inventory = other.GetComponent<PlayerInventory>();
-        if (inventory != null)
+        // Asegúrate de que el jugador tenga el tag "Player"
+        if (other.CompareTag("Player"))
         {
-            inventory.CollectCoin(this);
-            Destroy(gameObject); // Solo destruye la moneda
-        } */
+            // Suma puntos al GameManager
+            GameManager.Instance.AddPoints(pointValue);
+            Debug.Log("Puntos sumados: " + pointValue);
+
+            // Destruye la moneda
+            Destroy(gameObject);
+        }
     }
 }

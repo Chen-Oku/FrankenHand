@@ -4,11 +4,12 @@ public class Checkpoint : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        var player = other.GetComponent<PlayerController>();
+        var player = other.GetComponentInParent<PlayerController>();
         if (player != null)
         {
             player.lastCheckpoint = this;
-            // Feedback visual/audio
+            // Feedback visual/audio opcional
         }
     }
+    
 }

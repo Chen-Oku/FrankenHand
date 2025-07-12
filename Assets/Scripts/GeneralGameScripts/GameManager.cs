@@ -3,7 +3,22 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    private int totalPoints = 0;
+    public int maxPoints = 999; // Límite máximo de puntos
+
+    private int points;
+    public int Points
+    {
+        get => points;
+        set
+        {
+            int newValue = Mathf.Clamp(value, 0, maxPoints);
+            if (points != newValue)
+            {
+                points = newValue;
+                OnPointsChanged?.Invoke(points);
+            }
+        }
+    }
 
     public event System.Action<int> OnPointsChanged;
 
@@ -15,20 +30,18 @@ public class GameManager : MonoBehaviour
 
     public void UpdatePoints(int points)
     {
-        totalPoints = points;
-        OnPointsChanged?.Invoke(totalPoints);
+        Points = points;
         // Actualizar UI, guardar progreso, etc.
     }
 
     public void AddPoints(int amount)
     {
-        totalPoints += amount;
-        UpdatePoints(totalPoints);
+        Points += amount;
         // Aquí puedes actualizar la UI si tienes una referencia
     }
 
     public int GetPoints()
     {
-        return totalPoints;
+        return points;
     }
 }

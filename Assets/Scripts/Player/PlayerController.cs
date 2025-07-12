@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public CharacterController charController;
     public Transform cameraTransform;
-    public Transform spriteTransform; // Asigna el objeto del sprite en el Inspector
+    public Transform spriteVisualTransform; // Asigna el hijo visual en el Inspector
     public float speed = 6.0f;
     public float runSpeed = 12.0f;
     public float jumpHeight = 1.5f;
@@ -40,11 +41,33 @@ public class PlayerController : MonoBehaviour
 
     public Checkpoint lastCheckpoint; // Referencia al último checkpoint
 
+    private PauseMenu pauseMenu;
+
     private Quaternion targetSpriteRotation = Quaternion.Euler(90f, 180f, 0f); // Agrega este campo arriba
+    private int lastFacing = 1; // 1 = derecha, -1 = izquierda
+
+    private Animator animator; // Asigna el Animator en el Inspector si lo tienes
+
+    private Rigidbody rb; // Para animaciones de caída
+
+    private DraggableObject1 objetoArrastrado;
+    private IAgarrable objetoAgarrado;
 
     void Start()
     {
-        charController = charController ?? GetComponent<CharacterController>();
+        if (charController == null)
+            charController = GetComponent<CharacterController>();
+        if (animator == null)
+            animator = GetComponent<Animator>();
+        pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
+
+        // Aparecer en el spawn inicial
+        PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
+        if (spawn != null)
+        {
+            transform.position = spawn.transform.position;
+            lastCheckpoint = null; // No hay checkpoint aún
+        }
     }
 
     void Update()
@@ -75,7 +98,59 @@ public class PlayerController : MonoBehaviour
 
         ApplyGravity();
         charController.Move(velocity * Time.deltaTime);
+
+        // --- Billboarding: el objeto principal mira a la cámara (solo Y) ---
+        if (cameraTransform != null)
+        {
+            Vector3 toCamera = cameraTransform.position - transform.position;
+            toCamera.y = 0f;
+            if (toCamera.sqrMagnitude > 0.001f)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(toCamera.normalized, Vector3.up);
+                transform.rotation = lookRotation;
+            }
+        }
+        
+        animator.SetFloat("yVelocity", velocity.y); // Actualizar animación de caída
+
+        // al caer por debajo de un cierto nivel, reiniciar al último checkpoint
+        /*         if (transform.position.y < -10f && lastCheckpoint != null) // Ajusta el valor según tu escena
+                {
+                    transform.position = lastCheckpoint.transform.position;
+                } */
+
+        // Detectar si el jugador mantiene presionada la tecla F
+        if (Input.GetKey(KeyCode.F))
+        {
+            if (objetoArrastrado == null)
+            {
+                IAgarrable agarrable = DetectarAgarrableCercano();
+                if (agarrable != null)
+                {
+                    agarrable.Agarrar(transform);
+                    objetoArrastrado = agarrable as DraggableObject1;
+                }
+            }
+        }
+        else
+        {
+            if (objetoArrastrado != null)
+            {
+                objetoArrastrado.Soltar();
+                objetoArrastrado = null;
+            }
+        }
     }
+
+        private void OnTriggerEnter(Collider other)
+    {
+        Checkpoint checkpoint = other.GetComponent<Checkpoint>();
+        if (checkpoint != null)
+        {
+            lastCheckpoint = checkpoint;
+        }
+    }
+
 
     private void HandleMovementInput()
     {
@@ -83,22 +158,30 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        // --- NUEVO: Suavizar el giro del sprite ---
-        if (spriteTransform != null && horizontal != 0)
+        float moveAmount = new Vector2(horizontal, vertical).magnitude;
+        float animSpeed = 0f;
+        if (moveAmount > 0)
+            animSpeed = isRunning ? 1f : 0.5f;
+        animator.SetFloat("idleWaling", animSpeed);
+
+        // Detectar dirección y preparar rotación tipo Paper Mario
+        if (horizontal > 0.01f)
+            lastFacing = 1;
+        else if (horizontal < -0.01f)
+            lastFacing = -1;
+
+        // Flip Paper Mario: giro suave en Y local del hijo visual
+        if (spriteVisualTransform != null)
         {
-            float yRot = horizontal > 0 ? 180f : 0f;
-            targetSpriteRotation = Quaternion.Euler(90f, yRot, 0f);
-        }
-        if (spriteTransform != null)
-        {
-            // Suaviza la rotación hacia el objetivo
-            spriteTransform.localRotation = Quaternion.Slerp(
-                spriteTransform.localRotation,
-                targetSpriteRotation,
-                10f * Time.deltaTime // Ajusta la velocidad aquí
+            float yRot = lastFacing == 1 ? 180f : 0f;
+            Quaternion targetFlip = Quaternion.Euler(0f, yRot, 0f);
+            spriteVisualTransform.localRotation = Quaternion.Slerp(
+                spriteVisualTransform.localRotation,
+                targetFlip,
+                10f * Time.deltaTime // Ajusta la velocidad aquí para más o menos suavidad
             );
         }
-        // --- FIN NUEVO ---
+
 
         // Detectar doble toque para correr
         DetectDoubleTapForRun();
@@ -111,15 +194,11 @@ public class PlayerController : MonoBehaviour
             {
                 Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
                 charController.Move(moveDir.normalized * currentSpeed * Time.deltaTime);
-
-                // Solo asigna momentum si hay input significativo
                 airMomentum = moveDir.normalized * currentSpeed;
             }
             else
             {
-                isRunning = false; // Detener carrera si no hay input
-
-                // Reducir gradualmente el momentum en el suelo si no hay input
+                isRunning = false;
                 airMomentum = Vector3.Lerp(airMomentum, Vector3.zero, 20f * Time.deltaTime);
                 if (airMomentum.magnitude < 0.05f)
                     airMomentum = Vector3.zero;
@@ -127,13 +206,11 @@ public class PlayerController : MonoBehaviour
         }
         else // En el aire
         {
-            // Si el jugador da input, suaviza el cambio de momentum
             if (direction.magnitude >= 0.1f)
             {
                 Vector3 moveDir = Quaternion.Euler(0f, cameraTransform.eulerAngles.y, 0f) * direction;
                 airMomentum = Vector3.Lerp(airMomentum, moveDir.normalized * currentSpeed, airControlLerp * Time.deltaTime);
             }
-            // Aplica el momentum guardado
             charController.Move(new Vector3(airMomentum.x, 0f, airMomentum.z) * Time.deltaTime);
         }
     }
@@ -147,13 +224,21 @@ public class PlayerController : MonoBehaviour
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 coyoteTimeCounter = 0f;
                 canDoubleJump = true; // Permitir doble salto solo después de un salto válido
+                animator.SetBool("isJumping", true); // Activar animación de salto
             }
             else if (canDoubleJump)
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 canDoubleJump = false;
+                animator.SetBool("isJumping", true); // Activar animación de salto
             }
         }
+ 
+        if (isGrounded && velocity.y < 0)
+        {
+            animator.SetBool("isJumping", false); // Desactiva salto
+        }
+    
     }
 
     // DASH en E (ya implementado)
@@ -202,11 +287,36 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            // Ejecutar acción de interacción
-            Debug.Log("Interacción ejecutada");
-            // Aquí va tu lógica de interacción
+            IAgarrable agarrable = DetectarAgarrableCercano();
+            if (agarrable != null)
+            {
+                if (objetoAgarrado == null)
+                {
+                    agarrable.Agarrar(transform);
+                    objetoAgarrado = agarrable as DraggableObject;
+                }
+                else
+                {
+                    objetoAgarrado.Soltar();
+                    objetoAgarrado = null;
+                }
+            }
         }
     }
+
+    private IAgarrable DetectarAgarrableCercano()
+    {
+        float radio = 1.5f;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radio);
+        foreach (var col in colliders)
+        {
+            IAgarrable agarrable = col.GetComponent<IAgarrable>();
+            if (agarrable != null)
+                return agarrable;
+        }
+        return null;
+    }
+
 
     private void ApplyGravity()
     {
@@ -216,6 +326,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DashCoroutine(Vector3 direction)
     {
         isDashing = true;
+        animator.SetBool("isDashing", true); // Activa animación de dash
         dashTime = dashDuration;
 
         float targetAngle = cameraTransform.eulerAngles.y;
@@ -229,6 +340,7 @@ public class PlayerController : MonoBehaviour
         }
 
         isDashing = false;
+        animator.SetBool("isDashing", false); // Vuelve a animación normal
     }
 
     private void DetectDoubleTapForRun()
@@ -246,6 +358,7 @@ public class PlayerController : MonoBehaviour
                 }
                 lastTapTimes[key] = time;
             }
+            
         }
     }
 
@@ -253,12 +366,39 @@ public class PlayerController : MonoBehaviour
     {
         if (lastCheckpoint != null)
         {
-            transform.position = lastCheckpoint.transform.position; // Reiniciar posición al último checkpoint
-            // Resetear estado si es necesario
+            if (charController != null)
+                charController.enabled = false;
+
+            transform.position = lastCheckpoint.transform.position;
+
+            if (charController != null)
+                charController.enabled = true;
+
+            Debug.Log("Reaparecido en el checkpoint: " + lastCheckpoint.name);
         }
         else
         {
-            // Reiniciar nivel o lógica alternativa
+            PlayerSpawnPoint spawn = Object.FindFirstObjectByType<PlayerSpawnPoint>();
+            if (spawn != null)
+            {
+                if (charController != null)
+                    charController.enabled = false;
+
+                transform.position = spawn.transform.position;
+
+                if (charController != null)
+                    charController.enabled = true;
+            }
+        }
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rb = hit.collider.attachedRigidbody;
+        if (rb != null && !rb.isKinematic)
+        {
+            Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+            rb.AddForce(pushDir * 5f, ForceMode.Impulse); // Ajusta la fuerza según lo necesites
         }
     }
 }
