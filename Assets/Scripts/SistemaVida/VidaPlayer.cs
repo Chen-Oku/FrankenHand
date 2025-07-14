@@ -10,6 +10,7 @@ public class VidaPlayer : SistemaVida
         OnMuerte += Respawn;
         // Asegúrate de que la GUI se actualice después de inicializar la vida
         Object.FindFirstObjectByType<VidaGUI>()?.ActualizarGUI();
+        Object.FindFirstObjectByType<VidaGUIProbeta>()?.ActualizarProbeta();
     }
 
     private void Respawn()
