@@ -1,23 +1,26 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class CatEyes : MonoBehaviour
 {
-    public float eyesInterval = 2f;
-    public SpriteRenderer ojosSprite; // Asigna el SpriteRenderer en el inspector
-    public Animator ojosAnimator;     // Asigna el Animator en el inspector
+    public SpriteRenderer ojosSprite;
+    public Animator ojosAnimator;
+    public Vector3 posicionVisible;
+    public Vector3 posicionOculta;
+    public float intervalo = 2f; // Intervalo entre apariciones
 
-    private bool eyesCycleActive = false;
     private Coroutine eyesCoroutine;
 
     void Start()
     {
-        HideEyes();
+        // Al iniciar, mueve los ojos a la posición oculta y desactiva el sprite
+        transform.localPosition = posicionOculta;
+        if (ojosSprite != null)
+            ojosSprite.enabled = false;
     }
 
     public void ShowEyes()
     {
-        Debug.Log("ShowEyes called");
         if (ojosSprite != null)
             ojosSprite.enabled = true;
         if (ojosAnimator != null)
@@ -26,23 +29,34 @@ public class CatEyes : MonoBehaviour
 
     public void HideEyes()
     {
-        Debug.Log("HideEyes called");
+        if (ojosSprite != null)
+            ojosSprite.enabled = false;
+        if (ojosAnimator != null)
+            ojosAnimator.Play("IdleEyes");
+    }
+
+    public void HideEyes(float duration = 0.5f)
+    {
+        if (ojosAnimator != null)
+            ojosAnimator.Play("IdleEyes");
+        StartCoroutine(HideEyesRoutine(duration));
+    }
+
+    private IEnumerator HideEyesRoutine(float duration)
+    {
+        yield return StartCoroutine(MoveEyes(posicionOculta, duration));
         if (ojosSprite != null)
             ojosSprite.enabled = false;
     }
 
     public void StartEyesCycle()
     {
-        if (!eyesCycleActive)
-        {
-            eyesCycleActive = true;
+        if (eyesCoroutine == null)
             eyesCoroutine = StartCoroutine(EyesCycle());
-        }
     }
 
     public void StopEyesCycle()
     {
-        eyesCycleActive = false;
         if (eyesCoroutine != null)
         {
             StopCoroutine(eyesCoroutine);
@@ -53,12 +67,68 @@ public class CatEyes : MonoBehaviour
 
     private IEnumerator EyesCycle()
     {
-        while (eyesCycleActive)
+        while (true)
         {
             ShowEyes();
-            yield return new WaitForSeconds(eyesInterval);
+            yield return new WaitForSeconds(intervalo);
             HideEyes();
-            yield return new WaitForSeconds(eyesInterval);
+            yield return new WaitForSeconds(intervalo);
         }
+    }
+
+    // Coroutine para mover suavemente los ojos
+    private IEnumerator MoveEyes(Vector3 targetPos, float duration)
+    {
+        Vector3 startPos = transform.localPosition;
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            transform.localPosition = Vector3.Lerp(startPos, targetPos, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        transform.localPosition = targetPos;
+    }
+
+    public void MoveEyesToVisible(float duration = 0.5f)
+    {
+        StartCoroutine(MoveEyes(posicionVisible, duration));
+    }
+
+    public void MoveEyesToOculta(float duration = 0.5f)
+    {
+        StartCoroutine(MoveEyes(posicionOculta, duration));
+    }
+
+    public void FadeInEyes(float duration = 1f)
+    {
+        if (ojosSprite != null)
+        {
+            ojosSprite.enabled = true;
+            StartCoroutine(FadeEyesCoroutine(0f, 1f, duration));
+        }
+    }
+
+    public void FadeOutEyes(float duration = 1f)
+    {
+        if (ojosSprite != null)
+        {
+            StartCoroutine(FadeEyesCoroutine(1f, 0f, duration));
+        }
+    }
+
+    private IEnumerator FadeEyesCoroutine(float from, float to, float duration)
+    {
+        float elapsed = 0f;
+        Color color = ojosSprite.color;
+        while (elapsed < duration)
+        {
+            float alpha = Mathf.Lerp(from, to, elapsed / duration);
+            ojosSprite.color = new Color(color.r, color.g, color.b, alpha);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        ojosSprite.color = new Color(color.r, color.g, color.b, to);
+        ojosSprite.enabled = to > 0f;
     }
 }
