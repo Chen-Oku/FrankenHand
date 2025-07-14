@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: c79302895d010ff4fab27a50db38c48c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PataVertical NoBlack__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3a45e026d048a4ea70b5b0efc4d88b
+      internalID: -488543309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__1
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fc45177aa11d74183aa8abf383d624
+      internalID: 1492843415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__2
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7824076db3302b4e850d41e6380f7a0
+      internalID: -413124501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__3
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117d76c64f4b4f04ca6a3882002c2579
+      internalID: 545275365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__4
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8c3a4dcaea82347b7a127a42c4af28
+      internalID: 1088993143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__5
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c39533e9648e3468b22d358389a706
+      internalID: -1771620020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__6
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274d3cba940e91c47b0bfb8f5a237da3
+      internalID: -371760907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__7
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659e50058c5fe7e4290ceea910814bc8
+      internalID: 673986973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af61c95a73fb4094a86dc6bd440f9de3
+      internalID: 1764566155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__9
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26f9a199d665b842841e83443f1b129
+      internalID: 2138758387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__10
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eed70a5c98f6747a3ec3887a5de922
+      internalID: -1786405147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__11
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f51282d62295d4093a73f551a0dcec
+      internalID: -1878381531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__12
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c928e685be1e545a686f4627674a23
+      internalID: 1856402966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__13
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9e5d64e7fdc1a478d12b3493491e44
+      internalID: 386021421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__14
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed6710e8cd1f744f8aaaaa3f7b3168c
+      internalID: -91649372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__15
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceac641bc136a0f4a9e5a42d191e5fec
+      internalID: -2074724061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638dda6c574ae2c409d5d2c09e75d2f2
+      internalID: 1537098938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__17
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd0097a84726a545a3094c91dcd2c1a
+      internalID: 1961608301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__18
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be1247b73b48474b9faee0fc37c7a33
+      internalID: -342097882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__19
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d013386b0959f94ca4471ccc5cac1e0
+      internalID: -754433019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__20
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7df6624ba0f1348bb0512b0d0903f0
+      internalID: 2001747040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__21
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ff780a2e555504dbcca3d2cb964564
+      internalID: -1451851461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__22
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22b62381976fc544b0d725f563655c2
+      internalID: -1221351876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__23
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be03ac36b3a5cc409ec2cdd6f56a0f1
+      internalID: -1220369340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataVertical NoBlack__24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1686fa84bfa437f44a73a86bc862ea56
+      internalID: 711089790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 31e16d111af2ad64fafa52387eb005ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PataVertical NoBlack__0: -488543309
+      PataVertical NoBlack__1: 1492843415
+      PataVertical NoBlack__10: -1786405147
+      PataVertical NoBlack__11: -1878381531
+      PataVertical NoBlack__12: 1856402966
+      PataVertical NoBlack__13: 386021421
+      PataVertical NoBlack__14: -91649372
+      PataVertical NoBlack__15: -2074724061
+      PataVertical NoBlack__16: 1537098938
+      PataVertical NoBlack__17: 1961608301
+      PataVertical NoBlack__18: -342097882
+      PataVertical NoBlack__19: -754433019
+      PataVertical NoBlack__2: -413124501
+      PataVertical NoBlack__20: 2001747040
+      PataVertical NoBlack__21: -1451851461
+      PataVertical NoBlack__22: -1221351876
+      PataVertical NoBlack__23: -1220369340
+      PataVertical NoBlack__24: 711089790
+      PataVertical NoBlack__3: 545275365
+      PataVertical NoBlack__4: 1088993143
+      PataVertical NoBlack__5: -1771620020
+      PataVertical NoBlack__6: -371760907
+      PataVertical NoBlack__7: 673986973
+      PataVertical NoBlack__8: 1764566155
+      PataVertical NoBlack__9: 2138758387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

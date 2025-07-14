@@ -1,0 +1,705 @@
+fileFormatVersion: 2
+guid: e3b0fa47ce1c3ae4291424c1223474f6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f16de11bd9f0554ab9d14f688ed4de3
+      internalID: -1315027791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05509158787d7174c8b6745b1af51adb
+      internalID: 1431609946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5aa728abec8344b94d648719ddf6d8
+      internalID: 1536149436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbcf43c9f1a6be41bd5ca6a141416a3
+      internalID: 1724719739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5c57d8ab0dacf46a4b0c4fc3e65417
+      internalID: 1129582806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f0fd8028b9d4045a9bf63e1c74cb82
+      internalID: 192238704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322b7ea11624cee459b50a3c9eaebd7d
+      internalID: 1336011606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 3296
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a745abf17d0d3542a2f7da077597ed0
+      internalID: -1930337637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0099ebcd27b281e4996c6c0345c2cf39
+      internalID: -412144413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3cd6e5de04a1744bf8a4344464e1ef
+      internalID: -988307841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67623d9cac165c84bad9fc94e7a684c7
+      internalID: 952408381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351074d5ca3bd64f92df413672c4528
+      internalID: 1596953882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb5d89972d3f954c8048fe9b38718ad
+      internalID: -168139022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4921d61826b69c04fbc270206b4c7a12
+      internalID: -1139385621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b05cd8aacceac46a2c833d4333ee70
+      internalID: -127256553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 2496
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab05d4c33f54ce249ada7d60b87f4b22
+      internalID: -1338149409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fcedc50d7bdf940b399a1021749c2b
+      internalID: -2083230156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e0da3152f1626439808726c8f4db63
+      internalID: -446801275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b117f303e23c7f146a0cc980edfe3823
+      internalID: 2057119745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9397463f5beb39443a392406ba19684e
+      internalID: -1249029956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36169f1d23b572448fc14aa88acbb1d
+      internalID: -2113027577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4750
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d294d1bc3cdfcae4d908989a84cb3a1b
+      internalID: -1150636453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e448a194090f4c9121e4bbc7f5e06
+      internalID: 1569525520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6650
+        y: 1696
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5738aaa6f15eed4e8803cc3c2b626d8
+      internalID: 1398521854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PataHorizontal Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 950
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9cd4f78af5b074c933ba052a36df40
+      internalID: -2082292167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24247434c97a97d4694c775aa0471e33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PataHorizontal Sheet_0: -1315027791
+      PataHorizontal Sheet_1: 1431609946
+      PataHorizontal Sheet_10: 952408381
+      PataHorizontal Sheet_11: 1596953882
+      PataHorizontal Sheet_12: -168139022
+      PataHorizontal Sheet_13: -1139385621
+      PataHorizontal Sheet_14: -127256553
+      PataHorizontal Sheet_15: -1338149409
+      PataHorizontal Sheet_16: -2083230156
+      PataHorizontal Sheet_17: -446801275
+      PataHorizontal Sheet_18: 2057119745
+      PataHorizontal Sheet_19: -1249029956
+      PataHorizontal Sheet_2: 1536149436
+      PataHorizontal Sheet_20: -2113027577
+      PataHorizontal Sheet_21: -1150636453
+      PataHorizontal Sheet_22: 1569525520
+      PataHorizontal Sheet_23: 1398521854
+      PataHorizontal Sheet_24: -2082292167
+      PataHorizontal Sheet_25: -457622083
+      PataHorizontal Sheet_26: -537830244
+      PataHorizontal Sheet_27: -1860350540
+      PataHorizontal Sheet_28: 1061489957
+      PataHorizontal Sheet_29: -1852246722
+      PataHorizontal Sheet_3: 1724719739
+      PataHorizontal Sheet_30: -1433372644
+      PataHorizontal Sheet_31: 1112457460
+      PataHorizontal Sheet_32: 351312966
+      PataHorizontal Sheet_33: 1013637481
+      PataHorizontal Sheet_34: 1582775148
+      PataHorizontal Sheet_35: 1769085614
+      PataHorizontal Sheet_36: -1591267498
+      PataHorizontal Sheet_37: -873387302
+      PataHorizontal Sheet_4: 1129582806
+      PataHorizontal Sheet_5: 192238704
+      PataHorizontal Sheet_6: 1336011606
+      PataHorizontal Sheet_7: -1930337637
+      PataHorizontal Sheet_8: -412144413
+      PataHorizontal Sheet_9: -988307841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

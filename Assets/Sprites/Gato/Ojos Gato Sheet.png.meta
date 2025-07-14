@@ -1,0 +1,5407 @@
+fileFormatVersion: 2
+guid: 78a808ed9d0f0eb4c8aa5fd8c533a917
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd1e2a35bf33a644abec52da8bfae23
+      internalID: 2019277580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ebefb30f25b644ea7655ea9423e32a
+      internalID: 105507575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09dbbf1c0c2b424d80e11b79dd029b5
+      internalID: -528755973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48d01189ce49394b89dcda5e4647378
+      internalID: -154445162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd9a177a594e8c4ca8e1af32030f863
+      internalID: 13484785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3d9bec1f64fb94dac409defc6632bd
+      internalID: 1396090920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5610b68b195f5e4086a03aafb4ce7d5
+      internalID: -493301008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3a456a901c91a4b9ca85b2c9bc0dbe
+      internalID: 1871160665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b800676448d69294ab5256579a31a818
+      internalID: 227710232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c204809c9549cbc45982f803f90acdad
+      internalID: 985949243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f8cfd0577b3e2418a7ee097d55dec6
+      internalID: -1452677428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fe0b2a5c727324f91905404eea4879
+      internalID: 415059024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7832
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b75230a88a55b4ebefbb2f6ba0fa8a
+      internalID: -1862433314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997f6b4ecefdde045b9da912a992ac5f
+      internalID: -2042734150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec03d54c96d17442813089d98336e65
+      internalID: 739090055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f8b5ed7dc918944a0a60d1b98315c2
+      internalID: -505696766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9d2d08d0d8d61489bf1de4c060a284
+      internalID: 680820345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a3b85482ae8754dbafa0ebd290f7c5
+      internalID: -186271113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f496f9aa64d5e4b923bc0b23871383
+      internalID: -1370204334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8465a3fec042b9446bc287ddce3e62ee
+      internalID: 1248506518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db284e30c3b1e1241aafb8287c2475bd
+      internalID: -851577337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc0edc33c573ab419e44e069e7e5bdc
+      internalID: -809659903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c910f67f7ebfaf04ebf039ece7b95865
+      internalID: 731828227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95581e9df6c3d424d8e38a79c7351dc9
+      internalID: -446554913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97bd8e071abc1642a9112ccd3d7a325
+      internalID: -949944710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7472
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8f6c9153c828c4e9aa72fe4655c6eb
+      internalID: 1350414250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6656b4ee72bd30f46bd35423bb86e29a
+      internalID: -1450099876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aaa274289e21a4f9f0d722f83fe5f7
+      internalID: -921677690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd8ea174d2104b4fbcab515c70edb52
+      internalID: 1129208615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21971e211a29f04e8c32912c86ef3ce
+      internalID: 189681815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2791bd3c6ac6d6a43879de196a59130c
+      internalID: 1806983125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26106c7dbab49f745906044ae71e832a
+      internalID: 382610710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165bc2903ea27304db85ef4b8e0866cc
+      internalID: 993554535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c742bb84d5e514eb78e043f5a59523
+      internalID: 728260627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e6e08eef6bdc141b7604ede4d5c0e7
+      internalID: -1699335959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988d2c71dc09f5c489db39c77d7141a8
+      internalID: -651224553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e8e5b381fb100488710d01c7c96759
+      internalID: 503106496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca30f1c4ff933449ba01a428dc074c2
+      internalID: -594993710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7112
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163656a900611de43a873b00b194dc2d
+      internalID: 1571262137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0158c8a138c9224daa0bdd443c93419
+      internalID: -830924869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc42a4ec109d7740b2e4caabb371e16
+      internalID: 457640060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a404009a92cf5f0478071f30bc7422ef
+      internalID: -1336928765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af986748e03c31341b6dbd1785a77668
+      internalID: -1708640063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e7c8593b47529448ebb42431b7a47b
+      internalID: -211297480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af9c95cc681776449b6b5ef8778c455
+      internalID: -60660166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c826bd04c9a3f149b55ea4e5aa7e6e6
+      internalID: 666685718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a2b7ebe22a0e0499fb19d17ee6eef5
+      internalID: 138933129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75934674cc646c3439af43a4bdb8de76
+      internalID: -512372461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50372888c812c7546b72b0fac0467264
+      internalID: -1011243297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703b0eff716674347bc064f117caf10e
+      internalID: 342206238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9fb855a80bfb8418f386ea4f063277
+      internalID: -1931987526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 6752
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029d54f21bea5cf4780aaa536f5fb505
+      internalID: -968594972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb57a730c63c88e4b98d5f55df97279d
+      internalID: -1158854536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a80e38523b59646b3889625cf3ef4d
+      internalID: -1314812530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fcd8f63920f2045b6ac1fb3d1a72a0
+      internalID: -1271823543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22fcc733ce4d2e48b2f2d14413f5036
+      internalID: 1191540192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e89793430677a48ab3c4ac1ab6aa91
+      internalID: -684624376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9157855c4266964da53e20f64f2f5c3
+      internalID: -196907948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d03463fe72d74c4884d32a7caf3ed0f
+      internalID: 1908549187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af10f53c283c5434aa0f992ca8ac9110
+      internalID: -1959639656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170472f12d2af3048abf16190cf114c2
+      internalID: 790933199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421f810957c2c80429ea83dd93ff9387
+      internalID: 893275018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c8fc09867e6244d89445907bce761e
+      internalID: -1269811447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94121d5d6a636c4b874b6038c7c1414
+      internalID: -1815385919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 6392
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21edfef3e9ffe104494d2d12b785187e
+      internalID: 538767051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e245ab0bb9e16724a9689eec08e42e52
+      internalID: -1127770921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b753711da69ec345a0fd697e2d34680
+      internalID: -1146593119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30f626caf7cafd4c9cd098f40059fe4
+      internalID: -241292015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06777b781ba6854bb0bfe9343fef4df
+      internalID: -1350579616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e20386ec3125f54db489f800a63e2fd
+      internalID: 226169216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d59c575558172458c72989a04d16f2
+      internalID: 89666113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e179910e8929464984f2f6fce9db7c1
+      internalID: -1748305120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4569e4ebab3b1814c949206860ea77e5
+      internalID: 306409268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883134697c7979540b3968ec91a3480d
+      internalID: 1294287790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24ed2510ca214e44a2dfe97cc4141f5
+      internalID: -1365382262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ba01d07722729478891bb6e722eb4b
+      internalID: -1132905267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae4f195df7d0c342a93481fdcfba508
+      internalID: -1077462865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 6032
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ed255c9622f97458251ea851ab4413
+      internalID: -90120508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0064a3b560e3dd4a8c54b7fef5b0f33
+      internalID: -1204504957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b3031f3f67af44f9b2c610b9d77e98
+      internalID: 212753890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91fa308daf2f4e4693096c2e71fc34f
+      internalID: -265561445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fa73b2e6154c94d9674281e82748f8
+      internalID: -169030118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4b972df238d2149a3f4e1ef8ab6271
+      internalID: -631281445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906ac87a3fe70e245b62b315227af880
+      internalID: 75293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b9a121b0d24540a977fdfe3834476
+      internalID: -1368052951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c16148240736e44a25fb74aaafd603
+      internalID: -1632267317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31863b78371c8f4d92fe4da1e96a9d6
+      internalID: 1712732171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2117be0772fc14088c593f64adbba2
+      internalID: -1476692436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c4b432eb9499429ce1420c8861a7e
+      internalID: 1602368297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a13f856fd640c245bef1a9209aa0128
+      internalID: -1558912455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 5672
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f4d997db008054ea0583d2983c2464
+      internalID: 251549113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f61a164fb9f4b469c1ca873c077833
+      internalID: -48798908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ed26bd7e6ce4c46b8c5bbdcf031c1a
+      internalID: -1999662299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7bb2c702e412842bfd1f467f5d402e
+      internalID: -1555370696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b8afc04fe68544db9557067e6f6caa
+      internalID: 2128120442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac98125d96eca6428719132cff587ca
+      internalID: 1576513182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da6cc307f362ce459cbd70edc0a94b2
+      internalID: 1131430513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc659b5fff696264d84aecf3db8756d6
+      internalID: -1804599734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf472f37f1ab9fa498088253cf321bbd
+      internalID: 1848648809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a679c401e9102c4ca89deacd1bce258
+      internalID: -223252939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622b0ba0bfb57f3468bba02a9553cc8a
+      internalID: 170934002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf62510eedd129840bf450bf8ee75740
+      internalID: -1322401670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284c3aac49f0e764eb9828e905ac2626
+      internalID: -946511816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 5312
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f8a83e7546a6345b0b8b61a5c87c34
+      internalID: 1693097834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06ae8f4ea7a6be4eb75d3b911983e11
+      internalID: -330289953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fca681c80a7634c9ae9b68e0c00a47
+      internalID: -2104845800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38d8abdecf09e2409a7145e757a9012
+      internalID: -30427806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9f4696219271e47beb8b974aa4671d
+      internalID: 289039694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd191c57e4df9749a0cdb3a2a57811b
+      internalID: 368664201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2976a9098e962478f0fa168b5d3cb5
+      internalID: -692004641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85077c3afd367c340a804e10553ae851
+      internalID: -227638966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959e90b6afd22a149918fe060b78eb94
+      internalID: -519296686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18f09892d61b1b479564d34c36394db
+      internalID: 1269129262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f12df42b39e0cb46b456d453e2aba43
+      internalID: 1698744609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3f3f7369d642f46945d96564e64c64
+      internalID: -364063335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc90c67a5977df24d9fea6ec84af9061
+      internalID: -469833461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4952
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a9983acdd59904a821ffbfc2557e2c
+      internalID: -1648818293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044bfd139f69f304198571399bd97116
+      internalID: -1914542243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4371696311fc9e040b14970a15d59b79
+      internalID: -1735325732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82aa496aaedf434f977adccc3c83816
+      internalID: 269271191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f3ee081fd2bb345844d38d4b8a6583
+      internalID: 1013313853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002f7ad5efff20042919ee17cf354b11
+      internalID: -1486245608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49319365829ef14ea63984d6ccb5d74
+      internalID: 428993772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df06654d1c3ed71419c0395aeb26d659
+      internalID: -2054136021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67df115176758dc42ad107d609d921ad
+      internalID: 2040325035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4b60e2522ff66408b11730470193bf
+      internalID: 710344834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25131b4e78c5be49afbfd42d4573459
+      internalID: -1058274336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcc151779a39e04bbde46edf7bcc63d
+      internalID: 1358139520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b97783d24dbe74e8df23af146391f9
+      internalID: 158731627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4592
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0202564af63f44780592adae3784e8
+      internalID: -1271915699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b673a0a993643114498673472f0dee0c
+      internalID: 2044432176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c5494ea2abbe344b0ab85a0a446f37
+      internalID: -277484266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b60b895f8b3d8e4195605d3f9c7f36e
+      internalID: 2139286373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7398f9d13ea583e4995d9c13e52579e1
+      internalID: -1913817853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c703f926b45cada43b49f30c622d0768
+      internalID: 1116477038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafc553bf8d0e6f498e24145c3b9c11e
+      internalID: 82557216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0769473d255cc4a40b795c94605d1951
+      internalID: 1098462532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33937e4bf1ef80a4a9ac82add24e7985
+      internalID: -1128575129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfe961dadb77204fa563aca39211569
+      internalID: -1832529516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4730cc581c5bbf14e93edd3f728bd34a
+      internalID: -1802140076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736cd62521a1f4e4ab7a8754c7f62fe4
+      internalID: 674332495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55460b7359df6e143b7e23e06a832ed8
+      internalID: 1060784189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4232
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832212674de3fcc4ea6f75da3c60eb09
+      internalID: 1294882121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ab45e380063574aa09d77e5310543c
+      internalID: -1679624182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f3866d2a737fc43a54d922af8282f2
+      internalID: -263601300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb87bbbdf42cdd49b808652e1bf2984
+      internalID: -2057409989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7164a41d22a2545996f116f3af6d56
+      internalID: -393023679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1916f16bc80a0e14492c115807d79680
+      internalID: -383878011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0469f675f531c4785f1778db68cf50
+      internalID: 966782457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d571e8badd1cd94e8e290716dc69d85
+      internalID: 1816657010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef464e3e727f5345b0c1d70efb920a8
+      internalID: -1049021163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d15485eaf4aaa4c8938552c9c93e5e
+      internalID: 225445347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3475daeec52cdeb418bad3bfd593b54d
+      internalID: -1180832709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f35871fa6eceae4ab9d20638bfefedc
+      internalID: -2133005415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff7755749130ed4e962912ed7e6b6cb
+      internalID: -1956412027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3872
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086fd47a462db3d41ba4f9c2c6a63b2e
+      internalID: 94994445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dede330b90ae2ba41afdb3b009831baa
+      internalID: 538668733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_157
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6d1e734df83c84496b9011778ac698
+      internalID: 456558069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_158
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7e8b0ea5720c4aa82d05e613b416a
+      internalID: -2079958237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_159
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abec034f8cc74e441a9f2443f751cda1
+      internalID: -1676897464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_160
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2d362c9f3764b4b8655acb93b31a44
+      internalID: -500869447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_161
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16ecf17a7434de4da12ed09b4a96fe5
+      internalID: 272567369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_162
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04cb09684b3c5544b9449d8b37871fb
+      internalID: -1834261570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_163
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9129e77b44600ad489efdea7cb79975a
+      internalID: -1025439571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_164
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63135ac2e6ab5d4c933ba8005cea5f9
+      internalID: 227639687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_165
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895aea8478938ce40aa926d10254b91e
+      internalID: 109903959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_166
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758a0e562815b284486c81bd599a45bd
+      internalID: 1165507848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_167
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6156fd292361b9c4fbac022179b185d0
+      internalID: 345114032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_168
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3512
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6537010a5bfa4114cbe034205bd1530a
+      internalID: 1679568258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_169
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abd9495c1c47fc429b95c7cc3c48aec
+      internalID: 287429922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_170
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abe98549e80824478b19dd92756ab87
+      internalID: -859306608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_171
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e86bacb4977f74cbe7cdae80c6153c
+      internalID: -279781402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_172
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74960d06ac2f6ee438123ae3f3f8ee79
+      internalID: 1694265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_173
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bbc900c3581234eb60a1eb22b87cb6
+      internalID: -691500584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_174
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4fd3fa52d3ab647bac76e41a1f5be8
+      internalID: 2031191628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_175
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daa37a48562b1a47a14caf6d876b508
+      internalID: 1563481860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_176
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611a9d3544f932049a42d68aa70dd679
+      internalID: 927817221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_177
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ba1772cd632e84086d6e2696a8ba62
+      internalID: -402217447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_178
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4274fc1169699fd41960430465500719
+      internalID: 45867929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_179
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39961cfd468e60b44a8ee693953aee06
+      internalID: -264176402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_180
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e77712be52aec409e023f8e4e5d2d3
+      internalID: 154513773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_181
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3152
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e05a97147752924087040010b3a3743
+      internalID: 1517781809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_182
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ebe62aca1540b49a93d795de6125b1
+      internalID: 651913909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_183
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49eab168d413d2419134c7d6724077d
+      internalID: -1331310611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_184
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280e711113d0d5f43a8ac1cff4180478
+      internalID: -1277899949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_185
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92286fb9af16f3f46b94468f6d6690f0
+      internalID: 933967559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_186
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29dfb51a54c0254ebb271b258135030
+      internalID: -1387050320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_187
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e856055a2e420064faae2a71e2222e4f
+      internalID: 1893958337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_188
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a11c13ea3df277469fa49d3ba779dc4
+      internalID: 1733601589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_189
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65b889dbbcec71469269ee514717b8c
+      internalID: 1240692397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_190
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ae62974c307ce4da5e81eea4296ba0
+      internalID: 1588251014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_191
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674f29279921a9746a7e87d995ceecfc
+      internalID: 1656578208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_192
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e408377fff3d44ea62b145e8b81592
+      internalID: 1295095857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_193
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775b5fbf5e204784da5b544081d2daf7
+      internalID: -757810585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_194
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 2792
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740ffac8e3a9f4649a30ea61de5c64f6
+      internalID: 1463617989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_195
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc3d9985dd67bd47b60b4c468bfcd61
+      internalID: 204896621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_196
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc726731462ea4549b45e530a4793686
+      internalID: 11050964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_197
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4c8efb54aab2249a8447ba334cc6ab
+      internalID: 1406960243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_198
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79fcca21a2bbae498800599c15b39f6
+      internalID: -649606305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_199
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3f970dd8842124a82270f43c8efea8
+      internalID: -1175074412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_200
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da246e79b4082fb42adc7846de92fc00
+      internalID: 523649205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_201
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdceafb61464c9d4a9c0f43a82ece52d
+      internalID: -1811048993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_202
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caccb6735bb7c7548abd82d2af53ad59
+      internalID: 372407491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_203
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f63a20b79d47d4c86835eb3365d4d5
+      internalID: -311351535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_204
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bf9b3337051a94eb874df6217689cf
+      internalID: -317695261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_205
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0984761b15cc61349b734b6ef0463dd0
+      internalID: -1957269589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_206
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25efb1ddf06f8a43ab7eed74883491f
+      internalID: -1683577710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_207
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 2432
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6282cf774e554c4fbe81f24d884b3eb
+      internalID: 27462306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706eb2a20de07bc4dac72d31be1503b9
+      internalID: 921453521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_209
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2991bf90bed21be47bf78afbcadf2ca7
+      internalID: -1448334114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_210
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5191a89981aa4e8d8b82088910075
+      internalID: -217846714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_211
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8c47495d437ad46b0d41fcbd3d200d
+      internalID: -468946399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_212
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d260ad25d0bdd43a31c89de448303f
+      internalID: 271808085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_213
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4d5cfce740b4d43b35d61ab516027d
+      internalID: -1735087338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_214
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726a133023d1a6f469ea78ef87346a6f
+      internalID: -1342691905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_215
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057f05bbb116dde4e999c268c69be266
+      internalID: 1901819825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_216
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb469e47311eef468b1f7e3a0a22900
+      internalID: -1478347950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_217
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5d6a0b6c87a0344ad3f8a8cf7e277c
+      internalID: -481668304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_218
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2c5c7b17ea3a948ab895f22b2880e9
+      internalID: -176340505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_219
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e5bca1afe272458641f5f61568cdf
+      internalID: -1467286879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_220
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 2072
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393a9f79aa68d5542867da0b3d4ff3da
+      internalID: 248276780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_221
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dec76fa21472a4382ece580e26a5ef
+      internalID: -352981692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_222
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7c9127354feb643a9423994a57c7ee
+      internalID: 1065076854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_223
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fa0e8f2e80e02478d40ebf811573a5
+      internalID: -1960461538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_224
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360096950f7d313499dd3b8634bc1169
+      internalID: 575125929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_225
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c165fc7ba80f51242a08897aa774c042
+      internalID: 1403437286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_226
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488c5ad26c454b648a4cc67ab6bdf257
+      internalID: -1736884079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_227
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d756ab1648e014894f87790a759d95
+      internalID: 918687975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_228
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feed0d50a499f048a6d459d7bcbf7a7
+      internalID: -866760222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ojos Gato Sheet_229
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1712
+        width: 600
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356f0ac3caaa3684b8d052796ce9bbcb
+      internalID: 927333506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d46787882fc853f4cae1e4341d60f0a4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ojos Gato Sheet_0: 2019277580
+      Ojos Gato Sheet_1: 105507575
+      Ojos Gato Sheet_10: -1452677428
+      Ojos Gato Sheet_100: 170934002
+      Ojos Gato Sheet_101: -1322401670
+      Ojos Gato Sheet_102: -946511816
+      Ojos Gato Sheet_103: 1693097834
+      Ojos Gato Sheet_104: -330289953
+      Ojos Gato Sheet_105: -2104845800
+      Ojos Gato Sheet_106: -30427806
+      Ojos Gato Sheet_107: 289039694
+      Ojos Gato Sheet_108: 368664201
+      Ojos Gato Sheet_109: -692004641
+      Ojos Gato Sheet_11: 415059024
+      Ojos Gato Sheet_110: -227638966
+      Ojos Gato Sheet_111: -519296686
+      Ojos Gato Sheet_112: 1269129262
+      Ojos Gato Sheet_113: 1698744609
+      Ojos Gato Sheet_114: -364063335
+      Ojos Gato Sheet_115: -469833461
+      Ojos Gato Sheet_116: -1648818293
+      Ojos Gato Sheet_117: -1914542243
+      Ojos Gato Sheet_118: -1735325732
+      Ojos Gato Sheet_119: 269271191
+      Ojos Gato Sheet_12: -1862433314
+      Ojos Gato Sheet_120: 1013313853
+      Ojos Gato Sheet_121: -1486245608
+      Ojos Gato Sheet_122: 428993772
+      Ojos Gato Sheet_123: -2054136021
+      Ojos Gato Sheet_124: 2040325035
+      Ojos Gato Sheet_125: 710344834
+      Ojos Gato Sheet_126: -1058274336
+      Ojos Gato Sheet_127: 1358139520
+      Ojos Gato Sheet_128: 158731627
+      Ojos Gato Sheet_129: -1271915699
+      Ojos Gato Sheet_13: -2042734150
+      Ojos Gato Sheet_130: 2044432176
+      Ojos Gato Sheet_131: -277484266
+      Ojos Gato Sheet_132: 2139286373
+      Ojos Gato Sheet_133: -1913817853
+      Ojos Gato Sheet_134: 1116477038
+      Ojos Gato Sheet_135: 82557216
+      Ojos Gato Sheet_136: 1098462532
+      Ojos Gato Sheet_137: -1128575129
+      Ojos Gato Sheet_138: -1832529516
+      Ojos Gato Sheet_139: -1802140076
+      Ojos Gato Sheet_14: 739090055
+      Ojos Gato Sheet_140: 674332495
+      Ojos Gato Sheet_141: 1060784189
+      Ojos Gato Sheet_142: 1294882121
+      Ojos Gato Sheet_143: -1679624182
+      Ojos Gato Sheet_144: -263601300
+      Ojos Gato Sheet_145: -2057409989
+      Ojos Gato Sheet_146: -393023679
+      Ojos Gato Sheet_147: -383878011
+      Ojos Gato Sheet_148: 966782457
+      Ojos Gato Sheet_149: 1816657010
+      Ojos Gato Sheet_15: -505696766
+      Ojos Gato Sheet_150: -1049021163
+      Ojos Gato Sheet_151: 225445347
+      Ojos Gato Sheet_152: -1180832709
+      Ojos Gato Sheet_153: -2133005415
+      Ojos Gato Sheet_154: -1956412027
+      Ojos Gato Sheet_155: 94994445
+      Ojos Gato Sheet_156: 538668733
+      Ojos Gato Sheet_157: 456558069
+      Ojos Gato Sheet_158: -2079958237
+      Ojos Gato Sheet_159: -1676897464
+      Ojos Gato Sheet_16: 680820345
+      Ojos Gato Sheet_160: -500869447
+      Ojos Gato Sheet_161: 272567369
+      Ojos Gato Sheet_162: -1834261570
+      Ojos Gato Sheet_163: -1025439571
+      Ojos Gato Sheet_164: 227639687
+      Ojos Gato Sheet_165: 109903959
+      Ojos Gato Sheet_166: 1165507848
+      Ojos Gato Sheet_167: 345114032
+      Ojos Gato Sheet_168: 1679568258
+      Ojos Gato Sheet_169: 287429922
+      Ojos Gato Sheet_17: -186271113
+      Ojos Gato Sheet_170: -859306608
+      Ojos Gato Sheet_171: -279781402
+      Ojos Gato Sheet_172: 1694265
+      Ojos Gato Sheet_173: -691500584
+      Ojos Gato Sheet_174: 2031191628
+      Ojos Gato Sheet_175: 1563481860
+      Ojos Gato Sheet_176: 927817221
+      Ojos Gato Sheet_177: -402217447
+      Ojos Gato Sheet_178: 45867929
+      Ojos Gato Sheet_179: -264176402
+      Ojos Gato Sheet_18: -1370204334
+      Ojos Gato Sheet_180: 154513773
+      Ojos Gato Sheet_181: 1517781809
+      Ojos Gato Sheet_182: 651913909
+      Ojos Gato Sheet_183: -1331310611
+      Ojos Gato Sheet_184: -1277899949
+      Ojos Gato Sheet_185: 933967559
+      Ojos Gato Sheet_186: -1387050320
+      Ojos Gato Sheet_187: 1893958337
+      Ojos Gato Sheet_188: 1733601589
+      Ojos Gato Sheet_189: 1240692397
+      Ojos Gato Sheet_19: 1248506518
+      Ojos Gato Sheet_190: 1588251014
+      Ojos Gato Sheet_191: 1656578208
+      Ojos Gato Sheet_192: 1295095857
+      Ojos Gato Sheet_193: -757810585
+      Ojos Gato Sheet_194: 1463617989
+      Ojos Gato Sheet_195: 204896621
+      Ojos Gato Sheet_196: 11050964
+      Ojos Gato Sheet_197: 1406960243
+      Ojos Gato Sheet_198: -649606305
+      Ojos Gato Sheet_199: -1175074412
+      Ojos Gato Sheet_2: -528755973
+      Ojos Gato Sheet_20: -851577337
+      Ojos Gato Sheet_200: 523649205
+      Ojos Gato Sheet_201: -1811048993
+      Ojos Gato Sheet_202: 372407491
+      Ojos Gato Sheet_203: -311351535
+      Ojos Gato Sheet_204: -317695261
+      Ojos Gato Sheet_205: -1957269589
+      Ojos Gato Sheet_206: -1683577710
+      Ojos Gato Sheet_207: 27462306
+      Ojos Gato Sheet_208: 921453521
+      Ojos Gato Sheet_209: -1448334114
+      Ojos Gato Sheet_21: -809659903
+      Ojos Gato Sheet_210: -217846714
+      Ojos Gato Sheet_211: -468946399
+      Ojos Gato Sheet_212: 271808085
+      Ojos Gato Sheet_213: -1735087338
+      Ojos Gato Sheet_214: -1342691905
+      Ojos Gato Sheet_215: 1901819825
+      Ojos Gato Sheet_216: -1478347950
+      Ojos Gato Sheet_217: -481668304
+      Ojos Gato Sheet_218: -176340505
+      Ojos Gato Sheet_219: -1467286879
+      Ojos Gato Sheet_22: 731828227
+      Ojos Gato Sheet_220: 248276780
+      Ojos Gato Sheet_221: -352981692
+      Ojos Gato Sheet_222: 1065076854
+      Ojos Gato Sheet_223: -1960461538
+      Ojos Gato Sheet_224: 575125929
+      Ojos Gato Sheet_225: 1403437286
+      Ojos Gato Sheet_226: -1736884079
+      Ojos Gato Sheet_227: 918687975
+      Ojos Gato Sheet_228: -866760222
+      Ojos Gato Sheet_229: 927333506
+      Ojos Gato Sheet_23: -446554913
+      Ojos Gato Sheet_24: -949944710
+      Ojos Gato Sheet_25: 1350414250
+      Ojos Gato Sheet_26: -1450099876
+      Ojos Gato Sheet_27: -921677690
+      Ojos Gato Sheet_28: 1129208615
+      Ojos Gato Sheet_29: 189681815
+      Ojos Gato Sheet_3: -154445162
+      Ojos Gato Sheet_30: 1806983125
+      Ojos Gato Sheet_31: 382610710
+      Ojos Gato Sheet_32: 993554535
+      Ojos Gato Sheet_33: 728260627
+      Ojos Gato Sheet_34: -1699335959
+      Ojos Gato Sheet_35: -651224553
+      Ojos Gato Sheet_36: 503106496
+      Ojos Gato Sheet_37: -594993710
+      Ojos Gato Sheet_38: 1571262137
+      Ojos Gato Sheet_39: -830924869
+      Ojos Gato Sheet_4: 13484785
+      Ojos Gato Sheet_40: 457640060
+      Ojos Gato Sheet_41: -1336928765
+      Ojos Gato Sheet_42: -1708640063
+      Ojos Gato Sheet_43: -211297480
+      Ojos Gato Sheet_44: -60660166
+      Ojos Gato Sheet_45: 666685718
+      Ojos Gato Sheet_46: 138933129
+      Ojos Gato Sheet_47: -512372461
+      Ojos Gato Sheet_48: -1011243297
+      Ojos Gato Sheet_49: 342206238
+      Ojos Gato Sheet_5: 1396090920
+      Ojos Gato Sheet_50: -1931987526
+      Ojos Gato Sheet_51: -968594972
+      Ojos Gato Sheet_52: -1158854536
+      Ojos Gato Sheet_53: -1314812530
+      Ojos Gato Sheet_54: -1271823543
+      Ojos Gato Sheet_55: 1191540192
+      Ojos Gato Sheet_56: -684624376
+      Ojos Gato Sheet_57: -196907948
+      Ojos Gato Sheet_58: 1908549187
+      Ojos Gato Sheet_59: -1959639656
+      Ojos Gato Sheet_6: -493301008
+      Ojos Gato Sheet_60: 790933199
+      Ojos Gato Sheet_61: 893275018
+      Ojos Gato Sheet_62: -1269811447
+      Ojos Gato Sheet_63: -1815385919
+      Ojos Gato Sheet_64: 538767051
+      Ojos Gato Sheet_65: -1127770921
+      Ojos Gato Sheet_66: -1146593119
+      Ojos Gato Sheet_67: -241292015
+      Ojos Gato Sheet_68: -1350579616
+      Ojos Gato Sheet_69: 226169216
+      Ojos Gato Sheet_7: 1871160665
+      Ojos Gato Sheet_70: 89666113
+      Ojos Gato Sheet_71: -1748305120
+      Ojos Gato Sheet_72: 306409268
+      Ojos Gato Sheet_73: 1294287790
+      Ojos Gato Sheet_74: -1365382262
+      Ojos Gato Sheet_75: -1132905267
+      Ojos Gato Sheet_76: -1077462865
+      Ojos Gato Sheet_77: -90120508
+      Ojos Gato Sheet_78: -1204504957
+      Ojos Gato Sheet_79: 212753890
+      Ojos Gato Sheet_8: 227710232
+      Ojos Gato Sheet_80: -265561445
+      Ojos Gato Sheet_81: -169030118
+      Ojos Gato Sheet_82: -631281445
+      Ojos Gato Sheet_83: 75293
+      Ojos Gato Sheet_84: -1368052951
+      Ojos Gato Sheet_85: -1632267317
+      Ojos Gato Sheet_86: 1712732171
+      Ojos Gato Sheet_87: -1476692436
+      Ojos Gato Sheet_88: 1602368297
+      Ojos Gato Sheet_89: -1558912455
+      Ojos Gato Sheet_9: 985949243
+      Ojos Gato Sheet_90: 251549113
+      Ojos Gato Sheet_91: -48798908
+      Ojos Gato Sheet_92: -1999662299
+      Ojos Gato Sheet_93: -1555370696
+      Ojos Gato Sheet_94: 2128120442
+      Ojos Gato Sheet_95: 1576513182
+      Ojos Gato Sheet_96: 1131430513
+      Ojos Gato Sheet_97: -1804599734
+      Ojos Gato Sheet_98: 1848648809
+      Ojos Gato Sheet_99: -223252939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,32 +1,23 @@
 using UnityEngine;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEngine.UI;
-using cakeslice; // Importante: agrega esto arriba
+using cakeslice;
 
 public class Door : MonoBehaviour
 {
     public Inventory inventory;
     public InventoryItemData requiredKeyData; // Asigna el ScriptableObject de la llave en el Inspector
     public float openDistance = 4f; // Distancia para interactuar
-    private float liftingDistance = 10f; // Distancia que se levantará la puerta al abrir
     public GameObject interactMessage; // Asigna el objeto de mensaje en el inspector
-    //public Material normalMaterial;
-    //public Material outlineMaterial; // Asigna el material de Shader Graph
 
-    private MeshRenderer meshRenderer;
     private bool playerInRange = false;
     private Outline outline;
     private Transform playerTransform;
 
     void Awake()
     {
-        // Si el Outline está en un hijo, usa GetComponentInChildren<Outline>()
         outline = GetComponent<Outline>();
         if (outline != null)
-            outline.enabled = false; // Desactiva el outline al inicio
+            outline.enabled = false;
 
-        // Busca el jugador por tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
             playerTransform = playerObj.transform;
@@ -34,7 +25,6 @@ public class Door : MonoBehaviour
 
     void Update()
     {
-        // Ya no necesitas activar/desactivar el outline aquí
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             TryOpen();
@@ -78,7 +68,6 @@ public class Door : MonoBehaviour
         if (inventory.RemoveItem(requiredKeyData, 1))
         {
             Debug.Log("Puerta abierta");
-            // Ejemplo de animación simple: mover la puerta hacia arriba
             StartCoroutine(OpenDoorAnimation());
         }
         else
@@ -92,27 +81,27 @@ public class Door : MonoBehaviour
         Collider col = GetComponent<Collider>();
         if (col != null)
         {
-            col.enabled = false; // Desactiva el collider trigger de la puerta
+            col.enabled = false;
             Debug.Log("La puerta ha sido abierta.");
         }
         if (interactMessage != null)
-            interactMessage.SetActive(false); // Oculta el mensaje si aún está activo
+            interactMessage.SetActive(false);
     }
 
     private System.Collections.IEnumerator OpenDoorAnimation()
     {
         float duration = 1f;
         float elapsed = 0f;
-        Vector3 startPos = transform.position;
-        Vector3 endPos = startPos + Vector3.right * liftingDistance; // Mueve la puerta en X
+        Quaternion startRot = transform.rotation;
+        Quaternion endRot = startRot * Quaternion.Euler(0, 90f, 0);
 
         while (elapsed < duration)
         {
-            transform.position = Vector3.Lerp(startPos, endPos, elapsed / duration);
+            transform.rotation = Quaternion.Lerp(startRot, endRot, elapsed / duration);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        transform.position = endPos;
+        transform.rotation = endRot;
         WhenOpened();
         // Opcional: Destroy(gameObject); si quieres eliminar la puerta
     }
