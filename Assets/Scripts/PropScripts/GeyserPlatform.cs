@@ -1,41 +1,46 @@
-/* using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GeyserPlatform : MonoBehaviour
 {
-    public float geyserForce = 30f;
+    [Header("Geyser Settings")]
     public float cooldown = 2f;
     public float shakeDuration = 1f;
-    public float shakeAmount = 0.1f;
-    public float liftDuration = 1f;
     public float liftHeight = 5f;
+    public float liftDuration = 1f;
+    public float fallDurationFactor = 1.5f;
+    public float geyserForce = 30f;
 
-    public float impulseMinFactor = 0.3f; // Mínimo de impulso al final de la subida
-    public float explosionCurvePower = 0.5f; // Para la curva de subida (Mathf.Sin(t * Mathf.PI * explosionCurvePower))
-    public float fallDurationFactor = 0.5f; // Duración de la caída respecto a la subida
-    public float fallCurvePower = 0.7f; // Curva de aceleración de la caída
+    [Header("Shake Settings")]
+    public float shakeAmount = 0.1f;
+    public float idleShakeAmount = 0.02f;
+    public float idleShakeSpeed = 2f;
 
+    [Header("Curves")]
+    public float explosionCurvePower = 0.5f;
+    public float fallCurvePower = 2f;
+
+    [Header("VFX")]
     public ParticleSystem geyserParticles;
+    public Transform shakeVisual; // Asigna aquí el mesh/hijo visual del tubo
 
-    public float idleShakeAmount = 0.02f; // Shake suave cuando no hay jugador
-    public float idleShakeSpeed = 2f;     // Velocidad del shake suave
-
-    private float lastImpulseTime = -10f;
-    private bool isShaking = false;
-    private Vector3 originalPosition;
-    private Coroutine geyserRoutine;
     private HashSet<Collider> playersOnPlatform = new HashSet<Collider>();
-    private bool isBusy = false; // Nueva bandera
+    private Coroutine geyserRoutine;
+    private float lastImpulseTime = -10f;
+    private bool isBusy = false;
+    private bool isShaking = false;
+    private Vector3 visualOriginalPos;
 
     private void Start()
     {
-        originalPosition = transform.position;
-
         if (geyserParticles == null)
             geyserParticles = GetComponentInChildren<ParticleSystem>();
 
-        // Inicia el shake suave siempre activo
+        if (shakeVisual == null)
+            shakeVisual = transform;
+
+        visualOriginalPos = shakeVisual.localPosition;
         StartCoroutine(IdleShakeRoutine());
     }
 
@@ -53,9 +58,10 @@ public class GeyserPlatform : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && geyserRoutine == null && !isBusy && Time.time - lastImpulseTime > cooldown)
+        if (other.CompareTag("Player") && !isBusy && Time.time - lastImpulseTime > cooldown)
         {
-            geyserRoutine = StartCoroutine(GeyserSequence(other));
+            if (geyserRoutine == null)
+                geyserRoutine = StartCoroutine(GeyserSequence(other));
         }
     }
 
@@ -63,11 +69,10 @@ public class GeyserPlatform : MonoBehaviour
     {
         while (true)
         {
-            // Solo agita si NO está en ciclo de impulso
             if (!isShaking)
             {
                 float shakePhase = Time.time * idleShakeSpeed;
-                transform.position = originalPosition + new Vector3(
+                shakeVisual.localPosition = visualOriginalPos + new Vector3(
                     Mathf.Sin(shakePhase) * idleShakeAmount,
                     Mathf.Cos(shakePhase) * idleShakeAmount,
                     0f
@@ -81,86 +86,75 @@ public class GeyserPlatform : MonoBehaviour
     {
         isBusy = true;
         isShaking = true;
+
+        geyserParticles?.Play();
+
+        // Shake intenso previo al impulso
         float shakeEndTime = Time.time + shakeDuration;
-
-        if (geyserParticles != null)
-            geyserParticles.Play();
-
-        // Shake intenso mientras espera el impulso
         while (Time.time < shakeEndTime)
         {
-            transform.position = originalPosition + Random.insideUnitSphere * shakeAmount;
+            shakeVisual.localPosition = visualOriginalPos + Random.insideUnitSphere * shakeAmount;
             yield return null;
         }
-        transform.position = originalPosition;
-        isShaking = false;
 
+        shakeVisual.localPosition = visualOriginalPos;
+        isShaking = false;
         yield return new WaitForSeconds(0.2f);
 
-        // --- VERIFICACIÓN: ¿El jugador sigue sobre la plataforma? ---
+        // Cancelar si el jugador se ha bajado antes del impulso
         if (!playersOnPlatform.Contains(playerCollider))
         {
-            if (geyserParticles != null)
-                geyserParticles.Stop();
-            geyserRoutine = null;
-            isBusy = false;
+            CancelGeyser();
             yield break;
         }
 
-        // Subida
-        float elapsed = 0f;
-        Vector3 startPos = originalPosition;
-        Vector3 endPos = originalPosition + Vector3.up * liftHeight;
-
+        // Impulso vertical al jugador
         PlayerController player = playerCollider.GetComponent<PlayerController>();
+
+        float elapsed = 0f;
         while (elapsed < liftDuration)
         {
             float t = elapsed / liftDuration;
-            float explosionCurve = Mathf.Sin(t * Mathf.PI * explosionCurvePower);
-            transform.position = Vector3.Lerp(startPos, endPos, explosionCurve);
+            float curve = Mathf.Sin(t * Mathf.PI * explosionCurvePower);
+            float impulse = Mathf.Lerp(geyserForce, geyserForce * 0.3f, t);
 
-            if (player != null && playersOnPlatform.Contains(playerCollider))
+            if (player != null)
             {
-                float impulse = Mathf.Lerp(geyserForce, geyserForce * impulseMinFactor, t);
-                player.Velocity = new Vector3(player.Velocity.x, impulse, player.Velocity.z);
+                // Aplica el impulso vertical directamente al PlayerController
+                var vel = player.Velocity;
+                vel.y = impulse * curve;
+                player.Velocity = vel;
             }
 
             elapsed += Time.deltaTime;
             yield return null;
         }
-        transform.position = endPos;
 
         lastImpulseTime = Time.time;
+
+        // Espera en la cima
         yield return new WaitForSeconds(1f);
 
-        // Caída
-        float fallDuration = liftDuration * fallDurationFactor;
-        elapsed = 0f;
-        while (elapsed < fallDuration)
-        {
-            float t = elapsed / fallDuration;
-            float fallCurve = Mathf.Pow(t, fallCurvePower);
-            transform.position = Vector3.Lerp(endPos, originalPosition, fallCurve);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-        transform.position = originalPosition; // Asegura posición final
-
-        if (geyserParticles != null)
-            geyserParticles.Stop();
-
+        geyserParticles?.Stop();
         geyserRoutine = null;
         isBusy = false;
     }
-} */
+
+    private void CancelGeyser()
+    {
+        geyserParticles?.Stop();
+        geyserRoutine = null;
+        isBusy = false;
+        shakeVisual.localPosition = visualOriginalPos;
+    }
+}
 
 
 
 
 
 
-
-
+/* 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -338,4 +332,4 @@ public class GeyserPlatform : MonoBehaviour
         isBusy = false;
         transform.position = originalPosition;
     }
-}
+} */

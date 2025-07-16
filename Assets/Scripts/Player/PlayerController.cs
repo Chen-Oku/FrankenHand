@@ -55,6 +55,24 @@ public class PlayerController : MonoBehaviour
 
     private bool estabaEmpujando = false;
 
+    // --- Modificadores externos ---
+    private float speedMultiplier = 1f;
+    private float jumpMultiplier = 1f;
+    private bool dashEnabled = true;
+    private bool runEnabled = true;
+
+    public void SetSpeedMultiplier(float multiplier) => speedMultiplier = multiplier;
+    public void SetJumpMultiplier(float multiplier) => jumpMultiplier = multiplier;
+    public void DisableDash() => dashEnabled = false;
+    public void EnableDash() => dashEnabled = true;
+    public void DisableRun() { runEnabled = false; isRunning = false; }
+    public void EnableRun() => runEnabled = true;
+    public void TakeDamage(int amount)
+    {
+        Debug.Log($"Jugador recibe {amount} de daño por líquido.");
+        // Aquí pon tu lógica de daño real si tienes sistema de vida
+    }
+
     void Start()
     {
         if (charController == null)
@@ -233,9 +251,12 @@ public class PlayerController : MonoBehaviour
 
 
         // Detectar doble toque para correr
-        DetectDoubleTapForRun();
+        if (runEnabled)
+            DetectDoubleTapForRun();
+        else
+            isRunning = false;
 
-        float currentSpeed = isRunning ? runSpeed : speed;
+        float currentSpeed = (isRunning ? runSpeed : speed) * speedMultiplier;
 
         if (isGrounded)
         {
@@ -270,14 +291,14 @@ public class PlayerController : MonoBehaviour
         {
             if (isGrounded || coyoteTimeCounter > 0f)
             {
-                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                velocity.y = Mathf.Sqrt(jumpHeight * jumpMultiplier * -2f * gravity);
                 coyoteTimeCounter = 0f;
                 canDoubleJump = true; // Permitir doble salto solo después de un salto válido
                 animator.SetBool("isJumping", true); // Activar animación de salto
             }
             else if (canDoubleJump)
             {
-                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                velocity.y = Mathf.Sqrt(jumpHeight * jumpMultiplier * -2f * gravity);
                 canDoubleJump = false;
                 animator.SetBool("isJumping", true); // Activar animación de salto
             }
@@ -293,6 +314,8 @@ public class PlayerController : MonoBehaviour
     // DASH en E (ya implementado)
     private void HandleDashInput()
     {
+        if (!dashEnabled)
+            return;
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;

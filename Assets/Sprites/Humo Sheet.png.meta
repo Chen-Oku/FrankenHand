@@ -1,0 +1,2766 @@
+fileFormatVersion: 2
+guid: 16e1bdbf1e2f6294ca453cacb39144b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Humo Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9466618cb0f6f2849b1b32183bfc3677
+      internalID: -1564480480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6058277259439e34dae1bc6b3ef994f4
+      internalID: -1811097751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e113c9520e45a1f4691835d19c1c212c
+      internalID: 306654353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4002f54e1640d2b4fbf048a8060205fa
+      internalID: 1959302390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cdb367bbc3a7a41b6c4df053f9dd96
+      internalID: 174174879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77266c49728a2f84698f5c9bc831c057
+      internalID: -1802860882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7148eeb9adf62f143a35d99dfd6e1ce7
+      internalID: -350494759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3d9137067988242af3d41ade80e940
+      internalID: 2063983681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716762a48c4c7f84b9c7243d24a3d31c
+      internalID: 2097873710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 7812
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9aac64e88df49e46bc19451e9126984
+      internalID: -2116731318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28aee2daae04139449e4fca2a738bb74
+      internalID: -585964882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34aff111fdec434ab8db9da4febe0f6
+      internalID: -1222767170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8a13431a61fd547aea0038f3866125
+      internalID: 1645148393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0e025531ba34443b3f31774bbc6eba
+      internalID: -749297682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e6f17df438ba4db4cc8a61594fc94
+      internalID: -81124136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf0938d58e6c81498b697f36c55c433
+      internalID: -381017977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bce0d4a1346b144e8e7e3b13a7e2647
+      internalID: 743126858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7fbf08582b8124586e143118285c07
+      internalID: 1212972631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0aaace1938bde44a593a91d65add79
+      internalID: 70393449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 7432
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bebe8540d4bde43a252db561ffc69c
+      internalID: 1881559296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8960759c3e61cec45a8a88ed0bc438b3
+      internalID: 1990022338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f977be8db8182499c12b2e9ce38fd4
+      internalID: 1384619018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59c49aa9486fb444b9f35829f5e6da1
+      internalID: -715838259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f2cf525f9f6564d91dd795733c89b2
+      internalID: -560750926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba208023d652404b9e636642449fa9c
+      internalID: 1493089646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3244d934ecf7d241afc1359ce57b3fd
+      internalID: 1663369183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bafc5e3f80553a41b76b2cf8de2e5f9
+      internalID: 1269474526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333a36b3974511746be00d28d2a511f0
+      internalID: -393811571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5232c87e5f3916b48a4e01c7b6ffee04
+      internalID: -1064279209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 7052
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f6121f962901846baaae24746dddc4
+      internalID: 1624329308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a393ea678bae0064c8b2d9561330dec4
+      internalID: -1424362809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abd77c3794c627428189f1f44734fa6
+      internalID: 1753466507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f351c303fa59ff94d82655c8bbec5a9f
+      internalID: -1353654698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d68ae156d808641b43ba750f166d4e
+      internalID: -912681903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb30786d3611a934181b3f42f8d9b13d
+      internalID: -2055284346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6841da88f25a94088f999994d841b7
+      internalID: 422501164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830ab2484488335438413bc8b9e15774
+      internalID: -1203958344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d23aad71f5f7e49979bf33ec683542
+      internalID: -707832271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ad55d4dbfddac44be2dd2d6b7a58ad
+      internalID: 1026803573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 6672
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e995ed7ba4c12f04d911e6bbc2e16459
+      internalID: 1758261473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba547d2130ae55a4a850eafe1cfdc202
+      internalID: 1244993791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9647be6aa24405b419742c9ae0c14e98
+      internalID: -1716190092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073aba3961f1c85479e694fff37fabac
+      internalID: 520322842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632cc841ad4526b499261e8a7c5beddc
+      internalID: 1877549422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c50c0ee26b077f4297ec6f42ec6ca16
+      internalID: 1025256298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493c5d218dee44e46b16d76848fc25aa
+      internalID: 304280278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea85edab8fcbbe94c8b474486ce583bc
+      internalID: -1922116652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd8ec1e1cb481346b07599362b9e5ad
+      internalID: 806155182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312b096efb33b1340a3ff9c41f87d76c
+      internalID: -1842741479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 6292
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcbae59db7ba714198120e5f8135e45
+      internalID: 1261276133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f02af8e0ccfab44d92f2028b41baff3
+      internalID: -670107340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809fb61f37ac6ed4683979c8ddaa6e8d
+      internalID: 48653272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405ab184ccb1f4b45a01f552ecd0d380
+      internalID: 2092697431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3f3864b59c40248a251aba8cee3e06
+      internalID: 404225389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8158f4bd1d3844ba4aafeac4aa7643
+      internalID: 1926457800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f169d8bed4daef941bb9e91349104d4b
+      internalID: -2050564577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cf37f7753f49745a3a8f5a1200548c
+      internalID: 1709808775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4706d238a1e563b4eb3e0fe5ae64ff60
+      internalID: 697508754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b7dc0f4ce2fc0408cae147b102189f
+      internalID: 697026216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 5912
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e026288e3398541b5a8f04630e86c4
+      internalID: 129470388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31010bda0c0cdf489c76241216f94ee
+      internalID: -1418948282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8547035f5d2f604587ffbda96713178
+      internalID: -2020293659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13300ab28302dbd488e41aaf2986860c
+      internalID: -1537116569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909473b7cc4e36a48bc09b21be45ba9a
+      internalID: -1645687726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03119ea2387298e499f387ec8a3f3656
+      internalID: 2017321054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8f9588942b60f4b8e91dd5468d61c6
+      internalID: 1138017595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19535a33c8a87d147ba0dec4dfa3366b
+      internalID: -973265441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1041be1ee90082040ba2594b0ff88e93
+      internalID: 523442027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74905a4a4bca03340bd721761d3037c2
+      internalID: -872715802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 5532
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d677a23499e5e8c4e9565414a909a750
+      internalID: -785742868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ee10321428a76448380c3ee9fd8105
+      internalID: -421735872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7b3509566a32849842231a6235c7f4
+      internalID: -1017332979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee361f1a3a781af44bd27a641e2c8ebb
+      internalID: 1470707488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d85ad55033c2340a2c90bc3e4bf339
+      internalID: 336721850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c9c3bbdb3180d49b65c0bf5feee055
+      internalID: -2087524303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b6809c51e712c4d96aab5d6f54ca77
+      internalID: 626972346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f88e25f09b67d9439495c04e3d27b9b
+      internalID: -1854272810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d866ecc0d14f664f823864a9d48a332
+      internalID: -1865734409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ff12bfc0ed7444ab6610e4ded297a0
+      internalID: 1995550915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 5152
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbda89ca69b0d84c9effbb458c7f621
+      internalID: 1483878796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b799f76157633994c9227bc85c2ce559
+      internalID: 1313718915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2955b139f042e284aa0155580b53dd1d
+      internalID: -481932865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1be38a7d2d325478bb06bb07a2fa0d
+      internalID: -271134952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f2ca5a7dac1c4f96e904057c33abb
+      internalID: 183462248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13eab6dcbf6f6ab4d873ec755fa649ff
+      internalID: -1288208494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9654851f34f4b2b44a5fa2687a0c6f29
+      internalID: -2142210475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a2b2d41f9e0464685bea7401987399
+      internalID: -2088666476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080924b95c8f9ce4cb8d7517516ada8e
+      internalID: 1328778252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f517e2d1c1776884e978764ec1f82faf
+      internalID: 588446181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 4772
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81275bcb312a814ca0fd7d3f774bcb8
+      internalID: 618959985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7581e5861cec8764592f4ed208d12a51
+      internalID: -521674933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7482c5fc350a06146bbc88eb579fbc16
+      internalID: -652868109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c98db0c5e72b34b85f0285e3255492
+      internalID: -636832224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962a596278346e143b5a11c1c13efaac
+      internalID: -202679463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a088633be58ba84f938bb0dee77b7b9
+      internalID: -2126758914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f97f6eb1bc5cb4c995414b81720bac
+      internalID: -1988568833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d343b50d170af4e82eb044c8822267
+      internalID: 1118580500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1285de31f21c9244db85d65c74d6bad3
+      internalID: -2078804292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533735aedfd61154981b836c601762a7
+      internalID: -1457510825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 4392
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696c8d2e8aee00c438d6b1bc3be63618
+      internalID: 1611358762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda29924bfed42b409d4be04344138ea
+      internalID: 271088764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ded20424a0bde44919202af0b9ea06
+      internalID: 579965673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e86f73eaf32b8c448edf2111c04bbb0
+      internalID: 1601216631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d87fb5b44e2584c90422cbedd5268c
+      internalID: -245732783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103c6d9bb0901814d8c9303e0ae64164
+      internalID: -1010046649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4ee951e3152c9458a90a27830e73f7
+      internalID: 1125828673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ab0701876d7424b847823431f745db
+      internalID: 2052358591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfa69b9c94756841b91035c36c38fba
+      internalID: -19386367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 6240
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accd128bb6bc02c42a2d51e9287f428d
+      internalID: -1445984311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 4012
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d813c82b45cc84facd16cabc6ef7fb
+      internalID: -803706936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3632
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7301ac6a090af4f987cf92642d90b2
+      internalID: -1842197424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3632
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a55f0425c2db2f49bf1e41a98db9715
+      internalID: -1550900608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 3632
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de4f18bcf4c7d04d8cba4491e660b03
+      internalID: -1930070524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 3632
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d00f07cd50fc74a892ec05eb7c7282
+      internalID: 1410263397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Humo Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 3632
+        width: 780
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c3579fc0cb07c4ba0e7153d74129e5
+      internalID: -1436798473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 41c0a42fe7f14f940b7aee3920ca3057
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Humo Sheet_0: -1564480480
+      Humo Sheet_1: -1811097751
+      Humo Sheet_10: -585964882
+      Humo Sheet_100: 271088764
+      Humo Sheet_101: 579965673
+      Humo Sheet_102: 1601216631
+      Humo Sheet_103: -245732783
+      Humo Sheet_104: -1010046649
+      Humo Sheet_105: 1125828673
+      Humo Sheet_106: 2052358591
+      Humo Sheet_107: -19386367
+      Humo Sheet_108: -1445984311
+      Humo Sheet_109: -803706936
+      Humo Sheet_11: -1222767170
+      Humo Sheet_110: -1842197424
+      Humo Sheet_111: -1550900608
+      Humo Sheet_112: -1930070524
+      Humo Sheet_113: 1410263397
+      Humo Sheet_114: -1436798473
+      Humo Sheet_115: 19693566
+      Humo Sheet_116: -2037956623
+      Humo Sheet_117: 1272644534
+      Humo Sheet_118: 98791765
+      Humo Sheet_12: 1645148393
+      Humo Sheet_13: -749297682
+      Humo Sheet_14: -81124136
+      Humo Sheet_15: -381017977
+      Humo Sheet_16: 743126858
+      Humo Sheet_17: 1212972631
+      Humo Sheet_18: 70393449
+      Humo Sheet_19: 1881559296
+      Humo Sheet_2: 306654353
+      Humo Sheet_20: 1990022338
+      Humo Sheet_21: 1384619018
+      Humo Sheet_22: -715838259
+      Humo Sheet_23: -560750926
+      Humo Sheet_24: 1493089646
+      Humo Sheet_25: 1663369183
+      Humo Sheet_26: 1269474526
+      Humo Sheet_27: -393811571
+      Humo Sheet_28: -1064279209
+      Humo Sheet_29: 1624329308
+      Humo Sheet_3: 1959302390
+      Humo Sheet_30: -1424362809
+      Humo Sheet_31: 1753466507
+      Humo Sheet_32: -1353654698
+      Humo Sheet_33: -912681903
+      Humo Sheet_34: -2055284346
+      Humo Sheet_35: 422501164
+      Humo Sheet_36: -1203958344
+      Humo Sheet_37: -707832271
+      Humo Sheet_38: 1026803573
+      Humo Sheet_39: 1758261473
+      Humo Sheet_4: 174174879
+      Humo Sheet_40: 1244993791
+      Humo Sheet_41: -1716190092
+      Humo Sheet_42: 520322842
+      Humo Sheet_43: 1877549422
+      Humo Sheet_44: 1025256298
+      Humo Sheet_45: 304280278
+      Humo Sheet_46: -1922116652
+      Humo Sheet_47: 806155182
+      Humo Sheet_48: -1842741479
+      Humo Sheet_49: 1261276133
+      Humo Sheet_5: -1802860882
+      Humo Sheet_50: -670107340
+      Humo Sheet_51: 48653272
+      Humo Sheet_52: 2092697431
+      Humo Sheet_53: 404225389
+      Humo Sheet_54: 1926457800
+      Humo Sheet_55: -2050564577
+      Humo Sheet_56: 1709808775
+      Humo Sheet_57: 697508754
+      Humo Sheet_58: 697026216
+      Humo Sheet_59: 129470388
+      Humo Sheet_6: -350494759
+      Humo Sheet_60: -1418948282
+      Humo Sheet_61: -2020293659
+      Humo Sheet_62: -1537116569
+      Humo Sheet_63: -1645687726
+      Humo Sheet_64: 2017321054
+      Humo Sheet_65: 1138017595
+      Humo Sheet_66: -973265441
+      Humo Sheet_67: 523442027
+      Humo Sheet_68: -872715802
+      Humo Sheet_69: -785742868
+      Humo Sheet_7: 2063983681
+      Humo Sheet_70: -421735872
+      Humo Sheet_71: -1017332979
+      Humo Sheet_72: 1470707488
+      Humo Sheet_73: 336721850
+      Humo Sheet_74: -2087524303
+      Humo Sheet_75: 626972346
+      Humo Sheet_76: -1854272810
+      Humo Sheet_77: -1865734409
+      Humo Sheet_78: 1995550915
+      Humo Sheet_79: 1483878796
+      Humo Sheet_8: 2097873710
+      Humo Sheet_80: 1313718915
+      Humo Sheet_81: -481932865
+      Humo Sheet_82: -271134952
+      Humo Sheet_83: 183462248
+      Humo Sheet_84: -1288208494
+      Humo Sheet_85: -2142210475
+      Humo Sheet_86: -2088666476
+      Humo Sheet_87: 1328778252
+      Humo Sheet_88: 588446181
+      Humo Sheet_89: 618959985
+      Humo Sheet_9: -2116731318
+      Humo Sheet_90: -521674933
+      Humo Sheet_91: -652868109
+      Humo Sheet_92: -636832224
+      Humo Sheet_93: -202679463
+      Humo Sheet_94: -2126758914
+      Humo Sheet_95: -1988568833
+      Humo Sheet_96: 1118580500
+      Humo Sheet_97: -2078804292
+      Humo Sheet_98: -1457510825
+      Humo Sheet_99: 1611358762
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
