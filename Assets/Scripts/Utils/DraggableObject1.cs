@@ -9,6 +9,8 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
     private Rigidbody rb;
     private Transform grabber;
 
+    public GameObject interactMessage; // Asigna el objeto de mensaje en el inspector
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,5 +43,18 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
     void FixedUpdate()
     {
         // No muevas el objeto aquí. El jugador lo empuja con su cuerpo.
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!enabled) return; // Evita activar el mensaje si el script está desactivado
+        if (other.CompareTag("Player") && interactMessage != null)
+            interactMessage.SetActive(true);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && interactMessage != null)
+            interactMessage.SetActive(false);
     }
 }

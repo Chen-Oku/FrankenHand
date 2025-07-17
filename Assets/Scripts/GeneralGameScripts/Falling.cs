@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
+    public bool permitirRespawn = true;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +14,7 @@ public class Falling : MonoBehaviour
                 vida.RecibirDanio(1); // Cantidad de fragmentos de vida a perder 
             }
             PlayerController player = other.GetComponentInParent<PlayerController>();
-            if (player != null)
+            if (player != null && permitirRespawn)
             {
                 player.RespawnAtCheckpoint();
             }

@@ -425,8 +425,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void RespawnAtCheckpoint()
+    public bool permitirRespawn = true; // Puedes cambiar esto desde otros scripts o triggers
+
+    public void RespawnAtCheckpoint(string source = "Desconocido")
     {
+        if (!permitirRespawn) return;
+
         if (lastCheckpoint != null)
         {
             if (charController != null)
@@ -437,7 +441,7 @@ public class PlayerController : MonoBehaviour
             if (charController != null)
                 charController.enabled = true;
 
-            Debug.Log("Reaparecido en el checkpoint: " + lastCheckpoint.name);
+            Debug.Log($"Reaparecido en el checkpoint: {lastCheckpoint.name} (por: {source})");
         }
         else
         {
@@ -452,6 +456,7 @@ public class PlayerController : MonoBehaviour
                 if (charController != null)
                     charController.enabled = true;
             }
+            Debug.Log($"Reaparecido en el spawn inicial (por: {source})");
         }
     }
 
