@@ -8,6 +8,8 @@ public class InventoryItemData : ScriptableObject
     public string itemName;
     public ItemType itemType;
     public Sprite icon;
+    public AudioClip pickupSound;
+
 
     public GameObject itemPrefab; // Prefab for the item, if applicable
 

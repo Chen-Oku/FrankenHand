@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Key_LlavePuerta
   itemType: 1
-  icon: {fileID: 21300000, guid: 9435b6b4db7642d4d83373a38d8aa442, type: 3}
+  icon: {fileID: 21300000, guid: 49cadb7dad29a8f4b8a6825efe3c2e64, type: 3}
+  pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}
   itemPrefab: {fileID: 2954140549268419274, guid: d7b4769403c70cf4c9f58e8bfd002454, type: 3}
   description: "Extra\xF1a llave que abre tu camino en busqueda de lo que mas anhelas"
   maxStack: 1

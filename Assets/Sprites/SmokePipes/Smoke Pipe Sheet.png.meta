@@ -1,0 +1,1428 @@
+fileFormatVersion: 2
+guid: 071f4598b73f98f48b75673adb359461
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e74405134e88149ad1a877f325e855
+      internalID: 1357697322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f55b6e2d38d8419324f5178447e83
+      internalID: -504529018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024157d43c9282b468218221505537fb
+      internalID: 1772943752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdb38bf6723f0044ab1fe41ec5a83cd
+      internalID: -2010058580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b43673fb9ca9343ba23a3c510b7a6f
+      internalID: 606054353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9db7fc58076bbb40838301d4202349b
+      internalID: -376482784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d89ed48b4715d4e92ec14714c41feb
+      internalID: 264683072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840e5b15c6328b942beca25cbd60b404
+      internalID: -553415851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dc6b2433f7ee942959a39baec1e3eb
+      internalID: 147430670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16e5bcc9ad562b4c982ba79015b86a7
+      internalID: 436556522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ece12484fe21a47bb0b61769b84b68
+      internalID: 261814084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4114
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ad822ed2150f47a104bc7958d9b83
+      internalID: 1926288493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1afb63e03926440a1d5c1318eb628e
+      internalID: 1507086462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f8ca7c904e3334fa73037b9c9e2f3d
+      internalID: 1901322437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628c861275622a741b09d0d74c4ef420
+      internalID: 841840768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb8769f0a9e1224bb0676582c4df177
+      internalID: -993786512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cd6aa112cd6a949adf671a39fd4990
+      internalID: 1703654461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6358
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87142ea58f76764190e2b2de089d395
+      internalID: -1460092131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 6732
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911682de221cc8741bb1b1618f2ebeeb
+      internalID: 218007546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 7106
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846a63e928756574a9626fa604a0e5b3
+      internalID: 1997059096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 3296
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef92de64930de94ebfedbcb209b5b5c
+      internalID: -811269212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cba3cfa70b037f4ea7e8ffffe3a37e6
+      internalID: 736302011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276c1e0782f43444db11bc93415ecc60
+      internalID: -175287409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61812f19b1c4a4c4eb30e407c96d1ff7
+      internalID: -1261083537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f40029a81cfe6940b5ed5c8c41e0864
+      internalID: -521777199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2defcb89ca1b46641a5efadb13765c39
+      internalID: 1569128338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eee953f729e064fb88bf3766a0181f
+      internalID: 1114849025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f2bf0386fd0e44fb7dcfdc1a543fe6
+      internalID: 1540030373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6727bf0a66c8ea646ab3ef4f48e9cc12
+      internalID: -1739447294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a4a5e4438708b4fb6d135e3de401d9
+      internalID: 1803934983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c16c9202ba2a1449b82c521ab57cfc
+      internalID: -597556419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8c055968cc1ee4c8d2110a06bfaa6c
+      internalID: -980929023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4114
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adac885d5c4c3cb4ab0742314c2cb4b6
+      internalID: -1300836391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb5a4a4588eb614d8e30183fb3daf46
+      internalID: 1137474716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b863c936ead56594b824900df06d4bf9
+      internalID: -388755359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c7c2b5c3180bd409c0c3058f2cae75
+      internalID: 1845265284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b54e720ef4361240a774fb4cd32b0e0
+      internalID: 694622934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9466e65f93f6c744d9ab746142a3b983
+      internalID: -1190878295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 6358
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82453399aced53049802f66e7ce6d872
+      internalID: -371689872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 6732
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3713ed54a6a2340914a7b662baad88
+      internalID: 1785637076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 7106
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a151e837fa2df914fa7be948712aa439
+      internalID: 1867489129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 2496
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bcb30949c350a479ec074e5a306423
+      internalID: -1365391690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fe6f16bc4811e48878715fdc23b7cf
+      internalID: -1925288783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae7f69cb11e39f40b7f060f05f9dada
+      internalID: 452813954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fc29c2bdbbcb94fb1ffe4ad7a04c9a
+      internalID: -140349926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b70491425b6d884795beea64af5bd80
+      internalID: -132472568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195a6a5a2a123a64fa1fbc26b13caa32
+      internalID: 338304183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7f6b18102e74c4a863110380f65822
+      internalID: -1835453580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19990bcc08aabc42a700aaf55c80ae5
+      internalID: -1526489023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989e5ff73f751e54cb5a24a18243db31
+      internalID: 1333343458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6edece10412ea4fae9e2e625538143
+      internalID: 1983768767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a2e856fecd66b41835828fab79f202
+      internalID: -593059714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f8fd31bc08b71478fea9d77b6fa9b7
+      internalID: -2084204762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 4114
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca34629081d252e4a9033e5e68045f7a
+      internalID: -487927312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f250715c07cd554ea8079e5a1882ea2
+      internalID: -1187261152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 4862
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ab56bb504991d45a43814b8d42f2ce
+      internalID: -2027016859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smoke Pipe Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 5236
+        y: 1696
+        width: 374
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6dcace67319554b99cc49a5750123c
+      internalID: -62370148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7e46f407f63be3d4f8676ea6cf626632
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Smoke Pipe Sheet_0: 1357697322
+      Smoke Pipe Sheet_1: -504529018
+      Smoke Pipe Sheet_10: 261814084
+      Smoke Pipe Sheet_11: 1926288493
+      Smoke Pipe Sheet_12: 1507086462
+      Smoke Pipe Sheet_13: 1901322437
+      Smoke Pipe Sheet_14: 841840768
+      Smoke Pipe Sheet_15: -993786512
+      Smoke Pipe Sheet_16: 1703654461
+      Smoke Pipe Sheet_17: -1460092131
+      Smoke Pipe Sheet_18: 218007546
+      Smoke Pipe Sheet_19: 1997059096
+      Smoke Pipe Sheet_2: 1772943752
+      Smoke Pipe Sheet_20: -811269212
+      Smoke Pipe Sheet_21: 736302011
+      Smoke Pipe Sheet_22: -175287409
+      Smoke Pipe Sheet_23: -1261083537
+      Smoke Pipe Sheet_24: -521777199
+      Smoke Pipe Sheet_25: 1569128338
+      Smoke Pipe Sheet_26: 1114849025
+      Smoke Pipe Sheet_27: 1540030373
+      Smoke Pipe Sheet_28: -1739447294
+      Smoke Pipe Sheet_29: 1803934983
+      Smoke Pipe Sheet_3: -2010058580
+      Smoke Pipe Sheet_30: -597556419
+      Smoke Pipe Sheet_31: -980929023
+      Smoke Pipe Sheet_32: -1300836391
+      Smoke Pipe Sheet_33: 1137474716
+      Smoke Pipe Sheet_34: -388755359
+      Smoke Pipe Sheet_35: 1845265284
+      Smoke Pipe Sheet_36: 694622934
+      Smoke Pipe Sheet_37: -1190878295
+      Smoke Pipe Sheet_38: -371689872
+      Smoke Pipe Sheet_39: 1785637076
+      Smoke Pipe Sheet_4: 606054353
+      Smoke Pipe Sheet_40: 1867489129
+      Smoke Pipe Sheet_41: -1365391690
+      Smoke Pipe Sheet_42: -1925288783
+      Smoke Pipe Sheet_43: 452813954
+      Smoke Pipe Sheet_44: -140349926
+      Smoke Pipe Sheet_45: -132472568
+      Smoke Pipe Sheet_46: 338304183
+      Smoke Pipe Sheet_47: -1835453580
+      Smoke Pipe Sheet_48: -1526489023
+      Smoke Pipe Sheet_49: 1333343458
+      Smoke Pipe Sheet_5: -376482784
+      Smoke Pipe Sheet_50: 1983768767
+      Smoke Pipe Sheet_51: -593059714
+      Smoke Pipe Sheet_52: -2084204762
+      Smoke Pipe Sheet_53: -487927312
+      Smoke Pipe Sheet_54: -1187261152
+      Smoke Pipe Sheet_55: -2027016859
+      Smoke Pipe Sheet_56: -62370148
+      Smoke Pipe Sheet_6: 264683072
+      Smoke Pipe Sheet_7: -553415851
+      Smoke Pipe Sheet_8: 147430670
+      Smoke Pipe Sheet_9: 436556522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

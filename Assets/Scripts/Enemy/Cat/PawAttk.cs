@@ -70,4 +70,15 @@ public class PawAttk : MonoBehaviour
         HidePaw();
         attackCycleActive = false;
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        var paw = GetComponentInParent<PawAttk>();
+        if (paw != null && other.CompareTag("Player"))
+        {
+            paw.playerInZone = true;
+            paw.player = other.transform;
+            paw.StartCoroutine(paw.AttackCycle()); // si quieres iniciar el ciclo aquí
+        }
+    }
 }

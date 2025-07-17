@@ -40,16 +40,16 @@ public class Inventory : MonoBehaviour
 
         inventoryEnabled = false;
 
-        // Detecta automáticamente el CanvasGroup si no está asignado
         if (inventoryCanvasGroup == null && inventoryUI != null)
             inventoryCanvasGroup = inventoryUI.GetComponent<CanvasGroup>();
 
-        // Asegúrate de que el CanvasGroup esté desactivado al inicio
+        // Oculta el inventario al iniciar
         if (inventoryCanvasGroup != null)
             SetInventoryUIVisible(false);
 
         playerController = Object.FindFirstObjectByType<PlayerController>();
-        Debug.Log("PlayerController encontrado: " + (playerController != null));
+        if (playerController != null)
+            playerController.enabled = true; // Asegúrate de que el PlayerController esté habilitado al inicio
     }
 
     // Añade este método para controlar la visibilidad e interacción del inventario
@@ -91,19 +91,36 @@ public class Inventory : MonoBehaviour
                 // Solo reanuda si no hay otro menú abierto
                 if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
                 {
-                    TimeManager.Instance.RequestResume();
+                    //TimeManager.Instance.RequestResume();
+                    
                 }
             }
         }
 
+        // Comprobación del menú de opciones
+        var opcionesScript = Object.FindFirstObjectByType<ControladorOpciones>();
+        bool opcionesAbiertas = opcionesScript != null && opcionesScript.opcionesCanvasGroup != null && opcionesScript.opcionesCanvasGroup.alpha > 0.5f;
+
         // Controla el PlayerController según si hay algún menú abierto
         if (playerController != null)
-            playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()));
+            playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()) || opcionesAbiertas);
+
+        // Pausa el juego si cualquier menú está abierto
+        if (AnyMenuOpen())
+            Time.timeScale = 0f;
+        else
+            Time.timeScale = 1f;
     }
 
     public bool AnyMenuOpen()
     {
-        return (pauseMenu != null && pauseMenu.IsPauseMenuActive()) || inventoryEnabled;
+        bool inventarioAbierto = inventoryCanvasGroup != null && inventoryCanvasGroup.alpha > 0.5f;
+        bool pausaAbierta = pauseMenu != null && pauseMenu.IsPauseMenuActive();
+
+        var opcionesScript = Object.FindFirstObjectByType<ControladorOpciones>();
+        bool opcionesAbiertas = opcionesScript != null && opcionesScript.opcionesCanvasGroup != null && opcionesScript.opcionesCanvasGroup.alpha > 0.5f;
+
+        return inventarioAbierto || pausaAbierta || opcionesAbiertas;
     }
 
 
@@ -111,12 +128,13 @@ public class Inventory : MonoBehaviour
     {
         inventoryEnabled = false;
         SetInventoryUIVisible(false);
-        if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
-        {
-            TimeManager.Instance.RequestResume();
-            if (playerController != null)
-                playerController.enabled = true;
-        }
+
+        // Reanuda solo si no hay otro menú abierto
+        if (!AnyMenuOpen())
+            Time.timeScale = 1f;
+
+        if (playerController != null)
+            playerController.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)

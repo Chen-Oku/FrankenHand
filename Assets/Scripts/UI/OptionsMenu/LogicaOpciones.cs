@@ -8,7 +8,11 @@ public class LogicaOpciones : MonoBehaviour
 
     void Start()
     {
-        optionsPanel = GameObject.FindGameObjectWithTag("Opciones").GetComponent<ControladorOpciones>();
+        var opcionesObj = GameObject.FindGameObjectWithTag("Opciones");
+        if (opcionesObj != null)
+            optionsPanel = opcionesObj.GetComponent<ControladorOpciones>();
+        else
+            Debug.LogError("No se encontró un objeto con el tag 'Opciones'.");
     }
 
     void Update()

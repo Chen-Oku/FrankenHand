@@ -67,11 +67,7 @@ public class PlayerController : MonoBehaviour
     public void EnableDash() => dashEnabled = true;
     public void DisableRun() { runEnabled = false; isRunning = false; }
     public void EnableRun() => runEnabled = true;
-    public void TakeDamage(int amount)
-    {
-        Debug.Log($"Jugador recibe {amount} de daño por líquido.");
-        // Aquí pon tu lógica de daño real si tienes sistema de vida
-    }
+    private VidaPlayer vidaPlayer; // Referencia al componente de vida
 
     void Start()
     {
@@ -79,6 +75,7 @@ public class PlayerController : MonoBehaviour
             charController = GetComponent<CharacterController>();
         if (animator == null)
             animator = GetComponent<Animator>();
+        vidaPlayer = GetComponent<VidaPlayer>();
         pauseMenu = Object.FindFirstObjectByType<PauseMenu>();
 
         // Aparecer en el spawn inicial
@@ -132,12 +129,6 @@ public class PlayerController : MonoBehaviour
         }
         
         animator.SetFloat("yVelocity", velocity.y); // Actualizar animación de caída
-
-        // al caer por debajo de un cierto nivel, reiniciar al último checkpoint
-        /*         if (transform.position.y < -10f && lastCheckpoint != null) // Ajusta el valor según tu escena
-                {
-                    transform.position = lastCheckpoint.transform.position;
-                } */
 
         // Detectar si el jugador mantiene presionada la tecla F
         if (Input.GetKey(KeyCode.F))
@@ -478,5 +469,20 @@ public class PlayerController : MonoBehaviour
     {
         get => velocity;
         set => velocity = value;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (vidaPlayer != null)
+        {
+            vidaPlayer.RecibirDanio(amount);
+        }
+        else
+        {
+            Debug.LogWarning("VidaPlayer no encontrado en el jugador.");
+        }
+
+        if (animator != null)
+            animator.SetTrigger("TakeDamage");
     }
 }

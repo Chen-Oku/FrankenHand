@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5288464302911057136}
   - component: {fileID: 8591164332394911999}
   - component: {fileID: 6186739923546406409}
+  - component: {fileID: 8143092012648051131}
+  - component: {fileID: 5808522358865657577}
   m_Layer: 0
   m_Name: OptionsController
   m_TagString: Untagged
@@ -63,3 +65,29 @@ MonoBehaviour:
   slider: {fileID: 0}
   sliderValue: 0
   panelBrillo: {fileID: 0}
+--- !u!114 &8143092012648051131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134130152042052235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d9a61582e8b66f4d85acf7d851cdc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 0}
+--- !u!114 &5808522358865657577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134130152042052235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2aae18de30d3e489d99f915a09ea29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionDropdown: {fileID: 0}

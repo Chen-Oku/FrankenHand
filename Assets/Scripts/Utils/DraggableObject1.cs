@@ -7,7 +7,6 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
     public float grabbedMass = 5f; // Masa temporal cuando está agarrado
     private float originalMass;
     private Rigidbody rb;
-    private bool isGrabbed = false;
     private Transform grabber;
 
     void Start()
@@ -18,7 +17,6 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
 
     public void Agarrar(Transform agarrador)
     {
-        isGrabbed = true;
         grabber = agarrador;
         rb.useGravity = false;
         rb.linearDamping = 10f;
@@ -29,7 +27,6 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
 
     public void Soltar()
     {
-        isGrabbed = false;
         grabber = null;
         rb.useGravity = true;
         rb.linearDamping = 0f;

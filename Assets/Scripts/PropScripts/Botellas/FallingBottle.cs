@@ -3,7 +3,6 @@ using UnityEngine;
 public class FallingBottle : MonoBehaviour
 {
     public GameObject shadowIndicator;
-    public GameObject brokenBottlePrefab;
     public float fallDelay = 1.5f;
     public bool fallOnPlayerApproach = false;
     public float triggerRadius = 3f;
@@ -107,17 +106,6 @@ public class FallingBottle : MonoBehaviour
             // Oculta la botella original
             foreach (var renderer in GetComponentsInChildren<Renderer>())
                 renderer.enabled = false;
-
-            // Instancia la botella rota/partículas
-            if (brokenBottlePrefab != null)
-            {
-                GameObject broken = Instantiate(brokenBottlePrefab, transform.position, transform.rotation);
-                var ps = broken.GetComponentInChildren<ParticleSystem>();
-                float destroyDelay = 2f;
-                if (ps != null)
-                    destroyDelay = ps.main.duration + ps.main.startLifetime.constantMax;
-                Destroy(broken, destroyDelay);
-            }
 
             // Oculta la sombra al romperse la botella
             if (shadowIndicator != null)

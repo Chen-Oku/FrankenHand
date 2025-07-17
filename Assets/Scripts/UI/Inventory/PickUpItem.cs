@@ -9,12 +9,17 @@ public class PickupItem : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Objeto recogido por: " + other.name);
             Inventory inventory = other.GetComponent<Inventory>();
             if (inventory != null && itemData != null)
             {
                 //inventory.AddItem(itemData, amount);
-                // Aquí puedes reproducir un sonido o animación de recogida
+
+                if (itemData.pickupSound != null)
+                {
+                    Debug.Log("Reproduciendo sonido de pickup: " + itemData.pickupSound.name);
+                    AudioSource.PlayClipAtPoint(itemData.pickupSound, Camera.main.transform.position);
+                }
+
                 Destroy(gameObject);
             }
         }

@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject optionsMenuUI;
-    
+
     private bool pauseMenuEnabled = false;
 
     private PlayerController playerController; // Referencia al script de control del jugador
@@ -35,6 +36,11 @@ public class PauseMenu : MonoBehaviour
         // Asegúrate de que el CanvasGroup esté desactivado al inicio
         if (pauseMenuUICanvasGroup != null)
             SetPauseMenuVisibility(false);
+
+        // Asignar el método Resume al botón si no está asignado en el inspector
+        var resumeBtn = pauseMenuUI.transform.Find("bttmHolder/ResumeButton")?.GetComponent<Button>();
+        if (resumeBtn != null)
+            resumeBtn.onClick.AddListener(Resume);
     }
 
     public void SetPauseMenuVisibility(bool visible)
@@ -45,8 +51,9 @@ public class PauseMenu : MonoBehaviour
             pauseMenuUICanvasGroup.interactable = visible;
             pauseMenuUICanvasGroup.blocksRaycasts = visible;
         }
-        if (pauseMenuUI != null)
-            pauseMenuUI.SetActive(visible); // Opcional, puedes quitarlo si solo usas CanvasGroup
+        // No desactives el GameObject si usas solo CanvasGroup
+        // if (pauseMenuUI != null)
+        //     pauseMenuUI.SetActive(visible);
     }
 
     public bool IsPauseMenuActive()
@@ -90,8 +97,8 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuEnabled = false;
-        SetPauseMenuVisibility(false);
-        TimeManager.Instance.RequestResume();
+        SetPauseMenuVisibility(false); // Oculta el menú de pausa (CanvasGroup y GameObject)
+        TimeManager.Instance.RequestResume(); // Reanuda el juego
     }
 
     public void Restart()
@@ -147,10 +154,19 @@ public class PauseMenu : MonoBehaviour
 #endif
         // Quit the application
         Application.Quit();
-        
+
         // If running in the editor, stop playing
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+#endif
     }
+
+    public void OpenPauseMenu()
+    {
+        Debug.Log("OpenPauseMenu llamado");
+        pauseMenuEnabled = true;
+        SetPauseMenuVisibility(true);
+        TimeManager.Instance.RequestPause();
+    }
+    
 }
