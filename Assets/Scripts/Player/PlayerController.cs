@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
 
     private bool estabaEmpujando = false;
 
+    public bool puedeMover = true;
+
     // --- Modificadores externos ---
     private float speedMultiplier = 1f;
     private float jumpMultiplier = 1f;
@@ -101,7 +103,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (!isDashing)
+        if (!isDashing && puedeMover)
         {
             HandleMovementInput();
             HandleJumpInput();
@@ -488,5 +490,11 @@ public class PlayerController : MonoBehaviour
 
         if (animator != null)
             animator.SetTrigger("TakeDamage");
+    }
+
+    public void ForzarIdle()
+    {
+        if (animator != null)
+            animator.SetFloat("idleWaling", 0f); // O el parámetro que corresponda
     }
 }
