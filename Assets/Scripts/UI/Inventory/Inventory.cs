@@ -166,9 +166,9 @@ public class Inventory : MonoBehaviour
     public void AddItem(PickupItem pickup)
     {
         // --- NOTAS: No stackear y máximo 5 ---
-        if (pickup.itemData.itemType == ItemType.Collectible && pickup.itemData.itemName == "Nota")
+        if (pickup.itemData.itemType == ItemType.Collectible && pickup.itemData.esNota)
         {
-            int notaCount = collectibles.FindAll(i => i.itemData.itemName == "Nota").Count;
+            int notaCount = collectibles.FindAll(i => i.itemData.esNota).Count;
             if (notaCount >= MAX_NOTAS)
             {
                 Debug.Log("¡Ya tienes el máximo de " + MAX_NOTAS + " notas!");
@@ -185,7 +185,7 @@ public class Inventory : MonoBehaviour
                     collectibles.Add(newItem);
                     slot.AddItem(newItem);
                     pickup.gameObject.SetActive(false);
-                    UpdateAllSlots(); // <-- Actualiza la UI después de agregar
+                    UpdateAllSlots();
                     return;
                 }
             }
@@ -354,7 +354,7 @@ public class Inventory : MonoBehaviour
     int indexNota = 0;
     foreach (var item in collectibles)
     {
-        if (item.itemData.itemName == "Nota" && indexNota < slotsNotas.Length)
+        if (item.itemData.itemType == ItemType.Collectible && item.itemData.esNota && indexNota < slotsNotas.Length)
         {
             Slot slot = slotsNotas[indexNota].GetComponent<Slot>();
             slot.itemSlot = item;

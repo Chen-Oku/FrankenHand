@@ -16,4 +16,6 @@ public class InventoryItemData : ScriptableObject
     [TextArea]
     public string description;
     public int maxStack = 5; // 1 = no apilable, >1 = apilable
+
+    public bool esNota;
 }
