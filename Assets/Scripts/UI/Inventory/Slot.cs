@@ -18,6 +18,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
 
     [SerializeField]
     public Image iconImage;
+    public Sprite silhouetteSprite; // Asigna la silueta en el Inspector
     public InventoryItem itemSlot;
     public TMP_Text quantityText; // Texto para mostrar la cantidad del item
     public InventoryTooltip tooltip; // Referencia al tooltip para mostrar información del item
@@ -101,8 +102,16 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
         }
         else
         {
-            iconImage.sprite = null;
-            iconImage.enabled = false;
+            if (esSlotNota && silhouetteSprite != null)
+            {
+                iconImage.sprite = silhouetteSprite;
+                iconImage.enabled = true;
+            }
+            else
+            {
+                iconImage.sprite = null;
+                iconImage.enabled = false;
+            }
             if (quantityText != null)
                 quantityText.text = "";
             empty = true;
