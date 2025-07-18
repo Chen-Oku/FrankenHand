@@ -52,14 +52,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
             iconImage = GetComponent<Image>();
             if (iconImage == null)
             {
-                //iconImage = transform.Find("Icon").GetComponent<Image>(); // Por si tengo un hijo llamado "Icon" con un componente Image
-                Debug.Log("IconImage no está asignado en el inspector en " + gameObject.name);
+                Transform iconTransform = transform.Find("Icon");
+                if (iconTransform != null)
+                    iconImage = iconTransform.GetComponent<Image>();
             }
         }
+        if (iconImage == null)
+            Debug.LogError("IconImage no está asignado ni encontrado en " + gameObject.name);
+
         if (quantityText == null)
-        {
             quantityText = GetComponentInChildren<TMP_Text>();
-        }
+
         if (tooltip == null)
         {
             tooltip = Object.FindFirstObjectByType<InventoryTooltip>();
@@ -74,21 +77,27 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
     }
 
 
+    public bool esSlotNota = false; // Asígnalo en el Inspector solo a los slots de notas
+
     public void UpdateSlot()
     {
+        if (iconImage == null)
+        {
+            Debug.LogError("iconImage es null en " + gameObject.name);
+            return;
+        }
+
         if (itemSlot != null && itemSlot.itemData != null)
         {
             iconImage.sprite = itemSlot.itemData.icon;
             iconImage.enabled = true;
+            empty = false;
 
-            // Actualiza la cantidad
-            if (quantityText != null)
-            {
-                if (itemSlot.quantity > 1)
-                    quantityText.text = itemSlot.quantity.ToString();
-                else
-                    quantityText.text = ""; // O "1" si prefieres mostrar siempre la cantidad
-            }
+            // Solo muestra quantityText si NO es slot de nota
+            if (!esSlotNota && quantityText != null)
+                quantityText.text = (itemSlot.quantity > 1) ? itemSlot.quantity.ToString() : "";
+            else if (quantityText != null)
+                quantityText.text = "";
         }
         else
         {
@@ -96,6 +105,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDra
             iconImage.enabled = false;
             if (quantityText != null)
                 quantityText.text = "";
+            empty = true;
         }
     }
 

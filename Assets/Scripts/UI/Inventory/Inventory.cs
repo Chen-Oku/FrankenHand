@@ -5,10 +5,10 @@ public class Inventory : MonoBehaviour
 {
     private bool inventoryEnabled;
     public GameObject inventoryUI; // Asigna el objeto de la UI del inventario
-    private int allSlots;
-    private int enabledSlots;
-    public GameObject[] slots;
-    public GameObject slotHolder; // Referencia al objeto contenedor de los slots
+    public GameObject[] slotsNotas;
+    public GameObject[] slotsGeneral;
+    public GameObject slotHolderNotas; // Asigna en el inspector el objeto padre de los slots de notas
+    public GameObject slotHolderGeneral; // Asigna en el inspector
 
     private PlayerController playerController; // Referencia al script de control del jugador
 
@@ -23,21 +23,10 @@ public class Inventory : MonoBehaviour
     public PauseMenu pauseMenu; // Asigna el PauseMenu desde el Inspector
     public CanvasGroup inventoryCanvasGroup; // Asigna el CanvasGroup desde el Inspector
 
+    public const int MAX_NOTAS = 5;
+
     void Start()
     {
-        allSlots = slotHolder.transform.childCount;
-        slots = new GameObject[allSlots];
-
-        for (int i = 0; i < allSlots; i++)
-        {
-            slots[i] = slotHolder.transform.GetChild(i).gameObject;
-
-            if (slots[i].GetComponent<Slot>().itemSlot == null)
-            {
-                slots[i].GetComponent<Slot>().empty = true; // Marca la ranura como vacía si no hay un item
-            }
-        }
-
         inventoryEnabled = false;
 
         if (inventoryCanvasGroup == null && inventoryUI != null)
@@ -50,6 +39,32 @@ public class Inventory : MonoBehaviour
         playerController = Object.FindFirstObjectByType<PlayerController>();
         if (playerController != null)
             playerController.enabled = true; // Asegúrate de que el PlayerController esté habilitado al inicio
+
+        // Inicializa slotsNotas automáticamente
+        if (slotHolderNotas != null)
+        {
+            int notasCount = slotHolderNotas.transform.childCount;
+            slotsNotas = new GameObject[notasCount];
+            for (int i = 0; i < notasCount; i++)
+            {
+                slotsNotas[i] = slotHolderNotas.transform.GetChild(i).gameObject;
+                if (slotsNotas[i].GetComponent<Slot>().itemSlot == null)
+                    slotsNotas[i].GetComponent<Slot>().empty = true;
+            }
+        }
+
+        // Inicializa slotsGeneral automáticamente
+        if (slotHolderGeneral != null)
+        {
+            int generalCount = slotHolderGeneral.transform.childCount;
+            slotsGeneral = new GameObject[generalCount];
+            for (int i = 0; i < generalCount; i++)
+            {
+                slotsGeneral[i] = slotHolderGeneral.transform.GetChild(i).gameObject;
+                if (slotsGeneral[i].GetComponent<Slot>().itemSlot == null)
+                    slotsGeneral[i].GetComponent<Slot>().empty = true;
+            }
+        }
     }
 
     // Añade este método para controlar la visibilidad e interacción del inventario
@@ -150,23 +165,54 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(PickupItem pickup)
     {
-        // 1. Intenta stackear en un slot existente con el mismo tipo de item
-        for (int i = 0; i < slots.Length; i++)
+        // --- NOTAS: No stackear y máximo 5 ---
+        if (pickup.itemData.itemType == ItemType.Collectible && pickup.itemData.itemName == "Nota")
         {
-            Slot slot = slots[i].GetComponent<Slot>();
+            int notaCount = collectibles.FindAll(i => i.itemData.itemName == "Nota").Count;
+            if (notaCount >= MAX_NOTAS)
+            {
+                Debug.Log("¡Ya tienes el máximo de " + MAX_NOTAS + " notas!");
+                return;
+            }
+
+            // Busca un slot vacío SOLO en slotsNotas
+            for (int i = 0; i < slotsNotas.Length; i++)
+            {
+                Slot slot = slotsNotas[i].GetComponent<Slot>();
+                if (slot != null && slot.empty)
+                {
+                    InventoryItem newItem = new InventoryItem(pickup.itemData, 1);
+                    collectibles.Add(newItem);
+                    slot.AddItem(newItem);
+                    pickup.gameObject.SetActive(false);
+                    UpdateAllSlots(); // <-- Actualiza la UI después de agregar
+                    return;
+                }
+            }
+
+            Debug.Log("Inventario de notas lleno, no se pudo agregar la nota.");
+            return;
+        }
+
+        // --- RESTO DE ITEMS: lógica original ---
+        // 1. Intenta stackear en un slot existente con el mismo tipo de item
+        for (int i = 0; i < slotsGeneral.Length; i++)
+        {
+            Slot slot = slotsGeneral[i].GetComponent<Slot>();
             if (slot != null && !slot.empty && slot.itemSlot != null && slot.itemSlot.itemData == pickup.itemData)
             {
                 slot.itemSlot.quantity += pickup.amount;
                 slot.UpdateSlot();
                 pickup.gameObject.SetActive(false);
+                UpdateAllSlots();
                 return;
             }
         }
 
-        // 2. Si no hay slot stackeable, busca un slot vacío
-        for (int i = 0; i < slots.Length; i++)
+        // 2. Si no hay slot stackeable, busca un slot vacío en slotsGeneral
+        for (int i = 0; i < slotsGeneral.Length; i++)
         {
-            Slot slot = slots[i].GetComponent<Slot>();
+            Slot slot = slotsGeneral[i].GetComponent<Slot>();
             if (slot != null && slot.empty)
             {
                 InventoryItem newItem = new InventoryItem(pickup.itemData, pickup.amount);
@@ -190,11 +236,11 @@ public class Inventory : MonoBehaviour
 
                 slot.AddItem(newItem);
                 pickup.gameObject.SetActive(false);
+                UpdateAllSlots();
                 return;
             }
         }
 
-        // 3. Si no hay slot vacío ni stackeable, puedes mostrar mensaje de inventario lleno
         Debug.Log("Inventario lleno, no se pudo agregar el item.");
     }
 
@@ -216,6 +262,15 @@ public class Inventory : MonoBehaviour
                     break;
 
                 case ItemType.Collectible:
+                    if (pickup.itemData.itemName == "Nota")
+                    {
+                        int notaCount = collectibles.FindAll(i => i.itemName == "Nota").Count;
+                        if (notaCount >= MAX_NOTAS)
+                        {
+                            Debug.Log("¡Ya tienes el máximo de " + MAX_NOTAS + " notas!");
+                            return;
+                        }
+                    }
                     collectibles.Add(newItem);
                     break;
 
@@ -245,7 +300,7 @@ public class Inventory : MonoBehaviour
             if (item.quantity <= 0)
                 targetList.Remove(item);
 
-            UpdateSlot(); // <- Esto es lo importante
+            UpdateAllSlots(); // <- Esto es lo importante
 
             return true;
         }
@@ -254,9 +309,20 @@ public class Inventory : MonoBehaviour
   
     public void DeselectAllSlots()
     {
-        for (int i = 0; i < slots.Length; i++)
+        // Desselecciona todos los slots de notas
+        for (int i = 0; i < slotsNotas.Length; i++)
         {
-            Slot slot = slots[i].GetComponent<Slot>();
+            Slot slot = slotsNotas[i].GetComponent<Slot>();
+            if (slot != null)
+            {
+                slot.selectedShader.SetActive(false);
+                slot.thisItemSelected = false;
+            }
+        }
+        // Desselecciona todos los slots generales
+        for (int i = 0; i < slotsGeneral.Length; i++)
+        {
+            Slot slot = slotsGeneral[i].GetComponent<Slot>();
             if (slot != null)
             {
                 slot.selectedShader.SetActive(false);
@@ -264,35 +330,56 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-    public void UpdateSlot()
+    
+    public void UpdateAllSlots()
+{
+    // Limpia todos los slots de notas
+    for (int i = 0; i < slotsNotas.Length; i++)
     {
-        // Limpia todos los slots primero
-        for (int i = 0; i < allSlots; i++)
-        {
-            Slot slot = slots[i].GetComponent<Slot>();
-            slot.itemSlot = null;
-            slot.empty = true;
-            slot.UpdateSlot();
-        }
+        Slot slot = slotsNotas[i].GetComponent<Slot>();
+        slot.itemSlot = null;
+        slot.empty = true;
+        slot.UpdateSlot();
+    }
+    // Limpia todos los slots generales
+    for (int i = 0; i < slotsGeneral.Length; i++)
+    {
+        Slot slot = slotsGeneral[i].GetComponent<Slot>();
+        slot.itemSlot = null;
+        slot.empty = true;
+        slot.UpdateSlot();
+    }
 
-        // Junta todos los items en el orden que quieras mostrar
-        int index = 0;
-        List<InventoryItem> allItems = new List<InventoryItem>();
-        allItems.AddRange(keys);
-        allItems.AddRange(collectibles);
-        allItems.AddRange(usable);
-        allItems.AddRange(others);
-
-        // Asigna los items a los slots desde el principio
-        for (; index < allItems.Count && index < allSlots; index++)
+    // Asigna notas/collectibles a los slotsNotas
+    int indexNota = 0;
+    foreach (var item in collectibles)
+    {
+        if (item.itemData.itemName == "Nota" && indexNota < slotsNotas.Length)
         {
-            Slot slot = slots[index].GetComponent<Slot>();
-            slot.itemSlot = allItems[index];
+            Slot slot = slotsNotas[indexNota].GetComponent<Slot>();
+            slot.itemSlot = item;
             slot.empty = false;
             slot.UpdateSlot();
+            indexNota++;
         }
     }
-    
+
+    // Asigna el resto de objetos a los slotsGeneral
+    int indexGeneral = 0;
+    List<InventoryItem> allGeneral = new List<InventoryItem>();
+    allGeneral.AddRange(keys);
+    allGeneral.AddRange(usable);
+    allGeneral.AddRange(others);
+
+    for (; indexGeneral < allGeneral.Count && indexGeneral < slotsGeneral.Length; indexGeneral++)
+    {
+        Slot slot = slotsGeneral[indexGeneral].GetComponent<Slot>();
+        slot.itemSlot = allGeneral[indexGeneral];
+        slot.empty = false;
+        slot.UpdateSlot();
+    }
+}
+
 
     // --- Guardado y carga ---
 [System.Serializable]

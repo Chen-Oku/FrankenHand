@@ -13,8 +13,8 @@ public class NotaCounterUI : MonoBehaviour
         int count = 0;
         foreach (var item in inventory.collectibles)
         {
-            if (item.itemName == notaItemName)
-                count += item.quantity;
+            if (item.itemData.itemName == "Nota")
+                count++;
         }
         notasText.text = count.ToString();
     }

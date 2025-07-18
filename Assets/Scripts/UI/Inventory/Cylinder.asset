@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Cylinder
   m_EditorClassIdentifier: 
   itemName: Cylider
-  itemType: 0
+  itemType: 2
   icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}
   itemPrefab: {fileID: 7087490103678135662, guid: d8e48d9a50b6be84086c10507769ab22, type: 3}
   description: Cylindro de prueba
   maxStack: 1
