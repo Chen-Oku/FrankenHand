@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: bbb009e4429963d4b80251fe5cd609bd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LibroMainMenu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afeaf8769291adc47bf3719045126b8e
+      internalID: 2130807708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_1
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4822ae15aabeee74982398c8a5ba81ef
+      internalID: 490369817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_2
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a39843e810403f4b9ef5766c0a046f8
+      internalID: -1864028252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_3
+      rect:
+        serializedVersion: 2
+        x: 5271
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44cbeb2759ac66409bf79b9ab3c7efa
+      internalID: -1146982487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_4
+      rect:
+        serializedVersion: 2
+        x: 7028
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d15615667cec8469cfbc3e16883ce4
+      internalID: -561781290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_5
+      rect:
+        serializedVersion: 2
+        x: 8785
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05f452b987d9e34983fa907c953351a
+      internalID: -580000348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_6
+      rect:
+        serializedVersion: 2
+        x: 10542
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76866420fdddbe42a9cfb6010ced09a
+      internalID: -1951198784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_7
+      rect:
+        serializedVersion: 2
+        x: 12299
+        y: 6512
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d973ed87dd9f05248b06d4dd822bafbe
+      internalID: 1129652436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89068d1ad74f4304b9551d1e5fb86eac
+      internalID: 1633037991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_9
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e831254f91a04240a9139a66af6ce6e
+      internalID: -191484783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_10
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f99f3885e7d7964f929221c0ec4c019
+      internalID: 1906854549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_11
+      rect:
+        serializedVersion: 2
+        x: 5271
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28785ce333675054a9723ef2a6614729
+      internalID: 1774821033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_12
+      rect:
+        serializedVersion: 2
+        x: 7028
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b01ca6e7893c0f4daf7e431deccb9ab
+      internalID: -845114618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_13
+      rect:
+        serializedVersion: 2
+        x: 8785
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9945eac99cf3b40a7041d41fb178ba
+      internalID: 1264901493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_14
+      rect:
+        serializedVersion: 2
+        x: 10542
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8645ffa243205ed4883427ed87e8da7e
+      internalID: 1497303436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_15
+      rect:
+        serializedVersion: 2
+        x: 12299
+        y: 5524
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c254ebf674228ae43b5eafa261838672
+      internalID: 1301071498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e439d3ae534a447b9d0c6b4064572c
+      internalID: 622821471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_17
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a46ec97e01b654484e21219a415f06
+      internalID: -433052619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_18
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed889030d45c7d841ac13c18236145e4
+      internalID: -1846471196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_19
+      rect:
+        serializedVersion: 2
+        x: 5271
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1b4e5c1950d4b4189e77d0abb5b25a
+      internalID: 2118517192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_20
+      rect:
+        serializedVersion: 2
+        x: 7028
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28beeb9c356c2834394b52a3f440e7b7
+      internalID: 1494305697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_21
+      rect:
+        serializedVersion: 2
+        x: 8785
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c510e3690c926a248b0d5f8f23eadea0
+      internalID: 175551174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_22
+      rect:
+        serializedVersion: 2
+        x: 10542
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bf48b14644161429d3d67703ec3a20
+      internalID: -1435950643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_23
+      rect:
+        serializedVersion: 2
+        x: 12299
+        y: 4536
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c56ed1c80c6364b9b321e9c22ab06f
+      internalID: -1061503694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5cc0a6889912f409b43a38936bad1a
+      internalID: 84759877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_25
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2188fcf3ed6424aa93516779c85ba8
+      internalID: -131820533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_26
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053b551e3ee871446ba0d952bad68158
+      internalID: -1032668986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_27
+      rect:
+        serializedVersion: 2
+        x: 5271
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd82e76dce7bf845b76630e49359f13
+      internalID: -2100715834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_28
+      rect:
+        serializedVersion: 2
+        x: 7028
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf59736747695ed4b9d3d84123ac4956
+      internalID: -1201630379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_29
+      rect:
+        serializedVersion: 2
+        x: 8785
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8175ef5e75f4f1146a27c7692e1281c4
+      internalID: -1190111581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_30
+      rect:
+        serializedVersion: 2
+        x: 10542
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b1a46d9d54832438f76e0a02fba347
+      internalID: -1156193996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_31
+      rect:
+        serializedVersion: 2
+        x: 12299
+        y: 3548
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55311c7ab5ccff14ab72c6cf1bdc9c5e
+      internalID: 818051561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249761851a44fb64891559316430e425
+      internalID: -1220737859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_33
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 2560
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bf6e6d4b7f6994d9b34edc9ec5095a
+      internalID: -1617722601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LibroMainMenu_34
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 2560
+        width: 1757
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4922723aae984d14785cf34bc6163d7c
+      internalID: 484057649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3aa2aa1cf3ce2a346a8e15d7fe26ae4f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LibroMainMenu_0: 2130807708
+      LibroMainMenu_1: 490369817
+      LibroMainMenu_10: 1906854549
+      LibroMainMenu_11: 1774821033
+      LibroMainMenu_12: -845114618
+      LibroMainMenu_13: 1264901493
+      LibroMainMenu_14: 1497303436
+      LibroMainMenu_15: 1301071498
+      LibroMainMenu_16: 622821471
+      LibroMainMenu_17: -433052619
+      LibroMainMenu_18: -1846471196
+      LibroMainMenu_19: 2118517192
+      LibroMainMenu_2: -1864028252
+      LibroMainMenu_20: 1494305697
+      LibroMainMenu_21: 175551174
+      LibroMainMenu_22: -1435950643
+      LibroMainMenu_23: -1061503694
+      LibroMainMenu_24: 84759877
+      LibroMainMenu_25: -131820533
+      LibroMainMenu_26: -1032668986
+      LibroMainMenu_27: -2100715834
+      LibroMainMenu_28: -1201630379
+      LibroMainMenu_29: -1190111581
+      LibroMainMenu_3: -1146982487
+      LibroMainMenu_30: -1156193996
+      LibroMainMenu_31: 818051561
+      LibroMainMenu_32: -1220737859
+      LibroMainMenu_33: -1617722601
+      LibroMainMenu_34: 484057649
+      LibroMainMenu_4: -561781290
+      LibroMainMenu_5: -580000348
+      LibroMainMenu_6: -1951198784
+      LibroMainMenu_7: 1129652436
+      LibroMainMenu_8: 1633037991
+      LibroMainMenu_9: -191484783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

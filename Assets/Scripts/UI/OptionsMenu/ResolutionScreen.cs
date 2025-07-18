@@ -11,9 +11,33 @@ public class ResolutionScreen : MonoBehaviour
     void Start()
     {
         CheckResolutions();
-        // Aplica la resolución guardada al iniciar
-        int savedResolutionIndex = PlayerPrefs.GetInt("numeroResolucion", 0);
+
+        // Buscar 1920x1080 o la más cercana
+        int defaultWidth = 1920;
+        int defaultHeight = 1080;
+        int closestIndex = 0;
+        int minDiff = int.MaxValue;
+
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            int diff = Mathf.Abs(resolutions[i].width - defaultWidth) + Mathf.Abs(resolutions[i].height - defaultHeight);
+            if (diff < minDiff)
+            {
+                minDiff = diff;
+                closestIndex = i;
+            }
+            // Si es exactamente 1920x1080, selecciona y termina
+            if (resolutions[i].width == defaultWidth && resolutions[i].height == defaultHeight)
+            {
+                closestIndex = i;
+                break;
+            }
+        }
+
+        int savedResolutionIndex = PlayerPrefs.GetInt("numeroResolucion", closestIndex);
         SetResolution(savedResolutionIndex);
+        resolutionDropdown.value = savedResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
     }
 
     public void CheckResolutions()
