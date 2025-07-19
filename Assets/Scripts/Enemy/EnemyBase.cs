@@ -40,9 +40,9 @@ public abstract class EnemyBase : MonoBehaviour
             if (lookDir != Vector3.zero)
                 spriteRenderer.transform.forward = lookDir;
 
-            // FlipX según dirección de movimiento (para sprites que miran a la izquierda por defecto)
+            // FlipX según dirección de movimiento (para sprites que miran a la derecha por defecto)
             if (agent != null && agent.velocity.sqrMagnitude > 0.01f)
-                spriteRenderer.flipX = agent.velocity.x > 0.01f;
+                spriteRenderer.flipX = agent.velocity.x < -0.01f;
         }
 
         switch (behaviorType)

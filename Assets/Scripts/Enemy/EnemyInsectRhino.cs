@@ -4,6 +4,8 @@ public class EnemyInsectRhino : EnemyBase
 {
     private Vector3 patrolDestination;
 
+    private bool goingToHide = false;
+
     protected override void Start()
     {
         base.Start();
@@ -18,7 +20,11 @@ public class EnemyInsectRhino : EnemyBase
 
     protected override void NormalBehavior()
     {
-        GoToClosestHidePoint();
+        if (!goingToHide)
+        {
+            GoToClosestHidePoint();
+            goingToHide = true;
+        }
     }
 
     protected override void ScaredBehavior()
