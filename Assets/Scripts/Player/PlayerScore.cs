@@ -10,9 +10,4 @@ public class PlayerScore : MonoBehaviour
         GameManager.Instance.UpdatePoints(points);
     }
 
-    public void OnEnemyDefeated(Enemy enemy)
-    {
-        GameManager.Instance.AddPoints(enemy.pointValue);
-        // Lógica adicional al derrotar enemigo
-    }
 }

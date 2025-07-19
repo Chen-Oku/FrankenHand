@@ -1,0 +1,2348 @@
+fileFormatVersion: 2
+guid: a08faff407165044fae1ed5437b51bb1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mosca Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72fb26c21d7faf4fade7bb26d26a65c
+      internalID: -1105209736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b9c16d7c8693a4992b1a765013aa52
+      internalID: 1478100956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9b309c0bc8ad44d9dd4837a4069ca8
+      internalID: 614370550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aae25739578a3b4f9aafc6f6f92c353
+      internalID: -955218382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5d3160e021bbf4cad5ac3bf0e5e954
+      internalID: 1544155304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a75a5aa0bc678249a7e04a2a6ecfeef
+      internalID: -163134770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92d13fb712d7ae4d91c6497c41150e1
+      internalID: 251308918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25720f7f836adc747a2e9a7621a46f70
+      internalID: -1806331269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a70cb663a5acd944b97134e9e8c7a14
+      internalID: 1036003819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1a602ef68596148802de06c880a03b
+      internalID: 1712652710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5bca1ae5ffa774e88cc19d7f413584
+      internalID: -476243656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987f844932c9b29458a150453bf7b121
+      internalID: -1017237972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 3716
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac34ffc85cc4ec447a84e6428c228302
+      internalID: 1106076932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5133f9353600d0340ab422e669ef1c59
+      internalID: -1749737100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2cca1f705fb0e4c8a13ed2df947ee5
+      internalID: -1841697726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd78051a1eefb745a7b9466d8b8534c
+      internalID: 1410135634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affcae33ea2acea41922b031ca5c854f
+      internalID: -272333579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a061a366a4a729142b64069597b53755
+      internalID: -718409045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b45ceb4e8f97804a891b305010c3f4e
+      internalID: -1907147540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7743d3f8f81889b4bb8c249129b55f56
+      internalID: -1538903215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0400db111119d4b808c48d267c682b
+      internalID: -1697444652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b036151720cfab45bade1385a62414c
+      internalID: -112778742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049c0128562dfdf4b8eea1a2a902641a
+      internalID: -2084021384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf643df43b0f0f41933dde78e9150b3
+      internalID: 1462608411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41dc5ad60af6cd419719e49cf44cea3
+      internalID: -343062932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 3336
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b7608399e5ecc4a849990b3ec81994
+      internalID: -941679266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bb66216052d254b9d5316c86a5ef23
+      internalID: 590962708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1dbff7c9cfe8d4b98e2cc2d41a8594
+      internalID: -1295647782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0e67fccc6898743971fc3fdd946c42
+      internalID: 1984576709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1a1c5e557d4db4f9a6421d56db9d57
+      internalID: -1817864962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba22ee9c54e09c6478b477a68dbf1196
+      internalID: -1182364935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb384da01ec2a34e8f9f7719af50a3b
+      internalID: 565097982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcb48a04075a994e8454ea6c654aee4
+      internalID: -60517726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c00c2d719c67a6418588b42143a084a
+      internalID: -774118692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb16dba6e02a284785083f922cea21f
+      internalID: 411084009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2397793cca69664a81f83ef7c71ea25
+      internalID: 564844270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e8c0379e9c61248ba6a3a679d19515
+      internalID: 117951451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b27b7e1fff7dc8429b581a8fb981146
+      internalID: -437288286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 2956
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f457c410bc84ade47a57e75802681cc5
+      internalID: 808482915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d6ddd741a734e46a5914f15333e028
+      internalID: -1662473758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b73f47997a9a48bdb3636f5cbaad7
+      internalID: 2146438639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6555dd4758897649aaed8c8de1e4485
+      internalID: 942459001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b87867b773f9e47bff75ccbe9139cc
+      internalID: -88357267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb4118fdad8da44d9c727bc3bcba146
+      internalID: 699520520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b193743c5f7a15b41b5e7d66975ec390
+      internalID: -90628210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e616fba7d90924ab6ec9fa3dd137c7
+      internalID: -1599077541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428eb88144d38ec4eb14204f5b8bef1d
+      internalID: 654422435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9610b021fa8fe0540b6723040d1783f0
+      internalID: -1552810422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fbc4bf2dc90a14dadfcb96f9aed4ee
+      internalID: 641432837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f32daacc061514f9a5ceb2dc832ea1
+      internalID: 1045112074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc2c3106df22f547b21e00e531d44dd
+      internalID: 1580039893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 2576
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7e08a12a716dc4bbac7bb044753700
+      internalID: 542687280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13680eaf534d7be4c964eafedee7a469
+      internalID: 1013277385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115e7df4463659b4385809b8b84f46e6
+      internalID: 2008334629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2754601b1d4e25458c782cb85376bb4
+      internalID: -2041104194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d5eb48363800341848e6436953e888
+      internalID: -158294385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20898dbf8c5a8d74382d879006942c50
+      internalID: 348605941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8d81a194db61c44b89dc84c70ee5c5
+      internalID: 393553622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cde1fa78cd36d4785f83074023a6c3
+      internalID: 1329618478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e00a5cd9885b464185f395f2e39a73e
+      internalID: -1124513427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996afd3c821977f4ba70ec3c3ee7cd3a
+      internalID: 1079740889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0690242ee804bf54db78cb490a5a62b5
+      internalID: 1415618319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344fe0cd1126d7b41959d6b809a1194e
+      internalID: -124496077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509e7a50e0460dc40aebfa79f96e79f5
+      internalID: 2024608088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 2196
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04df216ab299cb4ab3a4ad8b021d531
+      internalID: 2108819173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3debcc54089c96c48b0445ac0a4a59b8
+      internalID: 1720955383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1bc2051450dbd45be0a9864bcdef2d
+      internalID: -1748094334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8a00c97c1cc1645a4b54c440ea1f22
+      internalID: -2084132609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4944650a5e3c14284233cf4ee1f205
+      internalID: -820900108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af7a15410f40ef49bda8ae20f335e29
+      internalID: -1912903959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a817de958879f2a48b7aa830b0b3ac50
+      internalID: 1903809145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddfd30efce490b4ca07d916fa206a8d
+      internalID: 847704867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38739ff538bd63044a95e2e424b8adc5
+      internalID: 742887794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda79039ccf2d041a4b0ab3ba0950c4
+      internalID: -1755847631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b54126ed7a01264c92c949bc5b0f004
+      internalID: 1287331865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402babe69f71d5d488dd6d24c2c235f2
+      internalID: -245875903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df79ad290f7ebaf44bb0efa5bbdbae7c
+      internalID: -1181582570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 1816
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d348f1981a89b9748943293f08b6b818
+      internalID: -871779136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152adb19dfcdebb449e68a7a62af8258
+      internalID: -2097625406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca8dcfbdcfa032449232c5ed86a788b
+      internalID: -1563188549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513e0edeae951a74ab3c305ae25fdf8f
+      internalID: -905070609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728787b096017324f80482bbece4a9eb
+      internalID: -1881026193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080286e02e5ab524189f7f35943d3b4a
+      internalID: 208947958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad2000261b88dd49b33f29903e047d9
+      internalID: 1472861699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13aa6645b88e2d548b0a6b25b9721fd9
+      internalID: -691015659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cb636c169a4964b96c0f2b81e5603d
+      internalID: 1917997553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 4880
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973391cc14e785346ba62e248aef609d
+      internalID: 758923538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69307548849bf044b909180946991bb
+      internalID: -864993002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927bcf2eb09e5734f8adc39d73208dc6
+      internalID: -494616510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 6710
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0031a4e91298fc44fb429fb1eda671eb
+      internalID: 674304436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 7320
+        y: 1436
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2a2fd4fe14c8c4faab906df5bc3baf
+      internalID: 1782451061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d715955f3f246743b791cf41ad2a859
+      internalID: 1635799102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89e712e0cd5844493623484dff0e8b
+      internalID: 281386180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49485cc24067e9647a06ddce6a45c7a3
+      internalID: 1109943773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770e6d4fae31f794680d96d772b7f651
+      internalID: 807052872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4084266781b53b4498c32ffa7fa25d3c
+      internalID: 697182022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mosca Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 1056
+        width: 610
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41768c1930366047972a7ad30632e15
+      internalID: -1497548510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mosca Sheet_0: -1105209736
+      Mosca Sheet_1: 1478100956
+      Mosca Sheet_10: -476243656
+      Mosca Sheet_11: -1017237972
+      Mosca Sheet_12: 1106076932
+      Mosca Sheet_13: -1749737100
+      Mosca Sheet_14: -1841697726
+      Mosca Sheet_15: 1410135634
+      Mosca Sheet_16: -272333579
+      Mosca Sheet_17: -718409045
+      Mosca Sheet_18: -1907147540
+      Mosca Sheet_19: -1538903215
+      Mosca Sheet_2: 614370550
+      Mosca Sheet_20: -1697444652
+      Mosca Sheet_21: -112778742
+      Mosca Sheet_22: -2084021384
+      Mosca Sheet_23: 1462608411
+      Mosca Sheet_24: -343062932
+      Mosca Sheet_25: -941679266
+      Mosca Sheet_26: 590962708
+      Mosca Sheet_27: -1295647782
+      Mosca Sheet_28: 1984576709
+      Mosca Sheet_29: -1817864962
+      Mosca Sheet_3: -955218382
+      Mosca Sheet_30: -1182364935
+      Mosca Sheet_31: 565097982
+      Mosca Sheet_32: -60517726
+      Mosca Sheet_33: -774118692
+      Mosca Sheet_34: 411084009
+      Mosca Sheet_35: 564844270
+      Mosca Sheet_36: 117951451
+      Mosca Sheet_37: -437288286
+      Mosca Sheet_38: 808482915
+      Mosca Sheet_39: -1662473758
+      Mosca Sheet_4: 1544155304
+      Mosca Sheet_40: 2146438639
+      Mosca Sheet_41: 942459001
+      Mosca Sheet_42: -88357267
+      Mosca Sheet_43: 699520520
+      Mosca Sheet_44: -90628210
+      Mosca Sheet_45: -1599077541
+      Mosca Sheet_46: 654422435
+      Mosca Sheet_47: -1552810422
+      Mosca Sheet_48: 641432837
+      Mosca Sheet_49: 1045112074
+      Mosca Sheet_5: -163134770
+      Mosca Sheet_50: 1580039893
+      Mosca Sheet_51: 542687280
+      Mosca Sheet_52: 1013277385
+      Mosca Sheet_53: 2008334629
+      Mosca Sheet_54: -2041104194
+      Mosca Sheet_55: -158294385
+      Mosca Sheet_56: 348605941
+      Mosca Sheet_57: 393553622
+      Mosca Sheet_58: 1329618478
+      Mosca Sheet_59: -1124513427
+      Mosca Sheet_6: 251308918
+      Mosca Sheet_60: 1079740889
+      Mosca Sheet_61: 1415618319
+      Mosca Sheet_62: -124496077
+      Mosca Sheet_63: 2024608088
+      Mosca Sheet_64: 2108819173
+      Mosca Sheet_65: 1720955383
+      Mosca Sheet_66: -1748094334
+      Mosca Sheet_67: -2084132609
+      Mosca Sheet_68: -820900108
+      Mosca Sheet_69: -1912903959
+      Mosca Sheet_7: -1806331269
+      Mosca Sheet_70: 1903809145
+      Mosca Sheet_71: 847704867
+      Mosca Sheet_72: 742887794
+      Mosca Sheet_73: -1755847631
+      Mosca Sheet_74: 1287331865
+      Mosca Sheet_75: -245875903
+      Mosca Sheet_76: -1181582570
+      Mosca Sheet_77: -871779136
+      Mosca Sheet_78: -2097625406
+      Mosca Sheet_79: -1563188549
+      Mosca Sheet_8: 1036003819
+      Mosca Sheet_80: -905070609
+      Mosca Sheet_81: -1881026193
+      Mosca Sheet_82: 208947958
+      Mosca Sheet_83: 1472861699
+      Mosca Sheet_84: -691015659
+      Mosca Sheet_85: 1917997553
+      Mosca Sheet_86: 758923538
+      Mosca Sheet_87: -864993002
+      Mosca Sheet_88: -494616510
+      Mosca Sheet_89: 674304436
+      Mosca Sheet_9: 1712652710
+      Mosca Sheet_90: 1782451061
+      Mosca Sheet_91: 1635799102
+      Mosca Sheet_92: 281386180
+      Mosca Sheet_93: 1109943773
+      Mosca Sheet_94: 807052872
+      Mosca Sheet_95: 697182022
+      Mosca Sheet_96: -1497548510
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

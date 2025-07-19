@@ -1,0 +1,1918 @@
+fileFormatVersion: 2
+guid: bedc6911744d6124f8a83857531a31cf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3191a8fb252ed9a4680d4e3614093c25
+      internalID: 603466618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__1
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63641870045ffb64f92e68e900f7a96a
+      internalID: -508649051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__2
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb4f160ab6528e438c250d621689d35
+      internalID: 1142782970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__3
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42515d4c7c187424eac2c74d166c1baf
+      internalID: -1614122780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__4
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231787af8ee3cef4395f0ddc45ef1066
+      internalID: 1536583297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__5
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8ab6df4eddc1748ae4410b81c649e5
+      internalID: 1972694286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__6
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4592e439d88ece84a93ef82a07d4dc8d
+      internalID: 1459826835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__7
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4291449fde64f0f49a8e7f80d99bcd7e
+      internalID: 731860929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__8
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0597a9c202442d54dbec1abd8d600e82
+      internalID: 1735366705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__9
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8edeb5109304e408e276ecce4421ea
+      internalID: 836516914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__10
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cac6678abf3cd84c8d36528f4c0b2a0
+      internalID: -254675636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__11
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06a3e4ba4b30fd4083fd1667545396c
+      internalID: -890869109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__12
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 3536
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44eb3366435af2f4f9fd205f793d9ee5
+      internalID: 1961343044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f122aee0f9d2e54384a62b4e24799be
+      internalID: 1025521028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e01d20322ace4342bcf93b0377793d2
+      internalID: -965508187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858480335dcfe24489617eb427b91cff
+      internalID: -1498336913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__16
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8973cd9acea0fa468fe675b1d285899
+      internalID: 1622057606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__17
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6beccf456668442b437b2cb7b5b487
+      internalID: -1423157981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__18
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c605acc5e066f984aa5ced71e06693f5
+      internalID: 777427694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__19
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12b7c9bed270d2458956c8750178dfb
+      internalID: -1109572999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__20
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce6907fab7c2d94d861f38026d49ca9
+      internalID: 531232578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__21
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07cdbea8d4d26341beedfa010ab70f1
+      internalID: -1807158458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__22
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b358ef5d3ca3e5a40948797c9ae99e88
+      internalID: -39968059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__23
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d206217d7c716d42af303e931ff8a89
+      internalID: 1329109414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__24
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90284cfaf39e3fe418eee8eb0e356cc6
+      internalID: -875288441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__25
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 2976
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496a359de1762824aa5700056dcf122e
+      internalID: 886507982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d941ac8080042242b38645c0c0dba20
+      internalID: -1228912775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__27
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa1a9e1eb47f4648a8b160131d7ecdc
+      internalID: -1329173813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__28
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8c19838d0c9304eac998f09dcf6cb0
+      internalID: -1139723534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__29
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a9ccd0936168541bc3678c0ab1b96b
+      internalID: 106480432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__30
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267296d6c68e1374b9e60a3a1d960bb7
+      internalID: 332988944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__31
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df4302118068ea4989c35b59ae3bd2f
+      internalID: -1184587194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__32
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b591c5fc558b98e48a5d2a02dda85f64
+      internalID: -1041351745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__33
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26952efb8fe4252478a84f59a795a783
+      internalID: -1772996861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__34
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65615cb5c34b724f8dd910158a26c48
+      internalID: 762377676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__35
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73a46e7b09a91147b1f433984e08e17
+      internalID: -1773355538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__36
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e992dd543c97b944eae3dcbc8a194962
+      internalID: -1733454005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__37
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5835c99f72142744f97f688bb2b2b3d7
+      internalID: 1059428438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__38
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 2416
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1568069a9f21c43bf8fd09a51a7641
+      internalID: -440974993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eac3475e46b3f744a1c2e4bf7e3fa25
+      internalID: -490054273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__40
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13516dcc2bb1e7448b24f27c8a637c68
+      internalID: 1654550743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__41
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf2cd08a92659d468c6d43846075b48
+      internalID: -1458287676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__42
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8910bd6c41450fa479195b0ee1c1fffc
+      internalID: 734507441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__43
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98435153def411c47bac4d61a6c1592f
+      internalID: 1698627369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__44
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c75f0d1f8fcdc5408b1b602c9e4a717
+      internalID: 961424163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__45
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0daa6ea41b0716488c378cf11a7b039
+      internalID: -2066898703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__46
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78b475fff4cb6346b46ba6fd2827455
+      internalID: -1996571648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__47
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a29166232401845bac0899a9b4eb91
+      internalID: 1589952549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__48
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d412130d5c568c04db75f3f37aeec6d9
+      internalID: 844361514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__49
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c729f6b23547a341bfb9eab6137afdf
+      internalID: -157353736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__50
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13872aef26da45c49a5f827f6fab5b79
+      internalID: -1239407612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__51
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 1856
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814e87e253d445c45a89bdb1be21d62c
+      internalID: -1904661513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a441cce9665724f8aa46dcbbcb0d0f
+      internalID: 806659547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__53
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a335610ca13f5c6499d3c03d1dd68df2
+      internalID: -1926473396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__54
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c1d791a802c546b789f068981867f
+      internalID: 549772935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__55
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9006394b2417a3e4ea4366c4d048adb2
+      internalID: -2135476308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__56
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c2123c405b97e458db018eb862ed86
+      internalID: 334138921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__57
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b42cc5007136343843046199cd95c0
+      internalID: -129728300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__58
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265c440faaac2cb45ba2b633d4999d64
+      internalID: 147391148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__59
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c3f21236435d34fbdad0c21f5056b6
+      internalID: 1208414813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__60
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9725573231a8c774e9c619ca3bddb231
+      internalID: 2145208467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__61
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb4bef0bd6e36345a8684932cb62d42
+      internalID: 2111240512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__62
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a416addb36cb84645995826360f62d0a
+      internalID: -1876380450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__63
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9519cf6987bb444885531689ba59b1c
+      internalID: 2114285046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__64
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 1296
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531b5e718008dee46a13e48d8ad8c8d6
+      internalID: 1529781711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e424f7effea2613438140a94a1f7c739
+      internalID: -1272012652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__66
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bf4c510e3e4e2428e64f35963fccc1
+      internalID: -1060302137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__67
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c97e8187eee76c4cb54935bd5bbfe04
+      internalID: 927694787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__68
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa933748e259c184a8df195e66ad0b81
+      internalID: 1926780408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__69
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e1910b70f4fde4a844475579379c80
+      internalID: -743020821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__70
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfd64031719b6d4f89235585937ded8
+      internalID: 1646465172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__71
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9428a3d098aec45a1b1e75ed31f57c
+      internalID: 1033260442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__72
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26829dbf5881bfd47833a25116168d0c
+      internalID: 1511820933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__73
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66d3d91a06e62a44b12bc124f9b388a
+      internalID: -1506692296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__74
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22942aa265d7a7640b793af9065d535f
+      internalID: 928970428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__75
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09205506e77a8dd46b4f515695c7dad6
+      internalID: -1800405959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__76
+      rect:
+        serializedVersion: 2
+        x: 6930
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c357798a2764a84081fa38d4fa9484f
+      internalID: -80906877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escarabajo rinoceronte Sheet__77
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 736
+        width: 630
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3082e9eaeda7604985b04f4bff21848
+      internalID: 1161546685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      escarabajo rinoceronte Sheet__0: 603466618
+      escarabajo rinoceronte Sheet__1: -508649051
+      escarabajo rinoceronte Sheet__10: -254675636
+      escarabajo rinoceronte Sheet__11: -890869109
+      escarabajo rinoceronte Sheet__12: 1961343044
+      escarabajo rinoceronte Sheet__13: 1025521028
+      escarabajo rinoceronte Sheet__14: -965508187
+      escarabajo rinoceronte Sheet__15: -1498336913
+      escarabajo rinoceronte Sheet__16: 1622057606
+      escarabajo rinoceronte Sheet__17: -1423157981
+      escarabajo rinoceronte Sheet__18: 777427694
+      escarabajo rinoceronte Sheet__19: -1109572999
+      escarabajo rinoceronte Sheet__2: 1142782970
+      escarabajo rinoceronte Sheet__20: 531232578
+      escarabajo rinoceronte Sheet__21: -1807158458
+      escarabajo rinoceronte Sheet__22: -39968059
+      escarabajo rinoceronte Sheet__23: 1329109414
+      escarabajo rinoceronte Sheet__24: -875288441
+      escarabajo rinoceronte Sheet__25: 886507982
+      escarabajo rinoceronte Sheet__26: -1228912775
+      escarabajo rinoceronte Sheet__27: -1329173813
+      escarabajo rinoceronte Sheet__28: -1139723534
+      escarabajo rinoceronte Sheet__29: 106480432
+      escarabajo rinoceronte Sheet__3: -1614122780
+      escarabajo rinoceronte Sheet__30: 332988944
+      escarabajo rinoceronte Sheet__31: -1184587194
+      escarabajo rinoceronte Sheet__32: -1041351745
+      escarabajo rinoceronte Sheet__33: -1772996861
+      escarabajo rinoceronte Sheet__34: 762377676
+      escarabajo rinoceronte Sheet__35: -1773355538
+      escarabajo rinoceronte Sheet__36: -1733454005
+      escarabajo rinoceronte Sheet__37: 1059428438
+      escarabajo rinoceronte Sheet__38: -440974993
+      escarabajo rinoceronte Sheet__39: -490054273
+      escarabajo rinoceronte Sheet__4: 1536583297
+      escarabajo rinoceronte Sheet__40: 1654550743
+      escarabajo rinoceronte Sheet__41: -1458287676
+      escarabajo rinoceronte Sheet__42: 734507441
+      escarabajo rinoceronte Sheet__43: 1698627369
+      escarabajo rinoceronte Sheet__44: 961424163
+      escarabajo rinoceronte Sheet__45: -2066898703
+      escarabajo rinoceronte Sheet__46: -1996571648
+      escarabajo rinoceronte Sheet__47: 1589952549
+      escarabajo rinoceronte Sheet__48: 844361514
+      escarabajo rinoceronte Sheet__49: -157353736
+      escarabajo rinoceronte Sheet__5: 1972694286
+      escarabajo rinoceronte Sheet__50: -1239407612
+      escarabajo rinoceronte Sheet__51: -1904661513
+      escarabajo rinoceronte Sheet__52: 806659547
+      escarabajo rinoceronte Sheet__53: -1926473396
+      escarabajo rinoceronte Sheet__54: 549772935
+      escarabajo rinoceronte Sheet__55: -2135476308
+      escarabajo rinoceronte Sheet__56: 334138921
+      escarabajo rinoceronte Sheet__57: -129728300
+      escarabajo rinoceronte Sheet__58: 147391148
+      escarabajo rinoceronte Sheet__59: 1208414813
+      escarabajo rinoceronte Sheet__6: 1459826835
+      escarabajo rinoceronte Sheet__60: 2145208467
+      escarabajo rinoceronte Sheet__61: 2111240512
+      escarabajo rinoceronte Sheet__62: -1876380450
+      escarabajo rinoceronte Sheet__63: 2114285046
+      escarabajo rinoceronte Sheet__64: 1529781711
+      escarabajo rinoceronte Sheet__65: -1272012652
+      escarabajo rinoceronte Sheet__66: -1060302137
+      escarabajo rinoceronte Sheet__67: 927694787
+      escarabajo rinoceronte Sheet__68: 1926780408
+      escarabajo rinoceronte Sheet__69: -743020821
+      escarabajo rinoceronte Sheet__7: 731860929
+      escarabajo rinoceronte Sheet__70: 1646465172
+      escarabajo rinoceronte Sheet__71: 1033260442
+      escarabajo rinoceronte Sheet__72: 1511820933
+      escarabajo rinoceronte Sheet__73: -1506692296
+      escarabajo rinoceronte Sheet__74: 928970428
+      escarabajo rinoceronte Sheet__75: -1800405959
+      escarabajo rinoceronte Sheet__76: -80906877
+      escarabajo rinoceronte Sheet__77: 1161546685
+      escarabajo rinoceronte Sheet__78: -295337394
+      escarabajo rinoceronte Sheet__79: 1448778926
+      escarabajo rinoceronte Sheet__8: 1735366705
+      escarabajo rinoceronte Sheet__80: -1278130962
+      escarabajo rinoceronte Sheet__81: -1693680598
+      escarabajo rinoceronte Sheet__82: 1240733027
+      escarabajo rinoceronte Sheet__83: -991400485
+      escarabajo rinoceronte Sheet__84: -685718129
+      escarabajo rinoceronte Sheet__9: 836516914
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

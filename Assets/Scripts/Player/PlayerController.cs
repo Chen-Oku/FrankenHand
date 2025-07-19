@@ -88,8 +88,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private bool isParalyzed = false;
+    private float paralyzeTimer = 0f;
+
+    public void Paralyze(float duration)
+    {
+        isParalyzed = true;
+        paralyzeTimer = duration;
+        StartCoroutine(CameraShake(duration, 0.2f)); // Puedes ajustar la magnitud
+    }
+
     void Update()
     {
+        if (isParalyzed)
+        {
+            paralyzeTimer -= Time.deltaTime;
+            if (paralyzeTimer <= 0f)
+                isParalyzed = false;
+            return; // Bloquea el movimiento aquí
+        }
+
         // Comprobar si está en el suelo
         isGrounded = charController.isGrounded;
         if (isGrounded && velocity.y < 0)
@@ -496,5 +514,26 @@ public class PlayerController : MonoBehaviour
     {
         if (animator != null)
             animator.SetFloat("idleWaling", 0f); // O el parámetro que corresponda
+    }
+
+    private IEnumerator CameraShake(float duration, float magnitude)
+    {
+        if (cameraTransform == null) yield break;
+        Vector3 originalPos = cameraTransform.localPosition;
+
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            cameraTransform.localPosition = originalPos + new Vector3(x, y, 0);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        cameraTransform.localPosition = originalPos;
     }
 }
