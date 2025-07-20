@@ -14,6 +14,15 @@ public class PickupItem : MonoBehaviour
             {
                 //inventory.AddItem(itemData, amount);
 
+                // Mostrar la nota si corresponde
+                if (itemData.esNota)
+                {
+                    // Busca el NotaCounterUI en la escena y muestra la nota
+                    NotaCounterUI notaUI = FindObjectOfType<NotaCounterUI>();
+                    if (notaUI != null)
+                        notaUI.MostrarNota(itemData);
+                }
+
                 if (itemData.pickupSound != null)
                 {
                     Debug.Log("Reproduciendo sonido de pickup: " + itemData.pickupSound.name);

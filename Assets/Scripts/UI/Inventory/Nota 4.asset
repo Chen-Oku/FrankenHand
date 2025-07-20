@@ -17,6 +17,10 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 22ffbb13ac1b4324f974a50fa31a595b, type: 3}
   pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}
   itemPrefab: {fileID: 4866518546810059896, guid: 54412d838e0ccd040ac88344f437e904, type: 3}
-  description: Nota Que revela parte de tu existencia 2
+  description: "\xBFEs posible que entienda? \xBFQu\xE9 sienta?\r\n\xBFQu\xE9 clase
+    de monstruo he creado... si ahora el monstruo soy yo?\r"
   maxStack: 1
   esNota: 1
+  notaVideo: {fileID: 0}
+  notaImagen: {fileID: 21300000, guid: 552318ec474e80b4ebeb66bb893d7ce9, type: 3}
+  imagenMostrarTiempo: 5

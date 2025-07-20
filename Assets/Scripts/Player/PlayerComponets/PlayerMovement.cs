@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public float dashSpeed = 40f;
     public float dashDuration = 0.2f;
     public float coyoteTime = 2f;
-    
+
 
     // --- State Variables ---
     private Vector3 velocity;
@@ -302,6 +302,14 @@ public class PlayerMovement : MonoBehaviour
     public void RespawnPlayer()
     {
         ResetMovementStateOnRespawn();
+        isGrounded = true;
+        wasGrounded = true;
+        stepTimer = 0f;
+        velocity = Vector3.zero;
+        airMomentum = Vector3.zero;
+        canDoubleJump = true;
+        coyoteTimeCounter = coyoteTime;
         // ...other respawn logic...
     }
+
 }

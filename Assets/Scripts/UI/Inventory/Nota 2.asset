@@ -17,6 +17,11 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 22ffbb13ac1b4324f974a50fa31a595b, type: 3}
   pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}
   itemPrefab: {fileID: 4866518546810059896, guid: 54412d838e0ccd040ac88344f437e904, type: 3}
-  description: Nota Que revela parte de tu existencia 2
+  description: "Partes muertas, otras restauradas.\r\n\xBFY si no es una sola vida?
+    \xBFY si cada parte guarda la suya, su dolor, su historia?\r\n\xBFY si no es
+    una criatura... sino muchas voces atrapadas en un solo cuerpo?\r"
   maxStack: 1
   esNota: 1
+  notaVideo: {fileID: 0}
+  notaImagen: {fileID: 21300000, guid: adf5d9af7011e7645be5902fb87b9393, type: 3}
+  imagenMostrarTiempo: 5
