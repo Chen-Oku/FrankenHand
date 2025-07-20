@@ -33,6 +33,9 @@ public class PlayerInteraction : MonoBehaviour
 
             estaEmpujando = direction.magnitude > 0.1f;
 
+            // NO LLAMES objetoArrastrado.Arrastrar(direction);
+            // NO MUEVAS objetoArrastrado.transform.position
+
             if (!estabaEmpujando && estaEmpujando)
                 animator.SetTrigger("startPush");
 

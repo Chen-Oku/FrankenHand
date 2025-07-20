@@ -21,23 +21,24 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
     {
         grabber = agarrador;
         rb.useGravity = false;
-        rb.linearDamping = 10f;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        rb.mass = grabbedMass; // ¡Reduce la masa para que sea fácil de empujar!
+        rb.isKinematic = false; // Permite que la física actúe
+        rb.linearDamping = 10f; // Damping para que no se deslice demasiado
+        rb.mass = grabbedMass; // Masa baja para que el jugador lo pueda empujar
     }
 
     public void Soltar()
     {
         grabber = null;
         rb.useGravity = true;
+        rb.isKinematic = false;
         rb.linearDamping = 0f;
-        rb.mass = originalMass; // Restaura la masa original
+        rb.mass = originalMass;
+        rb.linearVelocity = Vector3.zero;
     }
 
-    public void Arrastrar(Vector3 posicion)
+    public void Arrastrar(Vector3 direccion)
     {
-        // No se usa directamente, el movimiento es controlado por la física del jugador
+        // Vacío: el jugador lo empuja con su cuerpo, no por código
     }
 
     void FixedUpdate()

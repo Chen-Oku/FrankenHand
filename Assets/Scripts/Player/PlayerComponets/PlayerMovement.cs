@@ -297,4 +297,11 @@ public class PlayerMovement : MonoBehaviour
             );
         }
     }
+
+    // --- Respawn ---
+    public void RespawnPlayer()
+    {
+        ResetMovementStateOnRespawn();
+        // ...other respawn logic...
+    }
 }

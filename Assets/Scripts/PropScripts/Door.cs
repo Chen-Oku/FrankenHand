@@ -1,5 +1,7 @@
 using UnityEngine;
 using cakeslice;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
@@ -7,10 +9,13 @@ public class Door : MonoBehaviour
     public InventoryItemData requiredKeyData; // Asigna el ScriptableObject de la llave en el Inspector
     public float openDistance = 4f; // Distancia para interactuar
     public GameObject interactMessage; // Asigna el objeto de mensaje en el inspector
+    public GameObject videoPlayerObject; // Asigna el objeto con VideoPlayer en el inspector
+    public GameObject videoUI; // Asigna el RawImage de la UI en el inspector
 
     private bool playerInRange = false;
     private Outline outline;
     private Transform playerTransform;
+    private VideoPlayer videoPlayer;
 
     void Awake()
     {
@@ -69,11 +74,36 @@ public class Door : MonoBehaviour
         {
             Debug.Log("Puerta abierta");
             StartCoroutine(OpenDoorAnimation());
+            PlayEndingVideo();
         }
         else
         {
             Debug.Log("Necesitas la llave para abrir esta puerta.");
         }
+    }
+
+    private void PlayEndingVideo()
+    {
+        if (videoPlayerObject != null)
+        {
+            videoPlayerObject.SetActive(true);
+            if (videoUI != null)
+                videoUI.SetActive(true);
+
+            videoPlayer = videoPlayerObject.GetComponent<VideoPlayer>();
+            if (videoPlayer != null)
+            {
+                videoPlayer.Play();
+                videoPlayer.loopPointReached += OnVideoEnd;
+            }
+        }
+    }
+
+    private void OnVideoEnd(VideoPlayer vp)
+    {
+        if (videoUI != null)
+            videoUI.SetActive(false);
+        SceneManager.LoadScene("CreditsScene");
     }
 
     public void WhenOpened()
@@ -103,6 +133,5 @@ public class Door : MonoBehaviour
         }
         transform.rotation = endRot;
         WhenOpened();
-        // Opcional: Destroy(gameObject); si quieres eliminar la puerta
     }
 }

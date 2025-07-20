@@ -20,6 +20,9 @@ public class PlayerSoundController : MonoBehaviour
     public AudioClip sonidoBofetadaGato2;
     public AudioClip sonidoBofetadaGato3;
 
+    private float lastStepTime = -1f;
+    private float stepCooldown = 2.0f; // Ahora coincide con la duración del audio de caminar
+
     public void PlaySaltar()
     {
         audioSource.PlayOneShot(sonidoSalto);
@@ -42,7 +45,14 @@ public class PlayerSoundController : MonoBehaviour
 
     public void PlayManoCaminando()
     {
-        audioSource.PlayOneShot(sonidoManoCaminando);
+        if (audioSource == null || sonidoManoCaminando == null)
+            return;
+
+        if (Time.time - lastStepTime > stepCooldown)
+        {
+            audioSource.PlayOneShot(sonidoManoCaminando);
+            lastStepTime = Time.time;
+        }
     }
 
     public void PlayDeGolpeCaidaMano()
