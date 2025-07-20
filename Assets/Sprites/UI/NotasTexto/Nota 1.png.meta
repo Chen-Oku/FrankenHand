@@ -1,0 +1,3546 @@
+fileFormatVersion: 2
+guid: abace625ec1f5e346823bcecf2fb768f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nota 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb0665352fe676479ec9e5691b358f7
+      internalID: 733464362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_1
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04c984f6b5e6184cb8926597703508f
+      internalID: 240235889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_2
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff8af6e0b795b84cb1d05f501a467d9
+      internalID: -91522077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_3
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d29de7ac1202d4a9a7154d4a7ffbfe
+      internalID: 646343560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_4
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d701995aa912a42ac7cca5a1b2c33a
+      internalID: -530618686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_5
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 7992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4cf2f5b2b6429428834f6418525837
+      internalID: 187980093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f325b0ab6950e4342aae14c33b1858e9
+      internalID: -1425150252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_7
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450d8c962dd9c28468607ed07d9b7b75
+      internalID: -2061117457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_8
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237c418f46539ef458c8baa2ae385091
+      internalID: -1840393699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_9
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8080d1c6dc0f774283fc07dde0cf07e
+      internalID: -674165552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_10
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891c16b8e7ef9cf46b54e26591e6215c
+      internalID: 494616385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_11
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 7792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9039d2cccf2b64ab5559316f0401cd
+      internalID: -1577348030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaddc3a223bf80408206805398f2ce9
+      internalID: 713286902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_13
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b86992dc159c1469d729dbd230b874
+      internalID: 596718357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_14
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4eaf8179e132542a0673db84c64eea
+      internalID: 2076402195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_15
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1443f0b7bc4fc5478bf77407542e03e
+      internalID: 821380719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_16
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e165e57f98e594dbc1837e677b7023
+      internalID: -1068079254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_17
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 7592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6c924bef843ab429cd9c04a23b1bf2
+      internalID: 318704828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4537190f10e0348a52aa83210a7527
+      internalID: -1764151396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_19
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f88ac8ce2811624ea13fb1fac7b5da7
+      internalID: 2099711926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_20
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd393d387f28a840a9ca2aec7a3b6c6
+      internalID: 146620629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_21
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9499096f19266b64e855f6ad62ec9d04
+      internalID: 510636852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_22
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b273032fcfb80b44808e00fe2e1e004
+      internalID: 1167479010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_23
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 7392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01afcdf6acf658344b43a3480f6978dc
+      internalID: -670012578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa3822b25bfab449f5ac393b024e52
+      internalID: -250815165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_25
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2770dd33745abaa44b71848f77a42a3c
+      internalID: -903746162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_26
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5162e8f2c330741854465a7c9147f0
+      internalID: 505653914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_27
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10e638fbb36ff6468ddca2cc729a34b
+      internalID: 1240313967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_28
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2663aa22e7c0b44b73f7e53bf61fcc
+      internalID: -1023449934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_29
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 7192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b36ea71fb2630347862e1b6e699a522
+      internalID: 1663856301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d897287dc4936e7439a3d6ce08c25ba8
+      internalID: 471781258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_31
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5186384593108642849ee3c98952ba0
+      internalID: 1651651256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_32
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0566cc8511829864da777a107c1015d2
+      internalID: -1281872793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_33
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0ef6ad8c4e1574ab76d53e108c1f4f
+      internalID: -745909211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_34
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323862b3435124b4084d6d26b0c08e0f
+      internalID: -1402302624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_35
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 6992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30156d233b9886547b3f0a414f7a2a90
+      internalID: -1365737885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2849383a9b1b74ba416107525b0af9
+      internalID: 464001627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_37
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ea32caf5ad9fa48b2bc6f37ee2bd7a
+      internalID: -1360268564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_38
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25468d399b8dfc94893651bdf3fd056f
+      internalID: -1334667748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_39
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176cec73f8fabe14983219b090b50033
+      internalID: 496164654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_40
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928e6364c0541284eb40ff1fcbb8cab6
+      internalID: -1624316029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_41
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 6792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9465ad3ffd6a4b547881a9267803a298
+      internalID: -1236261082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7e800314fe45c4991ec4c81c161ad0
+      internalID: 1648912148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_43
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06099b7afeb3734a951dfc6ea019ad8
+      internalID: 282369332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_44
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae2e2c478fde9f469e5688a1c355a37
+      internalID: 331131540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_45
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba30cba2b62ab9b4dad2c152d9ed7c76
+      internalID: 1301899288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_46
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557d6a6003e5fce4f9ee2a82965578f6
+      internalID: 45662115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_47
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 6592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd11481573d5fb4fb2cbe8eb4d8b519
+      internalID: 1147093134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241cbce6b5ee2c14784b549d86fb4ce2
+      internalID: -2107507990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_49
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec0ccc1c3086044f8cefce16f623e3a
+      internalID: -295835548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_50
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6287c295b9e9a4ca3330c4ef287d7d
+      internalID: 1197629661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_51
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11d9480da8009442ba6d00fa56e2ff0
+      internalID: -1414859357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_52
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682bbd05c31d9f94cbbd2ab306ff4772
+      internalID: -1906029026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_53
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 6392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03efe1e682e327045a82ce1b6b7263aa
+      internalID: 1540969231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83958a63dd5a4b043a64f7baa6443a08
+      internalID: -313359728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_55
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494999e5ef1b2404cb43e7e22ecbb002
+      internalID: 1515279828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_56
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d98b30270c7aa24689d21c3c56f9ab4
+      internalID: 489930925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_57
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae805ad99b2f35c479a51abe73ac5de8
+      internalID: -1420912673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_58
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807fec9908f43784ca916a603f162e38
+      internalID: 705874151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_59
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 6192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71ae827d5c908c4795521de318aa206
+      internalID: 1504752980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07360c5c7e3b1d64985d41a7a214699e
+      internalID: 2057534160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_61
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c89ab67411176847ac7600960c2257a
+      internalID: -438572759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_62
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f138d9a0f3d3eb49886a2baa0ccb1ae
+      internalID: -1734334222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_63
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ad56beb955b024e93ac38a8c163da9
+      internalID: 459654103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_64
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09dd96747fbd7a4ab7eb4c2647742fb
+      internalID: -1582921294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_65
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 5992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64344cdde1feaff4d982cbdc2c60dd17
+      internalID: 291643947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527080b0d69d6bd4da8554991135103d
+      internalID: -1472380436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_67
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9a6efee85be204b9afbe347a34273f
+      internalID: -897827999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_68
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1f1a60d528d4649bf951db7eaacb44
+      internalID: -961655878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_69
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9000ab0f7d314d147954afb933395c6c
+      internalID: -428069894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_70
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ca6d98472bee4da1bc46aea1bab08
+      internalID: 1471936019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_71
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 5792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47ed970cb9c9c44caa18494998088ed
+      internalID: 1580529600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cddb64abf0230a45bf91c9bf18c1bd4
+      internalID: -688572978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_73
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13da1c2ab496acc4ab63b77209e23278
+      internalID: -1568021724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_74
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b716ecbc70489446b29d0bf95d88f2e
+      internalID: 270566651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_75
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7f81893414e544a8cc7520c734abd9
+      internalID: 647961029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_76
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a34bd793a1b97747a586f822e60b2a1
+      internalID: -1187310316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_77
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 5592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf5461d2b4ebaf42a0ba45f752d3ca4
+      internalID: -978888008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542ae4b568068c0458a9b8deeb6a881b
+      internalID: 153822968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_79
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc9ba5a367e81a4eb82cfba2dd41b8c
+      internalID: -1060520453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_80
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6388c41021ed297429f6ae5c83536bf4
+      internalID: 228757102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_81
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc38b5bb31cf3d47ad325be6c2bb7cb
+      internalID: 1788671285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_82
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83b29ffe49121241a959074db81d95c
+      internalID: -1930467627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_83
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 5392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c282fb2be9beec40a89d2b7c1b16dd3
+      internalID: 371028018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829a1144efce9a34c8cd0f2be1e40f52
+      internalID: -520635052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_85
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b76a5eec1a8e44fb93f7e6a52b61fc
+      internalID: -1645258790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_86
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11529204451f49c47812c3b4f80e29a5
+      internalID: 270460485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_87
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b17f695f028584d9541c3b5aa325b4
+      internalID: -1710012729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_88
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a4e3ab2e69c79458e7b2c60eda6da1
+      internalID: 295488908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_89
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 5192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1622f360d35dd4081496dd8ad45630
+      internalID: 1059481315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1059db27721ccfd4697c8438931a97a8
+      internalID: -1067985763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_91
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bc5b2e563c7674d83e4ae25738f38c
+      internalID: 246573704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_92
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b044c3a732a944d85ceafc45051f3f
+      internalID: 2072442230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_93
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3070347b0efdc25449c7328f0adf4c00
+      internalID: -1289078173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_94
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c14f85d6b3c95c4194cc63780eb8a95
+      internalID: -95172163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_95
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7140253c9f979f49a1fbaccdd51a020
+      internalID: -275130145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0344e1f6a1bf78f43b475798dca07859
+      internalID: -1613468720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_97
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c0c22be2c066468e188b513385a58
+      internalID: -1137683532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_98
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1d33205617bd34399bc03c1ff48a42
+      internalID: 591054907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_99
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1847d25957bfc141acc063a6b9c7d1b
+      internalID: 175111036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_100
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b39b3e053b2e84b9ca8d5deb388b7b
+      internalID: 629392776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_101
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bb853c1f835b4382296b34bf6cde1
+      internalID: 990474462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d582db0bb0b6104448baf73975139e04
+      internalID: -1249056287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_103
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4c6470d75b06040ad895e35159e10b
+      internalID: -27611455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_104
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ee20d30e77f7a49a409e5e89953a21
+      internalID: -1587695674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_105
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d882b7dfb9e95468714842f0e33e8a
+      internalID: -525539103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_106
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b58642bd0a7a848bdf12e95968a89f
+      internalID: -1412079889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_107
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f7f11dcf458034a9d9351ac0595326
+      internalID: -1388003521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b0ee9a7c065fd46b67ae7f4f776a23
+      internalID: 1591967930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_109
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5666df2a044b8174cbcc7b9f93494978
+      internalID: 741517220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_110
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af47f42caeb224ea6f2f0bb539a6b9
+      internalID: 1335068123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_111
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912c0969db7897249b9ca746f637f4ec
+      internalID: -2098374974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_112
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d3a93a3c48dd44298ae4ef9ba8bc7f
+      internalID: -108069900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_113
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096e3295d714dc34b96162da05d25127
+      internalID: 734685050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb006db610b4ead47b1a7258676e92fa
+      internalID: -220073558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_115
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b232d6d69dc15a142a6fd5f3e213eae9
+      internalID: 407812738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_116
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f42d9bfc21486459f3f19bedd5321e
+      internalID: -458167749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_117
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb4cd7ec50f3e042baa717a53021eb8
+      internalID: 349464571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_118
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecc60264249e1f41916da5082fc6876
+      internalID: -69341444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_119
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146b0f40d11df944daaf17a190cb913d
+      internalID: -15509104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231dcf9c61e1f94468a2852000a7cfa0
+      internalID: 1569942882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_121
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cea370667e30746946e272e6fecf61
+      internalID: 1733552339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_122
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5a52dbc05001b43a5ea5c7cba49566
+      internalID: 825484913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_123
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79df7fd9f1559c443a4e622e449da10c
+      internalID: -776612449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_124
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba03ea1776a3ae444b51dc2a087dd4e3
+      internalID: -1906850324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_125
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3992
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83582b0da160d74f8521da88e693cb5
+      internalID: 15357204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5c7a8080ba7164685767f904a26de5
+      internalID: -853954688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_127
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca08c8882d2d684caad3d0235b355c7
+      internalID: 107209918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_128
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90f15a548ac98843b962b765d9c9169
+      internalID: 254425577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_129
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e172b7ed59adf25498e008d230fd21cb
+      internalID: 1093559525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_130
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f496b0f8fa08c4fbdc6ef5bfdf534c
+      internalID: 1683689344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_131
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3792
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd8860755b262741ab1479424159aca
+      internalID: -932480753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f615ebbf2892046bd770a86b6ac95f
+      internalID: -1008762196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_133
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9376d2b3421da2d46938b1c6bbe9802e
+      internalID: 1398814884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_134
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed83a8aca0dadd4f8ede4b336a56f03
+      internalID: -158526778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_135
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69070f2a30ff3af44b65f5c60d3366e5
+      internalID: -49682887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_136
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e19cafb8645974bb1caf39f6545cc9
+      internalID: -475261431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_137
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3592
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959f79c9c82501744bbc339959952509
+      internalID: 353403096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4c713bec1ca5d4e8938291dd8dff2f
+      internalID: -260895390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_139
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7814b8ffbe4d76b4aa1fc368f2edab48
+      internalID: 338562237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_140
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d7ecb4d3855824ea49260d04778407
+      internalID: 389576617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_141
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d7495a2efb4864c82872a662497d32
+      internalID: 647947840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_142
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deee731c736d8624eb1a2a4ceb43cb5b
+      internalID: 818693510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_143
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3392
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874c5104303e87c48be064ef6d5fcb40
+      internalID: 1140358765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d3b74cd9cdfc94dace4cfd79da4cad
+      internalID: -423909464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_145
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0494255ce2347674483b18c9e34c2ce4
+      internalID: -521008684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_146
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e40f1f4978b0ab4a9b0df13b4d77bc8
+      internalID: 1653299922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_147
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49197f7a1b56f842a3972e1c1b4dc8c
+      internalID: -1955669106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nota 1_148
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 3192
+        width: 1260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c209bddc31fe034bb9045d1619d443e
+      internalID: 1810118872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99b7ca6d36339164bb17ca988834f029
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nota 1_0: 733464362
+      Nota 1_1: 240235889
+      Nota 1_10: 494616385
+      Nota 1_100: 629392776
+      Nota 1_101: 990474462
+      Nota 1_102: -1249056287
+      Nota 1_103: -27611455
+      Nota 1_104: -1587695674
+      Nota 1_105: -525539103
+      Nota 1_106: -1412079889
+      Nota 1_107: -1388003521
+      Nota 1_108: 1591967930
+      Nota 1_109: 741517220
+      Nota 1_11: -1577348030
+      Nota 1_110: 1335068123
+      Nota 1_111: -2098374974
+      Nota 1_112: -108069900
+      Nota 1_113: 734685050
+      Nota 1_114: -220073558
+      Nota 1_115: 407812738
+      Nota 1_116: -458167749
+      Nota 1_117: 349464571
+      Nota 1_118: -69341444
+      Nota 1_119: -15509104
+      Nota 1_12: 713286902
+      Nota 1_120: 1569942882
+      Nota 1_121: 1733552339
+      Nota 1_122: 825484913
+      Nota 1_123: -776612449
+      Nota 1_124: -1906850324
+      Nota 1_125: 15357204
+      Nota 1_126: -853954688
+      Nota 1_127: 107209918
+      Nota 1_128: 254425577
+      Nota 1_129: 1093559525
+      Nota 1_13: 596718357
+      Nota 1_130: 1683689344
+      Nota 1_131: -932480753
+      Nota 1_132: -1008762196
+      Nota 1_133: 1398814884
+      Nota 1_134: -158526778
+      Nota 1_135: -49682887
+      Nota 1_136: -475261431
+      Nota 1_137: 353403096
+      Nota 1_138: -260895390
+      Nota 1_139: 338562237
+      Nota 1_14: 2076402195
+      Nota 1_140: 389576617
+      Nota 1_141: 647947840
+      Nota 1_142: 818693510
+      Nota 1_143: 1140358765
+      Nota 1_144: -423909464
+      Nota 1_145: -521008684
+      Nota 1_146: 1653299922
+      Nota 1_147: -1955669106
+      Nota 1_148: 1810118872
+      Nota 1_149: 107382869
+      Nota 1_15: 821380719
+      Nota 1_150: -377275154
+      Nota 1_16: -1068079254
+      Nota 1_17: 318704828
+      Nota 1_18: -1764151396
+      Nota 1_19: 2099711926
+      Nota 1_2: -91522077
+      Nota 1_20: 146620629
+      Nota 1_21: 510636852
+      Nota 1_22: 1167479010
+      Nota 1_23: -670012578
+      Nota 1_24: -250815165
+      Nota 1_25: -903746162
+      Nota 1_26: 505653914
+      Nota 1_27: 1240313967
+      Nota 1_28: -1023449934
+      Nota 1_29: 1663856301
+      Nota 1_3: 646343560
+      Nota 1_30: 471781258
+      Nota 1_31: 1651651256
+      Nota 1_32: -1281872793
+      Nota 1_33: -745909211
+      Nota 1_34: -1402302624
+      Nota 1_35: -1365737885
+      Nota 1_36: 464001627
+      Nota 1_37: -1360268564
+      Nota 1_38: -1334667748
+      Nota 1_39: 496164654
+      Nota 1_4: -530618686
+      Nota 1_40: -1624316029
+      Nota 1_41: -1236261082
+      Nota 1_42: 1648912148
+      Nota 1_43: 282369332
+      Nota 1_44: 331131540
+      Nota 1_45: 1301899288
+      Nota 1_46: 45662115
+      Nota 1_47: 1147093134
+      Nota 1_48: -2107507990
+      Nota 1_49: -295835548
+      Nota 1_5: 187980093
+      Nota 1_50: 1197629661
+      Nota 1_51: -1414859357
+      Nota 1_52: -1906029026
+      Nota 1_53: 1540969231
+      Nota 1_54: -313359728
+      Nota 1_55: 1515279828
+      Nota 1_56: 489930925
+      Nota 1_57: -1420912673
+      Nota 1_58: 705874151
+      Nota 1_59: 1504752980
+      Nota 1_6: -1425150252
+      Nota 1_60: 2057534160
+      Nota 1_61: -438572759
+      Nota 1_62: -1734334222
+      Nota 1_63: 459654103
+      Nota 1_64: -1582921294
+      Nota 1_65: 291643947
+      Nota 1_66: -1472380436
+      Nota 1_67: -897827999
+      Nota 1_68: -961655878
+      Nota 1_69: -428069894
+      Nota 1_7: -2061117457
+      Nota 1_70: 1471936019
+      Nota 1_71: 1580529600
+      Nota 1_72: -688572978
+      Nota 1_73: -1568021724
+      Nota 1_74: 270566651
+      Nota 1_75: 647961029
+      Nota 1_76: -1187310316
+      Nota 1_77: -978888008
+      Nota 1_78: 153822968
+      Nota 1_79: -1060520453
+      Nota 1_8: -1840393699
+      Nota 1_80: 228757102
+      Nota 1_81: 1788671285
+      Nota 1_82: -1930467627
+      Nota 1_83: 371028018
+      Nota 1_84: -520635052
+      Nota 1_85: -1645258790
+      Nota 1_86: 270460485
+      Nota 1_87: -1710012729
+      Nota 1_88: 295488908
+      Nota 1_89: 1059481315
+      Nota 1_9: -674165552
+      Nota 1_90: -1067985763
+      Nota 1_91: 246573704
+      Nota 1_92: 2072442230
+      Nota 1_93: -1289078173
+      Nota 1_94: -95172163
+      Nota 1_95: -275130145
+      Nota 1_96: -1613468720
+      Nota 1_97: -1137683532
+      Nota 1_98: 591054907
+      Nota 1_99: 175111036
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

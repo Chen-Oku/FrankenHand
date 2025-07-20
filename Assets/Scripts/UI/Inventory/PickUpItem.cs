@@ -14,7 +14,23 @@ public class PickupItem : MonoBehaviour
             if (inventory != null && itemData != null)
             {
                 //inventory.AddItem(itemData, amount);
+<<<<<<< Updated upstream
                 // Aquí puedes reproducir un sonido o animación de recogida
+=======
+
+                if (itemData.pickupSound != null)
+                {
+                    Debug.Log("Reproduciendo sonido de pickup: " + itemData.pickupSound.name);
+                    AudioSource.PlayClipAtPoint(itemData.pickupSound, Camera.main.transform.position);
+                }
+
+                if (itemData.esNota)
+                {
+                    NoteUIManager.Instance.ShowNote(itemData.noteVideo);
+                    // Puedes ocultar la nota tras un tiempo o al presionar una tecla
+                }
+
+>>>>>>> Stashed changes
                 Destroy(gameObject);
             }
         }

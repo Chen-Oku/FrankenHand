@@ -78,11 +78,10 @@ public class MovingBooks : MonoBehaviour
             }
             // Si usas CharacterController, puedes reposicionar al jugador o llamar a un método de "caída"
             var playerController = other.GetComponent<PlayerController>();
-            if (playerController != null)
+            if (playerController != null && playerController.respawn != null)
             {
-                // Ejemplo: reposicionar al último checkpoint
-                if (playerController.lastCheckpoint != null)
-                    playerController.RespawnAtCheckpoint();
+                if (playerController.respawn.lastCheckpoint != null)
+                    playerController.respawn.RespawnAtCheckpoint();
             }
         }
     }

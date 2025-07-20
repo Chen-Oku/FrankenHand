@@ -16,5 +16,13 @@ MonoBehaviour:
   itemType: 2
   icon: {fileID: 21300000, guid: d7ee58d454799914aace3afe807ab9a3, type: 3}
   itemPrefab: {fileID: 4866518546810059896, guid: 54412d838e0ccd040ac88344f437e904, type: 3}
+<<<<<<< Updated upstream:Assets/Scripts/UI/Inventory/Cube.asset
   description: Cubo de Mute
   maxStack: 1
+=======
+  description: "Mi creaci\xF3n no deber\xEDa poder pensar ni sentir.\r\nEs un monstruo.
+    No es real, no debi\xF3 ser creado."
+  maxStack: 1
+  esNota: 1
+  noteVideo: {fileID: 32900000, guid: 20ca417ef5d605f4ba21b386447b55a2, type: 3}
+>>>>>>> Stashed changes:Assets/Scripts/UI/Inventory/Nota 1.asset

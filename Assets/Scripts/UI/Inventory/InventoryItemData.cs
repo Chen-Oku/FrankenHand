@@ -1,5 +1,6 @@
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.Video;
 
 public enum ItemType { Collectible, Key, Usable, Other }
 
@@ -15,4 +16,10 @@ public class InventoryItemData : ScriptableObject
     [TextArea]
     public string description;
     public int maxStack = 5; // 1 = no apilable, >1 = apilable
+<<<<<<< Updated upstream
+=======
+
+    public bool esNota;
+    public VideoClip noteVideo;
+>>>>>>> Stashed changes
 }

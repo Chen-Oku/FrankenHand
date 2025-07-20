@@ -4,27 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController charController;
-    public Transform cameraTransform;
-    public Transform spriteVisualTransform; // Asigna el hijo visual en el Inspector
-    public float speed = 6.0f;
-    public float runSpeed = 12.0f;
-    public float jumpHeight = 1.5f;
-    public float gravity = -9.81f;
-    public float dashSpeed = 20f;
-    public float dashDuration = 0.2f;
-    public float coyoteTime = 0.2f;
+    public PlayerMovement movement;
+    public PlayerInteraction interaction;
+    public PlayerAnimationController animationController;
+    public PlayerRespawn respawn;
+    public PlayerCameraEffect cameraEffect;
+    public VidaPlayer vidaPlayer;
+    private PlayerSoundController soundController;
 
-    private Vector3 velocity;
-    private bool isGrounded;
-    private bool canDoubleJump;
-    private bool isDashing;
-    private float dashTime;
-    private float coyoteTimeCounter;
-    private Vector3 lastDirection = Vector3.zero;
-    private float doubleTapTime = 0.25f; // Tiempo máximo entre toques
-    private Dictionary<KeyCode, float> lastTapTimes = new Dictionary<KeyCode, float>
+    void Awake()
     {
+<<<<<<< Updated upstream
         { KeyCode.W, -1f },
         { KeyCode.A, -1f },
         { KeyCode.S, -1f },
@@ -334,4 +324,39 @@ public class PlayerController : MonoBehaviour
     }
 
 
+=======
+        movement = GetComponent<PlayerMovement>();
+        interaction = GetComponent<PlayerInteraction>();
+        animationController = GetComponent<PlayerAnimationController>();
+        respawn = GetComponent<PlayerRespawn>();
+        cameraEffect = GetComponent<PlayerCameraEffect>();
+        vidaPlayer = GetComponent<VidaPlayer>();
+        soundController = GetComponent<PlayerSoundController>();
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (vidaPlayer != null)
+            vidaPlayer.RecibirDanio(amount);
+        animationController?.TriggerTakeDamage();
+    }
+
+    public void Paralyze(float duration)
+    {
+        movement.Paralyze(duration);
+        cameraEffect?.StartCinemachineShake(duration, 2f); // Usa el método nuevo
+    }
+
+    public void ForzarIdle()
+    {
+        if (animationController != null)
+            animationController.ForzarIdle();
+    }
+
+    public Vector3 Velocity
+    {
+        get { return movement != null ? movement.GetVelocity() : Vector3.zero; }
+        set { if (movement != null) movement.SetVelocity(value); }
+    }
+>>>>>>> Stashed changes
 }

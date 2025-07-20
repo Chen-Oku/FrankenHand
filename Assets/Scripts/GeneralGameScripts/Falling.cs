@@ -13,9 +13,13 @@ public class Falling : MonoBehaviour
                 vida.RecibirDanio(1); // O la cantidad que quieras
             }
             PlayerController player = other.GetComponentInParent<PlayerController>();
+<<<<<<< Updated upstream
             if (player != null)
+=======
+            if (player != null && permitirRespawn && player.respawn != null)
+>>>>>>> Stashed changes
             {
-                player.RespawnAtCheckpoint();
+                player.respawn.RespawnAtCheckpoint();
             }
         }
         Debug.Log("Falling trigger entered by: " + other.name);
