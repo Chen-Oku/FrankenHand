@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private DraggableObject1 objetoArrastrado;
+    public DraggableObject1 objetoArrastrado { get; set; }
     private IAgarrable objetoAgarrado;
     private Animator animator;
     private bool estabaEmpujando = false;
+
+    public KeyCode interactKey = KeyCode.F;
 
     void Awake()
     {
@@ -16,8 +18,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         HandleInteractInput();
 
-        // Animaciones de empuje/agarrar
-        bool estaAgarrando = objetoArrastrado != null;
+        // Solo animar si el objeto agarrado es arrastrable
+        bool estaAgarrando = objetoArrastrado != null && objetoArrastrado is IArrastrable;
         bool estaEmpujando = false;
 
         if (estaAgarrando)
@@ -32,9 +34,6 @@ public class PlayerInteraction : MonoBehaviour
             Vector3 direction = new Vector3(hRaw, 0f, vRaw);
 
             estaEmpujando = direction.magnitude > 0.1f;
-
-            // NO LLAMES objetoArrastrado.Arrastrar(direction);
-            // NO MUEVAS objetoArrastrado.transform.position
 
             if (!estabaEmpujando && estaEmpujando)
                 animator.SetTrigger("startPush");
@@ -55,38 +54,43 @@ public class PlayerInteraction : MonoBehaviour
 
     private void HandleInteractInput()
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(interactKey))
         {
-            if (objetoArrastrado == null)
-            {
-                IAgarrable agarrable = DetectarAgarrableCercano();
-                if (agarrable != null)
-                {
-                    agarrable.Agarrar(transform);
-                    objetoArrastrado = agarrable as DraggableObject1;
-                }
-            }
-        }
-        else
-        {
+            // Si ya tienes un objeto agarrado, suéltalo
             if (objetoArrastrado != null)
             {
                 objetoArrastrado.Soltar();
                 objetoArrastrado = null;
             }
+            else
+            {
+                // Si no tienes ninguno, busca uno cercano e intenta agarrarlo
+                IInteractuable interactuable = DetectarInteractuableCercano();
+                if (interactuable != null)
+                    interactuable.Interactuar();
+            }
         }
     }
 
-    private IAgarrable DetectarAgarrableCercano()
+    private IInteractuable DetectarInteractuableCercano()
     {
         float radio = 1.5f;
         Collider[] colliders = Physics.OverlapSphere(transform.position, radio);
         foreach (var col in colliders)
         {
-            IAgarrable agarrable = col.GetComponent<IAgarrable>();
-            if (agarrable != null)
-                return agarrable;
+            IInteractuable interactuable = col.GetComponent<IInteractuable>();
+            if (interactuable != null)
+                return interactuable;
         }
         return null;
+    }
+
+    public void AgarrarObjeto(DraggableObject1 objeto)
+    {
+        if (objetoArrastrado == null)
+        {
+            objetoArrastrado = objeto;
+            objeto.Agarrar(transform);
+        }
     }
 }

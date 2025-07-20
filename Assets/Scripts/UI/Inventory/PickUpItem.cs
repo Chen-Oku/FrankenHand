@@ -18,7 +18,7 @@ public class PickupItem : MonoBehaviour
                 if (itemData.esNota)
                 {
                     // Busca el NotaCounterUI en la escena y muestra la nota
-                    NotaCounterUI notaUI = FindObjectOfType<NotaCounterUI>();
+                    NotaCounterUI notaUI = FindFirstObjectByType<NotaCounterUI>();
                     if (notaUI != null)
                         notaUI.MostrarNota(itemData);
                 }

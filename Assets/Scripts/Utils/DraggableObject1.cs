@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class DraggableObject1 : MonoBehaviour, IAgarrable
+public class DraggableObject1 : MonoBehaviour, IAgarrable, IInteractuable, IArrastrable
 {
     public float weight = 3f;
     public float grabbedMass = 5f; // Masa temporal cuando está agarrado
@@ -10,6 +10,8 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
     private Transform grabber;
 
     public GameObject interactMessage; // Asigna el objeto de mensaje en el inspector
+
+    private bool jugadorEnRango = false;
 
     void Start()
     {
@@ -38,7 +40,7 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
 
     public void Arrastrar(Vector3 direccion)
     {
-        // Vacío: el jugador lo empuja con su cuerpo, no por código
+        // El jugador lo empuja con su cuerpo, no por código
     }
 
     void FixedUpdate()
@@ -48,14 +50,40 @@ public class DraggableObject1 : MonoBehaviour, IAgarrable
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!enabled) return; // Evita activar el mensaje si el script está desactivado
+        if (!enabled) return;
         if (other.CompareTag("Player") && interactMessage != null)
+        {
             interactMessage.SetActive(true);
+            jugadorEnRango = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player") && interactMessage != null)
             interactMessage.SetActive(false);
+
+        if (other.CompareTag("Player"))
+        {
+            jugadorEnRango = false;
+            PlayerInteraction playerInteraction = FindFirstObjectByType<PlayerInteraction>();
+            if (playerInteraction != null && playerInteraction.objetoArrastrado == this)
+            {
+                playerInteraction.objetoArrastrado.Soltar();
+                playerInteraction.objetoArrastrado = null;
+            }
+        }
+    }
+
+    // Interfaz de interacción
+    public void Interactuar()
+    {
+        if (!jugadorEnRango) return;
+
+        PlayerInteraction playerInteraction = FindFirstObjectByType<PlayerInteraction>();
+        if (playerInteraction != null)
+        {
+            playerInteraction.AgarrarObjeto(this);
+        }
     }
 }

@@ -3,7 +3,7 @@ using cakeslice;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IInteractuable
 {
     public Inventory inventory;
     public InventoryItemData requiredKeyData; // Asigna el ScriptableObject de la llave en el Inspector
@@ -30,6 +30,7 @@ public class Door : MonoBehaviour
 
     void Update()
     {
+        // Si usas PlayerInteraction centralizado, puedes quitar esta sección
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             TryOpen();
@@ -133,5 +134,11 @@ public class Door : MonoBehaviour
         }
         transform.rotation = endRot;
         WhenOpened();
+    }
+
+    // Interfaz de interacción
+    public void Interactuar()
+    {
+        TryOpen();
     }
 }

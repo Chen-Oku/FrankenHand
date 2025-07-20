@@ -75,17 +75,18 @@ public class PauseMenu : MonoBehaviour
 
         SetPauseMenuVisibility(pauseMenuEnabled);
 
+        // Al pausar
         if (pauseMenuEnabled)
         {
             TimeManager.Instance.RequestPause();
-            // if (playerController != null)
-            //     playerController.enabled = false;
+            if (playerController != null)
+                playerController.puedeMover = false; // Bloquea movimiento
         }
         else
         {
             TimeManager.Instance.RequestResume();
-            // if (playerController != null)
-            //     playerController.enabled = true;
+            if (playerController != null)
+                playerController.puedeMover = true; // Permite movimiento
         }
     }
 

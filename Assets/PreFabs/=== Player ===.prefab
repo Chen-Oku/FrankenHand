@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 9176298621234090148}
   - component: {fileID: 3974129546114127457}
   - component: {fileID: 653750319942414228}
+  - component: {fileID: 7735806936656354165}
   - component: {fileID: 5028510315980127378}
   - component: {fileID: -3343274439498419281}
   - component: {fileID: 1658461842678572430}
@@ -249,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49caa9e3e77320e4a8874a184272b50f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactKey: 102
 --- !u!114 &4214038497459493834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +336,7 @@ MonoBehaviour:
   maxSlots: 20
   pauseMenu: {fileID: 5028510315980127378}
   inventoryCanvasGroup: {fileID: 0}
---- !u!114 &5028510315980127378
+--- !u!114 &7735806936656354165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,6 +344,21 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5318958587113912407}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a730f75dc7ace24298c415682586010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  optionsMenuUI: {fileID: 0}
+  inventory: {fileID: 653750319942414228}
+--- !u!114 &5028510315980127378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a647e0e3a800b4c41945c44f9807dbf5, type: 3}
   m_Name: 
@@ -444,7 +461,7 @@ MonoBehaviour:
   sonidoGatoPrimeraAparicion: {fileID: 0}
   sonidoCauldron: {fileID: 0}
   sonidoManoAPuntoDeCaer: {fileID: 0}
-  sonidoManoCaminando: {fileID: 8300000, guid: 0348ad355e0a9644baa5e7bdc374d60d, type: 3}
+  sonidoManoCaminando: {fileID: 8300000, guid: ee2cd8befc15ffa4d8f2fe16a127f8d6, type: 3}
   sonidoDeGolpeCaidaMano: {fileID: 8300000, guid: 27640225bb2e31047a5762013721d476, type: 3}
   sonidosManoLastimada:
   - {fileID: 8300000, guid: 93d9bdf06520a7b4a832f02f7494c0b1, type: 3}

@@ -20,18 +20,17 @@ public class PaneoTrigger : MonoBehaviour
             cameraSwitcher.mainVirtualCamera.Priority = 10;
             cameraSwitcher.RestartPaneoAnimation();
 
-            // Asigna automáticamente el PlayerController si no está asignado
             if (playerController == null)
                 playerController = other.GetComponent<PlayerController>();
 
-            // Desactiva el movimiento del jugador
             if (playerController != null)
             {
                 playerController.puedeMover = false;
                 playerController.ForzarIdle();
             }
 
-            StartCoroutine(DesactivarObjetosTrasDelay(tiempoDesactivacion));
+            // Inicia la corrutina para desactivar objetos antes de terminar el paneo
+            StartCoroutine(DesactivarObjetosTrasDelay(3f)); // Cambia 3f por los segundos deseados
         }
     }
 
@@ -47,6 +46,24 @@ public class PaneoTrigger : MonoBehaviour
         }
     }
 
+    private System.Collections.IEnumerator DesactivarObjetosTrasDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        DesactivarObjetos();
+        // El resto se hace en OnPaneoTerminado()
+    }
+
+    // Llama este método desde un Animation Event al final de la animación de paneo
+    public void OnPaneoTerminado()
+    {
+        DesactivarObjetos(); // Apaga luces y partículas
+        cameraSwitcher.ReturnToMainCamera(); // Vuelve a la cámara principal
+        paneoActivo = false;
+        if (playerController != null)
+            playerController.puedeMover = true; // Devuelve el control al jugador
+        DisableTrigger(); // Desactiva el trigger para que no se repita
+    }
+
     // Llama este método desde un Animation Event al final de la animación
     public void DisableTrigger()
     {
@@ -56,18 +73,12 @@ public class PaneoTrigger : MonoBehaviour
     public void DesactivarObjetos()
     {
         foreach (var obj in objetosADesactivar)
-            if (obj != null) obj.SetActive(false);
+        {
+            if (obj != null && obj != this.gameObject)
+            {
+                Debug.Log("Desactivando: " + obj.name);
+                obj.SetActive(false);
+            }
+        }
     }
-
-    private System.Collections.IEnumerator DesactivarObjetosTrasDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        DesactivarObjetos();
-        cameraSwitcher.ReturnToMainCamera(); // Vuelve a la cámara principal
-        paneoActivo = false;
-        if (playerController != null)
-            playerController.puedeMover = true; // Devuelve el control al jugador
-        DisableTrigger();
-    }
-
 }
