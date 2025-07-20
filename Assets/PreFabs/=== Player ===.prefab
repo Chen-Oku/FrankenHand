@@ -82,13 +82,19 @@ GameObject:
   - component: {fileID: 8204084892406804306}
   - component: {fileID: 4181182543207569413}
   - component: {fileID: 6976602750939388042}
-  - component: {fileID: 6997917008296747862}
+  - component: {fileID: 8172290811563433175}
+  - component: {fileID: 1511023465057927848}
+  - component: {fileID: 5557876932030823688}
+  - component: {fileID: 4214038497459493834}
+  - component: {fileID: 9176298621234090148}
+  - component: {fileID: 3974129546114127457}
   - component: {fileID: 653750319942414228}
   - component: {fileID: 5028510315980127378}
   - component: {fileID: -3343274439498419281}
   - component: {fileID: 1658461842678572430}
   - component: {fileID: 5678698935080886234}
   - component: {fileID: 4050164388326374232}
+  - component: {fileID: 1617371130202732963}
   - component: {fileID: 2727000297407748977}
   m_Layer: 0
   m_Name: === Player ===
@@ -190,7 +196,7 @@ CapsuleCollider:
   m_Height: 4.2
   m_Direction: 1
   m_Center: {x: 0, y: 0.1, z: 0}
---- !u!114 &6997917008296747862
+--- !u!114 &8172290811563433175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,12 +205,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 5318958587113912407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ab0875e97d074542b6144762252466d, type: 3}
+  m_Script: {fileID: 11500000, guid: 19e48adadd6172c4780d685048e35ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 0}
+  interaction: {fileID: 0}
+  animationController: {fileID: 0}
+  respawn: {fileID: 0}
+  cameraEffect: {fileID: 0}
+  vidaPlayer: {fileID: 0}
+--- !u!114 &1511023465057927848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbf563a4913a6d41866918a848b9afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 8204084892406804306}
   cameraTransform: {fileID: 0}
   spriteVisualTransform: {fileID: 2033902908291047385}
+  soundController: {fileID: 1617371130202732963}
   speed: 10
   runSpeed: 20
   jumpHeight: 3.5
@@ -212,7 +237,59 @@ MonoBehaviour:
   dashSpeed: 40
   dashDuration: 0.2
   coyoteTime: 2
+--- !u!114 &5557876932030823688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49caa9e3e77320e4a8874a184272b50f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4214038497459493834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fd58de8cf541748ac178505558e730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1658461842678572430}
+--- !u!114 &9176298621234090148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f8a82bf2b7e324fae6a5a92e091982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 0}
+  virtualCamera: {fileID: 0}
+--- !u!114 &3974129546114127457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24473a662b72c404c9b0927d7b02a4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   lastCheckpoint: {fileID: 0}
+  permitirRespawn: 1
 --- !u!114 &653750319942414228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,8 +303,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 0}
-  slots: []
-  slotHolder: {fileID: 0}
+  slotsNotas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slotsGeneral:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slotHolderNotas: {fileID: 0}
+  slotHolderGeneral: {fileID: 0}
   others: []
   usable: []
   collectibles: []
@@ -265,10 +364,6 @@ MonoBehaviour:
   maxContenedores: 9
   vidaPorContenedor: 1
   vidaActual: 0
-  audioSource: {fileID: 2727000297407748977}
-  sonidosDanio:
-  - {fileID: 8300000, guid: 10b98ad864b697a40b481e6bc076b89d, type: 3}
-  - {fileID: 8300000, guid: f1efb8af8dcb4254681f62be93c17b03, type: 3}
 --- !u!95 &1658461842678572430
 Animator:
   serializedVersion: 7
@@ -332,6 +427,37 @@ MonoBehaviour:
   precomputeOutline: 1
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1617371130202732963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318958587113912407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4a96dbee09a4d41afdbbc86f61359e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2727000297407748977}
+  sonidoSalto: {fileID: 8300000, guid: 972a24a57ee89fa4cbcaaf0fd0427604, type: 3}
+  sonidoGatoPrimeraAparicion: {fileID: 0}
+  sonidoCauldron: {fileID: 0}
+  sonidoManoAPuntoDeCaer: {fileID: 0}
+  sonidoManoCaminando: {fileID: 8300000, guid: 0348ad355e0a9644baa5e7bdc374d60d, type: 3}
+  sonidoDeGolpeCaidaMano: {fileID: 8300000, guid: 27640225bb2e31047a5762013721d476, type: 3}
+  sonidosManoLastimada:
+  - {fileID: 8300000, guid: 93d9bdf06520a7b4a832f02f7494c0b1, type: 3}
+  - {fileID: 8300000, guid: 26a1f4c78a2f5f443a9607ddacad58d2, type: 3}
+  sonidoSalpicaduraPinturaVerde: {fileID: 0}
+  sonidoSalpicaduraPinturaAzul: {fileID: 0}
+  "sonidoSalpicaduraPinturaVerdePeque\xF1a": {fileID: 0}
+  sonidoPapel: {fileID: 0}
+  sonidoRecogerElementos: {fileID: 8300000, guid: 45da8aef7896ce7498468cc72749726b, type: 3}
+  sonidoPanelDeRocaAscendente: {fileID: 0}
+  sonidoBofetadaGato1: {fileID: 0}
+  sonidoBofetadaGato2: {fileID: 0}
+  sonidoBofetadaGato3: {fileID: 0}
 --- !u!82 &2727000297407748977
 AudioSource:
   m_ObjectHideFlags: 0

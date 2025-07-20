@@ -3,13 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class VidaPlayer : SistemaVida
 {
-    public AudioSource audioSource;
-    public AudioClip[] sonidosDanio; // Puedes asignar varios sonidos en el inspector
+    private PlayerSoundController soundController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
     {
         base.Start();
+        soundController = GetComponent<PlayerSoundController>();
         OnMuerte += Respawn;
         // Asegúrate de que la GUI se actualice después de inicializar la vida
         Object.FindFirstObjectByType<VidaGUIProbeta>()?.ActualizarProbeta();
@@ -18,16 +18,7 @@ public class VidaPlayer : SistemaVida
     public override void RecibirDanio(int cantidad)
     {
         base.RecibirDanio(cantidad);
-        ReproducirSonidoDanio();
-    }
-
-    private void ReproducirSonidoDanio()
-    {
-        if (audioSource != null && sonidosDanio != null && sonidosDanio.Length > 0)
-        {
-            int idx = Random.Range(0, sonidosDanio.Length);
-            audioSource.PlayOneShot(sonidosDanio[idx]);
-        }
+        soundController?.PlayManoLastimada();
     }
 
     private void Respawn()

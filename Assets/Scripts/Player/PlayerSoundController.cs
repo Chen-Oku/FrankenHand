@@ -9,7 +9,7 @@ public class PlayerSoundController : MonoBehaviour
     public AudioClip sonidoManoAPuntoDeCaer;
     public AudioClip sonidoManoCaminando;
     public AudioClip sonidoDeGolpeCaidaMano;
-    public AudioClip sonidoManoLastimada;
+    public AudioClip[] sonidosManoLastimada;
     public AudioClip sonidoSalpicaduraPinturaVerde;
     public AudioClip sonidoSalpicaduraPinturaAzul;
     public AudioClip sonidoSalpicaduraPinturaVerdePequeña;
@@ -52,7 +52,11 @@ public class PlayerSoundController : MonoBehaviour
 
     public void PlayManoLastimada()
     {
-        audioSource.PlayOneShot(sonidoManoLastimada);
+        if (sonidosManoLastimada != null && sonidosManoLastimada.Length > 0)
+        {
+            int idx = Random.Range(0, sonidosManoLastimada.Length);
+            audioSource.PlayOneShot(sonidosManoLastimada[idx]);
+        }
     }
 
     public void PlaySalpicaduraPinturaVerde()

@@ -27,12 +27,19 @@ public class SpeedBoostPowerUp : MonoBehaviour
         if (icon != null) icon.SetActive(false);
         gameObject.SetActive(false); // Oculta el power-up
 
-        float originalSpeed = player.speed;
-        player.speed = originalSpeed * boostMultiplier;
+        // Guarda las velocidades originales
+        float originalSpeed = player.movement.speed;
+        float originalRunSpeed = player.movement.runSpeed;
+
+        // Aplica el boost
+        player.movement.speed = originalSpeed * boostMultiplier;
+        player.movement.runSpeed = originalRunSpeed * boostMultiplier;
 
         yield return new WaitForSeconds(boostDuration);
 
-        player.speed = originalSpeed;
+        // Restaura las velocidades originales
+        player.movement.speed = originalSpeed;
+        player.movement.runSpeed = originalRunSpeed;
         // Aquí termina el efecto, el objeto sigue oculto
     }
 }

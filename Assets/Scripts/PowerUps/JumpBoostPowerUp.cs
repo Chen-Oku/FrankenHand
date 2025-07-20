@@ -27,12 +27,11 @@ public class JumpBoostPowerUp : MonoBehaviour
         if (icon != null) icon.SetActive(false);
         gameObject.SetActive(false); // Oculta el power-up
 
-        float originalJumpForce = player.jumpHeight;
-        player.jumpHeight = originalJumpForce * boostMultiplier;
+        float originalJumpForce = player.movement.jumpHeight;
+        player.movement.jumpHeight = originalJumpForce * boostMultiplier;
 
         yield return new WaitForSeconds(boostDuration);
 
-        player.jumpHeight = originalJumpForce;
-        // Aquí termina el efecto, el objeto sigue oculto
+        player.movement.jumpHeight = originalJumpForce;
     }
 }

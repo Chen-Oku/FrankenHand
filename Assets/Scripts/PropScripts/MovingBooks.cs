@@ -81,7 +81,7 @@ public class MovingBooks : MonoBehaviour
             if (playerController != null)
             {
                 // Ejemplo: reposicionar al último checkpoint
-                if (playerController.lastCheckpoint != null)
+                if (playerController.respawn != null && playerController.respawn.lastCheckpoint != null)
                     playerController.RespawnAtCheckpoint();
             }
         }
