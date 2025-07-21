@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PaneoTrigger : MonoBehaviour
 {
-    public PlayerController playerController; // Asigna en el inspector
+    public PlayerController playerController;
     public PaneoCameraSwitcher cameraSwitcher;
     public Animator paneoAnimator;
 
-    public GameObject[] objetosADesactivar; // Asigna aquí tus partículas y luces
-    public float tiempoDesactivacion = 10f; // Tiempo en segundos para desactivar objetos
+    public GameObject[] objetosADesactivar;
+    public float tiempoDesactivacion = 10f;
 
     private bool paneoActivo = false;
 
@@ -29,8 +29,8 @@ public class PaneoTrigger : MonoBehaviour
                 playerController.ForzarIdle();
             }
 
-            // Inicia la corrutina para desactivar objetos antes de terminar el paneo
-            StartCoroutine(DesactivarObjetosTrasDelay(3f)); // Cambia 3f por los segundos deseados
+
+            StartCoroutine(DesactivarObjetosTrasDelay(tiempoDesactivacion));
         }
     }
 
@@ -41,7 +41,7 @@ public class PaneoTrigger : MonoBehaviour
             cameraSwitcher.ReturnToMainCamera();
             paneoActivo = false;
             if (playerController != null)
-                playerController.puedeMover = true; // Devuelve el control al jugador
+                playerController.puedeMover = true;
             DisableTrigger();
         }
     }
@@ -50,21 +50,19 @@ public class PaneoTrigger : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         DesactivarObjetos();
-        // El resto se hace en OnPaneoTerminado()
     }
 
-    // Llama este método desde un Animation Event al final de la animación de paneo
+
     public void OnPaneoTerminado()
     {
-        DesactivarObjetos(); // Apaga luces y partículas
-        cameraSwitcher.ReturnToMainCamera(); // Vuelve a la cámara principal
+        DesactivarObjetos(); 
+        cameraSwitcher.ReturnToMainCamera();
         paneoActivo = false;
         if (playerController != null)
-            playerController.puedeMover = true; // Devuelve el control al jugador
-        DisableTrigger(); // Desactiva el trigger para que no se repita
+            playerController.puedeMover = true;
+        DisableTrigger(); 
     }
 
-    // Llama este método desde un Animation Event al final de la animación
     public void DisableTrigger()
     {
         gameObject.SetActive(false);

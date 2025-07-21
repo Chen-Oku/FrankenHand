@@ -49,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
     private float paralyzeTimer = 0f;
     private int lastFacing = 1; // 1 = derecha, -1 = izquierda
     private bool wasGrounded = true;
+    private bool isKnockback = false;
+    private float knockbackTimer = 0f;
+    private Vector3 knockbackVelocity = Vector3.zero;
 
     // --- Properties ---
     public bool canMove { get; private set; } = true;
@@ -101,6 +104,18 @@ public class PlayerMovement : MonoBehaviour
             paralyzeTimer -= Time.deltaTime;
             if (paralyzeTimer <= 0f)
                 isParalyzed = false;
+            return;
+        }
+
+        if (isKnockback)
+        {
+            charController.Move(knockbackVelocity * Time.deltaTime);
+            knockbackTimer -= Time.deltaTime;
+            if (knockbackTimer <= 0f)
+            {
+                isKnockback = false;
+                knockbackVelocity = Vector3.zero;
+            }
             return;
         }
 
@@ -312,4 +327,10 @@ public class PlayerMovement : MonoBehaviour
         // ...other respawn logic...
     }
 
+    public void ApplyKnockback(Vector3 direction, float force, float duration)
+    {
+        isKnockback = true;
+        knockbackTimer = duration;
+        knockbackVelocity = direction.normalized * force;
+    }
 }

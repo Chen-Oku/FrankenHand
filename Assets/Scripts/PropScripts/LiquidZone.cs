@@ -9,6 +9,13 @@ public class LiquidZone : MonoBehaviour
 
     private float damageTimer = 0f;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        PlayerSoundController sound = other.GetComponent<PlayerSoundController>();
+        if (sound != null)
+            sound.PlaySalpicaduraCharco();
+    }
+
     private void OnTriggerStay(Collider other)
     {
         PlayerController player = other.GetComponent<PlayerController>();

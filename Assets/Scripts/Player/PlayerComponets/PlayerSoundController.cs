@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic; // Asegúrate de incluir esto para usar List<>
 
 public class PlayerSoundController : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerSoundController : MonoBehaviour
     public AudioClip sonidoBofetadaGato1;
     public AudioClip sonidoBofetadaGato2;
     public AudioClip sonidoBofetadaGato3;
+    public AudioClip[] sonidosSalpicaduraCharco;
 
     private float lastStepTime = -1f;
     private float stepCooldown = 2.0f; // Ahora coincide con la duración del audio de caminar
@@ -112,5 +114,24 @@ public class PlayerSoundController : MonoBehaviour
     public void PlayBofetadaGato3()
     {
         audioSource.PlayOneShot(sonidoBofetadaGato3);
+    }
+     public void PlaySalpicaduraCharco()
+    {
+        if (sonidosSalpicaduraCharco != null && sonidosSalpicaduraCharco.Length > 0)
+        {
+            int idx = Random.Range(0, sonidosSalpicaduraCharco.Length);
+            audioSource.PlayOneShot(sonidosSalpicaduraCharco[idx]);
+        }
+    }
+
+    public void PlayBofetadaGatoRandom()
+    {
+        AudioClip[] bofetadas = new AudioClip[] { sonidoBofetadaGato1, sonidoBofetadaGato2, sonidoBofetadaGato3 };
+        List<AudioClip> disponibles = new List<AudioClip>();
+        foreach (var clip in bofetadas)
+            if (clip != null) disponibles.Add(clip);
+
+        if (disponibles.Count > 0)
+            audioSource.PlayOneShot(disponibles[Random.Range(0, disponibles.Count)]);
     }
 }

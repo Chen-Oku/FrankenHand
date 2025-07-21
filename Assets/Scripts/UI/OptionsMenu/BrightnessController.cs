@@ -20,15 +20,14 @@ public class brillo : MonoBehaviour
         if (panelBrillo == null)
             panelBrillo = GameObject.Find("Panel Brightness")?.GetComponent<Image>();
 
-        // Inicializa el valor del slider y el panel
         float savedBrightness = GameSettings.Instance != null ? GameSettings.Instance.Brightness : PlayerPrefs.GetFloat("Brightness", 1f);
         slider.value = savedBrightness;
-        GameSettings.Instance.SetBrightness(savedBrightness); // Aplica el brillo al iniciar
+        GameSettings.Instance.SetBrightness(savedBrightness);
 
         slider.onValueChanged.AddListener(ChangeSlider);
     }
 
-    //Update is called once per frame
+
     void Update()
     {
 

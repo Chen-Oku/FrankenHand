@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
     public PlayerRespawn respawn;
     public PlayerCameraEffect cameraEffect;
     public VidaPlayer vidaPlayer;
+    public SpriteRenderer spriteRenderer; 
+
+    private Coroutine flashCoroutine;
+    private Color originalColor;
+
+    public float knockbackForce = 20f;
+    public float knockbackDuration = 0.25f;
 
     void Awake()
     {
@@ -19,6 +26,10 @@ public class PlayerController : MonoBehaviour
         respawn = GetComponent<PlayerRespawn>();
         cameraEffect = GetComponent<PlayerCameraEffect>();
         vidaPlayer = GetComponent<VidaPlayer>();
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (spriteRenderer != null)
+            originalColor = spriteRenderer.color;
     }
 
     public void TakeDamage(int amount)
@@ -31,7 +42,7 @@ public class PlayerController : MonoBehaviour
     public void Paralyze(float duration)
     {
         movement.Paralyze(duration);
-        cameraEffect?.StartCinemachineShake(duration, 2f); // Usa el método nuevo
+        cameraEffect?.StartCinemachineShake(duration, 2f);
     }
 
     public void ForzarIdle()
@@ -94,13 +105,49 @@ public class PlayerController : MonoBehaviour
             movement.EnableRun();
     }
 
+    public void ApplyKnockback(Vector3 direction, float? force = null, float? duration = null)
+    {
+        if (movement != null)
+            movement.ApplyKnockback(
+                direction,
+                force ?? knockbackForce,
+                duration ?? knockbackDuration
+            );
+    }
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Rigidbody rb = hit.collider.attachedRigidbody;
         if (rb != null && !rb.isKinematic)
         {
             Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
-            rb.AddForce(pushDir * 5f, ForceMode.Impulse); // Ajusta la fuerza según lo necesites
+            rb.AddForce(pushDir * 5f, ForceMode.Impulse);
         }
+    }
+
+    public void FlashRed(float duration = 0.5f, int flashes = 3)
+    {
+        if (spriteRenderer != null)
+        {
+            if (flashCoroutine != null)
+            {
+                StopCoroutine(flashCoroutine);
+                spriteRenderer.color = originalColor;
+            }
+            flashCoroutine = StartCoroutine(FlashRedCoroutine(duration, flashes));
+        }
+    }
+
+    private IEnumerator FlashRedCoroutine(float duration, int flashes)
+    {
+        for (int i = 0; i < flashes; i++)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(duration / (flashes * 2));
+            spriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(duration / (flashes * 2));
+        }
+        spriteRenderer.color = originalColor;
+        flashCoroutine = null;
     }
 }

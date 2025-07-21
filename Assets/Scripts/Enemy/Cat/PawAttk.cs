@@ -12,8 +12,7 @@ public class PawAttk : MonoBehaviour
     [HideInInspector] public Transform player;
     [HideInInspector] public bool attackCycleActive = false;
     public float attackInterval = 2f;
-    public SpriteRenderer pataSprite; // Asigna el SpriteRenderer en el inspector
-
+    public SpriteRenderer pataSprite;
     public int lastSpawnIndex = -1;
 
     void Start()
@@ -23,14 +22,12 @@ public class PawAttk : MonoBehaviour
 
     public void ShowPaw()
     {
-        Debug.Log("ShowPaw called");
         if (pataSprite != null)
             pataSprite.enabled = true;
     }
 
     public void HidePaw()
     {
-        Debug.Log("HidePaw called");
         if (pataSprite != null)
             pataSprite.enabled = false;
     }
@@ -54,7 +51,21 @@ public class PawAttk : MonoBehaviour
         {
             VidaPlayer vida = player.GetComponent<VidaPlayer>();
             if (vida != null)
+            {
                 vida.RecibirDanio(damage);
+
+                PlayerController pc = player.GetComponent<PlayerController>();
+                if (pc != null)
+                {
+                    Vector3 knockbackDir = (player.position - transform.position).normalized;
+                    pc.ApplyKnockback(knockbackDir, 10f, 0.2f);
+                    pc.FlashRed(0.5f, 3);
+
+                    var sound = player.GetComponent<PlayerSoundController>();
+                    if (sound != null)
+                        sound.PlayBofetadaGatoRandom();
+                }
+            }
         }
     }
 
@@ -78,7 +89,7 @@ public class PawAttk : MonoBehaviour
         {
             paw.playerInZone = true;
             paw.player = other.transform;
-            paw.StartCoroutine(paw.AttackCycle()); // si quieres iniciar el ciclo aquí
+            paw.StartCoroutine(paw.AttackCycle());
         }
     }
 }

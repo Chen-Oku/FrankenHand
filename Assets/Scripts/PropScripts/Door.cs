@@ -102,8 +102,6 @@ public class Door : MonoBehaviour, IInteractuable
 
     private void OnVideoEnd(VideoPlayer vp)
     {
-        if (videoUI != null)
-            videoUI.SetActive(false);
         SceneManager.LoadScene("CreditsScene");
     }
 

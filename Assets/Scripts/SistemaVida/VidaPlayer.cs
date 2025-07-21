@@ -19,6 +19,16 @@ public class VidaPlayer : SistemaVida
     {
         base.RecibirDanio(cantidad);
         soundController?.PlayManoLastimada();
+
+        // Retroceso y parpadeo
+        var pc = GetComponent<PlayerController>();
+        if (pc != null)
+        {
+            // Puedes ajustar la dirección, fuerza y duración según el contexto
+            Vector3 knockbackDir = -transform.forward; // Por defecto, hacia atrás
+            pc.ApplyKnockback(knockbackDir);
+            pc.FlashRed(0.5f, 3);
+        }
     }
 
     private void Respawn()
