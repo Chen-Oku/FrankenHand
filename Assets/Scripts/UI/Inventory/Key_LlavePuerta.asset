@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37183b102782a77428b3888400376ba8, type: 3}
   m_Name: Key_LlavePuerta
   m_EditorClassIdentifier: 
-  itemName: Key_LlavePuerta
+  itemName: llave puerta
   itemType: 1
   icon: {fileID: 21300000, guid: 49cadb7dad29a8f4b8a6825efe3c2e64, type: 3}
   pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}
   itemPrefab: {fileID: 2954140549268419274, guid: d7b4769403c70cf4c9f58e8bfd002454, type: 3}
-  description: "Extra\xF1a llave que abre tu camino en busqueda de lo que mas anhelas"
+  description: "Oculta en la \xFAltima repisa, lejos de la salida. Como si el creador
+    supiera que incluso las puertas deben quedarse cerradas.\r\nLa criatura la encuentra.
+    Tiembla. No por miedo, sino por memoria. Porque esta llave no abre un camino\u2026
+    despierta lo que nunca debi\xF3 ser.\r"
   maxStack: 1
+  esNota: 0
+  notaVideo: {fileID: 0}
+  notaImagen: {fileID: 0}
+  imagenMostrarTiempo: 5
