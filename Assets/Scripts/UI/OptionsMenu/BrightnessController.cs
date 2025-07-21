@@ -1,33 +1,3 @@
-/* using UnityEngine;
-using UnityEngine.UI;
-
-public class BrightnessController : MonoBehaviour
-{
-    public Slider slider; // Reference to the UI Slider component
-    public float sliderValue; // Variable to store the slider value
-    public Image panelBrightness; // Reference to the UI Image component for brightness effect
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        slider.value = PlayerPrefs.GetFloat("Brightness", 0.5f);
-        panelBrightness.color = new Color(panelBrightness.color.r, panelBrightness.color.g, panelBrightness.color.b, slider.value);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void ChangeSlider(float value)
-    {
-        sliderValue = value;
-        PlayerPrefs.SetFloat("Brightness", sliderValue);
-        panelBrightness.color = new Color(panelBrightness.color.r, panelBrightness.color.g, panelBrightness.color.b, sliderValue);
-    }
-} */
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,9 +14,18 @@ public class brillo : MonoBehaviour
 
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
+        if (slider == null)
+            slider = GetComponentInChildren<Slider>();
 
-        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
+        if (panelBrillo == null)
+            panelBrillo = GameObject.Find("Panel Brightness")?.GetComponent<Image>();
+
+        // Inicializa el valor del slider y el panel
+        float savedBrightness = GameSettings.Instance != null ? GameSettings.Instance.Brightness : PlayerPrefs.GetFloat("Brightness", 1f);
+        slider.value = savedBrightness;
+        GameSettings.Instance.SetBrightness(savedBrightness); // Aplica el brillo al iniciar
+
+        slider.onValueChanged.AddListener(ChangeSlider);
     }
 
     //Update is called once per frame
@@ -60,5 +39,11 @@ public class brillo : MonoBehaviour
         sliderValue = valor;
         PlayerPrefs.SetFloat("brillo", sliderValue);
         panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
+    }
+
+    public void ChangeBrightness(float value)
+    {
+        GameSettings.Instance.SetBrightness(value);
+        slider.value = value;
     }
 }

@@ -89,8 +89,6 @@ GameObject:
   - component: {fileID: 9176298621234090148}
   - component: {fileID: 3974129546114127457}
   - component: {fileID: 653750319942414228}
-  - component: {fileID: 7735806936656354165}
-  - component: {fileID: 5028510315980127378}
   - component: {fileID: -3343274439498419281}
   - component: {fileID: 1658461842678572430}
   - component: {fileID: 5678698935080886234}
@@ -245,7 +243,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5318958587113912407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49caa9e3e77320e4a8874a184272b50f, type: 3}
   m_Name: 
@@ -334,38 +332,8 @@ MonoBehaviour:
   collectibles: []
   keys: []
   maxSlots: 20
-  pauseMenu: {fileID: 5028510315980127378}
+  menuPausa: {fileID: 0}
   inventoryCanvasGroup: {fileID: 0}
---- !u!114 &7735806936656354165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318958587113912407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a730f75dc7ace24298c415682586010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  optionsMenuUI: {fileID: 0}
-  inventory: {fileID: 653750319942414228}
---- !u!114 &5028510315980127378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5318958587113912407}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a647e0e3a800b4c41945c44f9807dbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
-  optionsMenuUI: {fileID: 0}
-  inventory: {fileID: 653750319942414228}
 --- !u!114 &-3343274439498419281
 MonoBehaviour:
   m_ObjectHideFlags: 0

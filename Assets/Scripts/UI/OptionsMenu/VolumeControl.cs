@@ -4,38 +4,26 @@ using UnityEngine.UI;
 public class VolumeControl : MonoBehaviour
 {
     public Slider slider;
-    public float sliderValue;
     public Image imageMute;
-
-    
 
     void Start()
     {
-        // Initialize the slider value from PlayerPrefs or set a default value
-        sliderValue = PlayerPrefs.GetFloat("Volume", 0.5f);
-        AudioListener.volume = slider.value;
+        slider.onValueChanged.AddListener(ChangeSlider);
+        float savedVolume = GameSettings.Instance != null ? GameSettings.Instance.Volume : PlayerPrefs.GetFloat("Volume", 0.5f);
+        slider.value = savedVolume;
+        GameSettings.Instance.SetVolume(savedVolume); // Aplica el volumen al iniciar
         CheckIfMuted();
     }
 
     public void ChangeSlider(float value)
     {
-        sliderValue = value;
-        PlayerPrefs.SetFloat("Volume", sliderValue);
-        AudioListener.volume = sliderValue;
+        GameSettings.Instance.SetVolume(value);
+        slider.value = value;
         CheckIfMuted();
     }
 
     public void CheckIfMuted()
     {
-        // Check if the volume is zero and update the mute icon accordingly
-        if (slider.value == 0)
-        {
-            imageMute.enabled = true; // Show mute icon
-        }
-        else
-        {
-            imageMute.enabled = false; // Hide mute icon
-        }
+        imageMute.enabled = slider.value == 0;
     }
-
 }

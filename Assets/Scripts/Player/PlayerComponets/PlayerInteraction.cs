@@ -16,8 +16,13 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("PlayerInteraction activo");
         HandleInteractInput();
+        UpdatePlayerControlState();
+    }
 
+    private void UpdatePlayerControlState()
+    {
         // Solo animar si el objeto agarrado es arrastrable
         bool estaAgarrando = objetoArrastrado != null && objetoArrastrado is IArrastrable;
         bool estaEmpujando = false;

@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     public int maxSlots = 20;
 
-    public PauseMenu pauseMenu; // Asigna el PauseMenu desde el Inspector
+    public MenuPausa menuPausa; // Asigna el PauseMenu desde el Inspector
     public CanvasGroup inventoryCanvasGroup; // Asigna el CanvasGroup desde el Inspector
 
     public const int MAX_NOTAS = 5;
@@ -90,24 +90,25 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+            // Si el menú de pausa está activo, ciérralo antes de abrir el inventario
+            if (menuPausa != null && menuPausa.IsPauseMenuActive())
+                menuPausa.ClosePauseMenu();
+
             inventoryEnabled = !inventoryEnabled;
             SetInventoryUIVisible(inventoryEnabled);
 
             if (inventoryEnabled)
             {
-                // Si el menú de pausa está activo, ciérralo
-                if (pauseMenu != null && pauseMenu.IsPauseMenuActive())
-                    pauseMenu.Resume();
+                if (menuPausa != null && menuPausa.IsPauseMenuActive())
+                    menuPausa.Resume();
 
                 TimeManager.Instance.RequestPause();
             }
             else
             {
-                // Solo reanuda si no hay otro menú abierto
-                if (pauseMenu == null || !pauseMenu.IsPauseMenuActive())
+                if (menuPausa == null || !menuPausa.IsPauseMenuActive())
                 {
                     //TimeManager.Instance.RequestResume();
-                    
                 }
             }
         }
@@ -118,7 +119,7 @@ public class Inventory : MonoBehaviour
 
         // Controla el PlayerController según si hay algún menú abierto
         if (playerController != null)
-            playerController.enabled = !(inventoryEnabled || (pauseMenu != null && pauseMenu.IsPauseMenuActive()) || opcionesAbiertas);
+            playerController.enabled = !(inventoryEnabled || (menuPausa != null && menuPausa.IsPauseMenuActive()) || opcionesAbiertas);
 
         // Pausa el juego si cualquier menú está abierto
         if (AnyMenuOpen())
@@ -130,7 +131,7 @@ public class Inventory : MonoBehaviour
     public bool AnyMenuOpen()
     {
         bool inventarioAbierto = inventoryCanvasGroup != null && inventoryCanvasGroup.alpha > 0.5f;
-        bool pausaAbierta = pauseMenu != null && pauseMenu.IsPauseMenuActive();
+        bool pausaAbierta = menuPausa != null && menuPausa.IsPauseMenuActive();
 
         var opcionesScript = Object.FindFirstObjectByType<ControladorOpciones>();
         bool opcionesAbiertas = opcionesScript != null && opcionesScript.opcionesCanvasGroup != null && opcionesScript.opcionesCanvasGroup.alpha > 0.5f;
@@ -138,22 +139,28 @@ public class Inventory : MonoBehaviour
         return inventarioAbierto || pausaAbierta || opcionesAbiertas;
     }
 
-
     public void CloseInventory()
     {
         inventoryEnabled = false;
         SetInventoryUIVisible(false);
+        MenuManager.Instance.UpdatePlayerControlState();
 
         // Reanuda solo si no hay otro menú abierto
-        if (!AnyMenuOpen())
+        if (!MenuManager.Instance.AnyMenuOpen())
             Time.timeScale = 1f;
 
         if (playerController != null)
             playerController.enabled = true;
+
+        var playerInteraction = Object.FindFirstObjectByType<PlayerInteraction>();
+        if (playerInteraction != null)
+            playerInteraction.enabled = true;
+            
+        
     }
 
     private void OnTriggerEnter(Collider other)
-{
+    {
         // Solo recoge objetos que tengan el componente PickupItem
         var pickup = other.GetComponent<PickupItem>();
         if (pickup != null)
@@ -424,4 +431,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void OpenInventory()
+    {
+        inventoryEnabled = true;
+        SetInventoryUIVisible(true);
+        MenuManager.Instance.UpdatePlayerControlState();
+    }
 }

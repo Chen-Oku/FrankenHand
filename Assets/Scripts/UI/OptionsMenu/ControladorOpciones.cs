@@ -13,15 +13,46 @@ public class ControladorOpciones : MonoBehaviour
     {
         // Detecta automáticamente el CanvasGroup si no está asignado
         if (opcionesCanvasGroup == null && pantallaOpciones != null)
-            opcionesCanvasGroup = pantallaOpciones.GetComponentInChildren<CanvasGroup>();
+            opcionesCanvasGroup = pantallaOpciones.GetComponent<CanvasGroup>();
 
+        // Asegura que el menú de opciones inicie oculto y no interactivo
         SetOpcionesVisible(false);
     }
 
+    /// <summary>
+    /// Muestra el menú de opciones y asegura que el CanvasGroup esté correctamente configurado.
+    /// </summary>
+    public void MostrarOpciones()
+    {
+        // Detecta automáticamente el menú activo anterior si no está asignado
+        if (previousMenu == null)
+        {
+            // Busca todos los GameObjects activos en la raíz del Canvas (excepto el propio menú de opciones)
+            Canvas canvas = GetComponentInParent<Canvas>();
+            if (canvas != null)
+            {
+                foreach (Transform child in canvas.transform)
+                {
+                    if (child.gameObject != pantallaOpciones && child.gameObject.activeSelf)
+                    {
+                        previousMenu = child.gameObject;
+                        break;
+                    }
+                }
+            }
+        }
+
+        SetOpcionesVisible(true);
+        Time.timeScale = 1f;
+    }
+
+    /// <summary>
+    /// Activa o desactiva el menú de opciones y configura el CanvasGroup.
+    /// </summary>
     public void SetOpcionesVisible(bool visible)
     {
-        if (pantallaOpciones != null && visible)
-            pantallaOpciones.SetActive(true);
+        if (pantallaOpciones != null)
+            pantallaOpciones.SetActive(visible);
 
         if (opcionesCanvasGroup != null)
         {
@@ -29,12 +60,15 @@ public class ControladorOpciones : MonoBehaviour
             opcionesCanvasGroup.interactable = visible;
             opcionesCanvasGroup.blocksRaycasts = visible;
         }
-        if (pantallaOpciones != null && !visible)
-            pantallaOpciones.SetActive(false);
     }
 
+    /// <summary>
+    /// Vuelve al menú anterior o al menú principal/pausa si no hay uno definido.
+    /// </summary>
     public void ReturnToPreviousMenu()
     {
+        SetOpcionesVisible(false);
+
         if (previousMenu != null)
         {
             previousMenu.SetActive(true);
@@ -46,20 +80,12 @@ public class ControladorOpciones : MonoBehaviour
             // Buscar MainMenuUI automáticamente si no está asignado
             GameObject mainMenu = mainMenuUI;
             if (mainMenu == null)
-            {
                 mainMenu = GameObject.FindGameObjectWithTag("MainMenu");
-                if (mainMenu == null)
-                    mainMenu = GameObject.Find("=== PauseMenu ==="); // Cambia el nombre si tu panel se llama diferente
-            }
 
             // Buscar PauseMenuUI automáticamente si no está asignado
             GameObject pauseMenu = pauseMenuUI;
             if (pauseMenu == null)
-            {
                 pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
-                if (pauseMenu == null)
-                    pauseMenu = GameObject.Find("=== PauseMenu ==="); // Cambia el nombre si tu panel se llama diferente
-            }
 
             if (sceneName == "MainMenu" && mainMenu != null)
             {
@@ -69,23 +95,6 @@ public class ControladorOpciones : MonoBehaviour
             {
                 pauseMenu.SetActive(true);
             }
-        }
-
-        SetOpcionesVisible(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void MostrarOpciones()
-    {
-        if (pantallaOpciones != null)
-        {
-            pantallaOpciones.SetActive(true); // Siempre antes
-            SetOpcionesVisible(true);
         }
     }
 }
