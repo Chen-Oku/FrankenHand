@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class OutlineActivator : MonoBehaviour
 {
-    private Outline outline;
+    private OutlineChen outline;
 
     void Awake()
     {
         // Busca el componente Outline en este objeto o en sus hijos
-        outline = GetComponent<Outline>();
+        outline = GetComponent<OutlineChen>();
         if (outline == null)
-            outline = GetComponentInChildren<Outline>();
+            outline = GetComponentInChildren<OutlineChen>();
 
         if (outline != null)
             outline.enabled = false; // Desactiva el outline al inicio
