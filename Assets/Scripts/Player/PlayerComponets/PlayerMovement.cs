@@ -52,6 +52,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isKnockback = false;
     private float knockbackTimer = 0f;
     private Vector3 knockbackVelocity = Vector3.zero;
+    public ParticleSystem dust;
+    // Particle system para el burst al aterrizar (se reproduce una sola vez)
+    public ParticleSystem landingDust;
+    // flag para saber si el jugador saltó desde el suelo (para reproducir el burst al aterrizar)
+    private bool hasJumpedSinceGrounded = false;
 
     // --- Properties ---
     public bool canMove { get; private set; } = true;
@@ -86,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
         airMomentum = Vector3.zero;
         canDoubleJump = true;
         coyoteTimeCounter = coyoteTime;
+        hasJumpedSinceGrounded = false;
     }
 
     // --- Unity Methods ---
@@ -131,25 +137,46 @@ public class PlayerMovement : MonoBehaviour
         ApplyGravity();
         charController.Move(velocity * Time.deltaTime);
 
-        if (isGrounded && velocity.magnitude >= 0.1f)
+        // Reproducir pasos y polvo solo cuando está en el suelo y se está moviendo (walk/run), no en el aire ni en dash
+        if (isGrounded && !isDashing)
         {
-            stepTimer -= Time.deltaTime;
-            float interval = isRunning ? runStepInterval : walkStepInterval;
-            if (stepTimer <= 0f)
+            // calcula la velocidad horizontal real (puede venir de velocity o de airMomentum según implementación)
+            float horizontalSpeed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
+            float movementSpeed = Mathf.Max(horizontalSpeed, airMomentum.magnitude);
+
+            if (movementSpeed >= 0.1f)
             {
-                soundController?.PlayManoCaminando();
-                stepTimer = interval;
+                stepTimer -= Time.deltaTime;
+                float interval = isRunning ? runStepInterval : walkStepInterval;
+                if (stepTimer <= 0f)
+                {
+                    soundController?.PlayManoCaminando();
+                    CreateDustEffect(); // ahora crea polvo solo cuando corresponde
+                    stepTimer = interval;
+                }
+            }
+            else
+            {
+                stepTimer = 0f;
+                StopDustEffect(); // detener polvo si deja de moverse
             }
         }
         else
         {
             stepTimer = 0f;
+            StopDustEffect(); // detener polvo si no está en tierra o está haciendo dash
         }
 
         // Sonido de aterrizaje
         if (!wasGrounded && isGrounded)
         {
             soundController?.PlayDeGolpeCaidaMano();
+            // Si el jugador había saltado desde el suelo, reproducir el burst de aterrizaje una sola vez
+            if (hasJumpedSinceGrounded)
+            {
+                CreateLandingEffect();
+                hasJumpedSinceGrounded = false;
+            }
         }
         wasGrounded = isGrounded;
     }
@@ -208,12 +235,14 @@ public class PlayerMovement : MonoBehaviour
                 coyoteTimeCounter = 0f;
                 canDoubleJump = true; // Permitir doble salto solo después de un salto válido
                 soundController?.PlaySaltar();
+                hasJumpedSinceGrounded = true;
             }
             else if (canDoubleJump)
             {
                 velocity.y = Mathf.Sqrt(jumpHeight * jumpMultiplier * -2f * gravity);
                 canDoubleJump = false;
                 soundController?.PlaySaltar();
+                hasJumpedSinceGrounded = true;
             }
         }
 
@@ -324,6 +353,7 @@ public class PlayerMovement : MonoBehaviour
         airMomentum = Vector3.zero;
         canDoubleJump = true;
         coyoteTimeCounter = coyoteTime;
+        hasJumpedSinceGrounded = false;
         // ...other respawn logic...
     }
 
@@ -332,5 +362,27 @@ public class PlayerMovement : MonoBehaviour
         isKnockback = true;
         knockbackTimer = duration;
         knockbackVelocity = direction.normalized * force;
+    }
+
+    void CreateDustEffect()
+    {
+        if (dust == null) return;
+        // si no está reproduciéndose, iniciar; evita reiniciar continuamente si ya está en curso
+        if (!dust.isPlaying)
+            dust.Play();
+    }
+
+    void CreateLandingEffect()
+    {
+        if (landingDust == null) return;
+        // burst: reproducir una vez (si ya está reproduciéndose no hace falta reiniciarlo)
+        landingDust.Play();
+    }
+
+    void StopDustEffect()
+    {
+        if (dust == null) return;
+        if (dust.isPlaying)
+            dust.Stop();
     }
 }

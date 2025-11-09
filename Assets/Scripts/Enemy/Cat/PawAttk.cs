@@ -13,6 +13,7 @@ public class PawAttk : MonoBehaviour
     [HideInInspector] public bool attackCycleActive = false;
     public float attackInterval = 2f;
     public SpriteRenderer pataSprite;
+    public ParticleSystem attkDust;
     public int lastSpawnIndex = -1;
 
     void Start()
@@ -47,6 +48,9 @@ public class PawAttk : MonoBehaviour
 
     public void TryAttack()
     {
+        // Reproduce el polvo siempre que se intente el ataque
+        AttackDust();
+
         if (player != null && Vector3.Distance(transform.position, player.position) < attackRange)
         {
             VidaPlayer vida = player.GetComponent<VidaPlayer>();
@@ -91,5 +95,11 @@ public class PawAttk : MonoBehaviour
             paw.player = other.transform;
             paw.StartCoroutine(paw.AttackCycle());
         }
+    }
+
+    void AttackDust()
+    {
+        if (attkDust != null)
+            attkDust.Play();
     }
 }

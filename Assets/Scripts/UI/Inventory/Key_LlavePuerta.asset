@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37183b102782a77428b3888400376ba8, type: 3}
   m_Name: Key_LlavePuerta
   m_EditorClassIdentifier: 
-  itemName: llave puerta
+  itemName: Key_LlavePuerta
   itemType: 1
   icon: {fileID: 21300000, guid: 49cadb7dad29a8f4b8a6825efe3c2e64, type: 3}
   pickupSound: {fileID: 8300000, guid: 3c33ecf9cd1ade0409e9d4e01828e7cb, type: 3}

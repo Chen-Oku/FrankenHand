@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: defb200c792f0664088b64c190f5ac53
+guid: da81f4cf3b54d484f87f47371f11ecf7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,10 +51,10 @@ TextureImporter:
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 2
-  alphaIsTransparency: 1
-  spriteTessellationDetail: 0.343
-  textureType: 8
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -135,69 +135,12 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline:
-    - - {x: 54, y: -134}
-      - {x: 61, y: -132}
-      - {x: 72, y: -127}
-      - {x: 87, y: -117}
-      - {x: 104, y: -102}
-      - {x: 114, y: -87}
-      - {x: 118, y: -78}
-      - {x: 121, y: -70}
-      - {x: 123, y: -61}
-      - {x: 124, y: -53}
-      - {x: 124, y: -30}
-      - {x: 126, y: -22}
-      - {x: 121, y: -10}
-      - {x: 131, y: 7}
-      - {x: 135, y: 22}
-      - {x: 135, y: 61}
-      - {x: 134, y: 68}
-      - {x: 125, y: 87}
-      - {x: 119, y: 98}
-      - {x: 102, y: 114}
-      - {x: 98, y: 117}
-      - {x: 88, y: 124}
-      - {x: 68, y: 133}
-      - {x: 61, y: 135}
-      - {x: 22, y: 135}
-      - {x: 12, y: 133}
-      - {x: 0, y: 129}
-      - {x: -13, y: 122}
-      - {x: -19, y: 117}
-      - {x: -33, y: 103}
-      - {x: -45, y: 92}
-      - {x: -52, y: 91}
-      - {x: -71, y: 85}
-      - {x: -77, y: 83}
-      - {x: -95, y: 74}
-      - {x: -103, y: 68}
-      - {x: -119, y: 52}
-      - {x: -124, y: 44}
-      - {x: -129, y: 32}
-      - {x: -132, y: 23}
-      - {x: -135, y: 9}
-      - {x: -135, y: -31}
-      - {x: -131, y: -42}
-      - {x: -125, y: -54}
-      - {x: -117, y: -64}
-      - {x: -103, y: -79}
-      - {x: -92, y: -87}
-      - {x: -80, y: -93}
-      - {x: -70, y: -97}
-      - {x: -62, y: -100}
-      - {x: -49, y: -100}
-      - {x: -31, y: -117}
-      - {x: -18, y: -126}
-      - {x: -11, y: -130}
-      - {x: 0, y: -133}
-      - {x: 9, y: -135}
-      - {x: 49, y: -135}
+    outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []

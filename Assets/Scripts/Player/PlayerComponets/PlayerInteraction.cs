@@ -16,7 +16,6 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("PlayerInteraction activo");
         HandleInteractInput();
         UpdatePlayerControlState();
     }

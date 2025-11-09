@@ -5,7 +5,7 @@ public class InventoryItem
 {
     public string itemName; // Guardar el nombre del ScriptableObject para serialización
     public int quantity;
-    public bool pickedcUp;
+    public bool pickedUp;
     public Sprite itemIcon;
 
     [System.NonSerialized]

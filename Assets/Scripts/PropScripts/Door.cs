@@ -1,5 +1,4 @@
 using UnityEngine;
-using cakeslice;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
@@ -13,15 +12,19 @@ public class Door : MonoBehaviour, IInteractuable
     public GameObject videoUI; // Asigna el RawImage de la UI en el inspector
 
     private bool playerInRange = false;
-    private Outline outline;
+    private OutlineChen outline;
     private Transform playerTransform;
     private VideoPlayer videoPlayer;
 
     void Awake()
     {
-        outline = GetComponent<Outline>();
+        outline = GetComponent<OutlineChen>();
         if (outline != null)
             outline.enabled = false;
+
+        // Asegurar que no haya outlines activos en hijos (OutlineChen)
+        foreach (var oc in GetComponentsInChildren<OutlineChen>(true))
+            oc.enabled = false;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
