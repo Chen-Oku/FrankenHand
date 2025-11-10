@@ -18,11 +18,7 @@ public class OutlineChen : MonoBehaviour
 
   public enum Mode
   {
-    OutlineAll,
-    OutlineVisible,
-    OutlineHidden,
-    OutlineAndSilhouette,
-    SilhouetteOnly
+    OutlineAll,    OutlineVisible,    OutlineHidden,    OutlineAndSilhouette,    SilhouetteOnly
   }
 
   public Mode OutlineMode
@@ -91,8 +87,8 @@ public class OutlineChen : MonoBehaviour
   void Awake()
   {
 
-    // Cache renderers
-    renderers = GetComponentsInChildren<Renderer>();
+    // Cache renderers and exclude particle system renderers so outline won't affect particle systems
+    renderers = GetComponentsInChildren<Renderer>().Where(r => !(r is ParticleSystemRenderer)).ToArray();
 
     // Instantiate outline materials and validate resources
     var maskRes = Resources.Load<Material>(@"Materials/OutlineMask");
@@ -113,8 +109,13 @@ public class OutlineChen : MonoBehaviour
     outlineFillMaterial.name = "OutlineFill (Instance)";
 
     // Prevent instances from being saved into the scene or project
+#if UNITY_2018_3_OR_NEWER
+    outlineMaskMaterial.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSaveInBuild | HideFlags.HideInHierarchy;
+    outlineFillMaterial.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSaveInBuild | HideFlags.HideInHierarchy;
+#else
     outlineMaskMaterial.hideFlags = HideFlags.HideAndDontSave;
     outlineFillMaterial.hideFlags = HideFlags.HideAndDontSave;
+#endif
 
     // Retrieve or generate smooth normals
     LoadSmoothNormals();
