@@ -17,11 +17,15 @@ Guiada por un instinto primario, la Mano siente el deseo de buscar su identidad 
 > ¿O transformarse en algo completamente nuevo?
 
 ## 📽 Presentación del proyecto
+
 https://www.canva.com/design/DAGpjDjwRWo/fq92OKYs2G5n8MH-aXaJrw/view?utm_content=DAGpjDjwRWo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1dd3b51f5d
 
 ---
 
 ## 🎮 Cómo jugar
+
+Puedes probar el juego directamente en itch.io:
+👉 https://chenoku.itch.io/frankenhand
 
 | Acción                  | Tecla                           |
 |------------------------|---------------------------------|
